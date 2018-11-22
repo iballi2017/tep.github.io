@@ -206,10 +206,15 @@ body{
     button{
         background: $actionGreen;
         border: none;
-        width: 100px;
+        border-radius: 3px;
+        width: 110px;
         height: 30px;
         color: $white;
         font-size: 12px;
+
+    }
+    button:hover{
+        background: #444;
     }
 
 }

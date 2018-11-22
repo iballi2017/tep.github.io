@@ -137,10 +137,13 @@ body {
   .walletHead button {
     background: #4C6F35;
     border: none;
-    width: 100px;
+    border-radius: 3px;
+    width: 110px;
     height: 30px;
     color: #ffffff;
     font-size: 12px; }
+  .walletHead button:hover {
+    background: #444; }
 
 .recentorder {
   font-size: 14px;
