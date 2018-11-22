@@ -63,6 +63,13 @@ body{
     a:hover{
         color: $orange;
     }
+    .profile-image{
+        width: 25px;
+    }
+    
+    .basket{
+        width:25px;
+    }
 
 }
 
@@ -108,16 +115,6 @@ body{
 
 }
 
-.profile-image{
-    width: 41px;
-    margin-top: -10px;
-}
-
-.basket{
-    width: 45px;
-    margin-top: -10px;
-}
-
 
 #main{
     margin-top: 20px;
@@ -132,6 +129,7 @@ body{
 
 
 .sidenav {
+    font-family: $poppins;
     height: 100%;
     width: 360px;
     position: fixed;
@@ -144,11 +142,10 @@ body{
     padding-top: 150px;
     padding-left: 100px;
 
-    
     a {
         padding: 6px 8px 6px 16px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 15px;
         color: #818181;
         display: block;
         margin-left: 50px;
@@ -157,6 +154,19 @@ body{
             color: #000;
         }
         
+    }
+    
+    .logout{
+        margin-top: 60px;
+    }
+
+    .profile-image{
+        width: 40px;
+    }
+
+    #wallet{
+        border-left: 2px solid #444;
+        padding-left: 5px;
     }
 
 }
@@ -177,21 +187,75 @@ body{
     }
 }
 
-#wallet{
-    border-left: 2px solid #444;
+
+.walletHead{
+    // background: green;
+    width: 70%;
+    text-align: center;
+    margin-top: 100px;
+    font-family: $poppins;
+    
+    .walletBalance{
+        font-weight: 600;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: bold;
+    }
+    button{
+        background: $actionGreen;
+        border: none;
+        width: 100px;
+        height: 30px;
+        color: $white;
+        font-size: 12px;
+    }
+
 }
+
+.recentorder{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+#walletContainer{
+    height: 180px;
+    background: #fff;
+    width: 70%;
+    box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.1);
+    border-radius: 2px;
+    padding-top: 3px;
+    text-align: center;
+    font-family: $poppins;
+
+
+    .number{
+        background: #ccc;
+        width: 7%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+        h1{
+
+            font-size: 40px;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+
+    }
+
+}
+
 
 
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-}
-
-
-#walletContainer{
-        height: 200px;
-        background: green;
-        width: 100%;
-        margin-top: 100px;
 }

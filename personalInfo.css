@@ -40,6 +40,10 @@ body {
       background: #d3b091; }
   .mynav a:hover {
     color: #e68631; }
+  .mynav .profile-image {
+    width: 25px; }
+  .mynav .basket {
+    width: 25px; }
 
 .navbar-logo {
   width: 200px;
@@ -70,14 +74,6 @@ body {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px); }
 
-.profile-image {
-  width: 41px;
-  margin-top: -10px; }
-
-.basket {
-  width: 45px;
-  margin-top: -10px; }
-
 #main {
   margin-top: 20px;
   transition: margin-left .5s;
@@ -87,6 +83,7 @@ body {
   margin-top: 100px; }
 
 .sidenav {
+  font-family: "Poppins", sans-serif;
   height: 100%;
   width: 360px;
   position: fixed;
@@ -101,12 +98,19 @@ body {
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     color: #818181;
     display: block;
     margin-left: 50px; }
     .sidenav a :hover {
       color: #000; }
+  .sidenav .logout {
+    margin-top: 60px; }
+  .sidenav .profile-image {
+    width: 40px; }
+  .sidenav #userInfo {
+    border-left: 2px solid #444;
+    padding-left: 5px; }
 
 .backbtn {
   position: absolute;
@@ -119,20 +123,16 @@ body {
     text-decoration: none;
     color: #000; }
 
-#userInfo {
-  border-left: 2px solid #444; }
-
 #personalInformationContent {
   width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  #personalInformationContent #info p {
-    color: #000;
-    font-size: 14px;
-    line-height: 30px; }
-  #personalInformationContent #info #delivery {
-    margin-top: 50px; }
+  height: 400px; }
+  #personalInformationContent #info {
+    margin-top: 150px; }
+    #personalInformationContent #info p {
+      color: #000;
+      font-size: 14px;
+      line-height: 30px; }
+    #personalInformationContent #info #delivery {
+      margin-top: 50px; }
 
 /*# sourceMappingURL=personalInfo.css.map */

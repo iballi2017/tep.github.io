@@ -97,6 +97,10 @@ body {
       background: #d3b091; }
   .mynav a:hover {
     color: #e68631; }
+  .mynav .profile-image {
+    width: 25px; }
+  .mynav .basket {
+    width: 25px; }
 
 .navbar-logo {
   width: 200px;
@@ -126,14 +130,6 @@ body {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px); }
-
-.profile-image {
-  width: 41px;
-  margin-top: -10px; }
-
-.basket {
-  width: 45px;
-  margin-top: -10px; }
 
 .hero {
   width: 100%;

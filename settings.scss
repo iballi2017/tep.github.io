@@ -63,6 +63,14 @@ body{
     a:hover{
         color: $orange;
     }
+    
+    .profile-image{
+        width: 25px;
+    }
+    
+    .basket{
+        width:25px;
+    }
 
 }
 
@@ -108,17 +116,6 @@ body{
 
 }
 
-.profile-image{
-    width: 41px;
-    margin-top: -10px;
-}
-
-.basket{
-    width: 45px;
-    margin-top: -10px;
-}
-
-
 #main{
     margin-top: 20px;
     transition: margin-left .5s;
@@ -134,6 +131,7 @@ body{
 
 
 .sidenav {
+    font-family: $poppins;
     height: 100%;
     width: 360px;
     position: fixed;
@@ -150,7 +148,7 @@ body{
     a {
         padding: 6px 8px 6px 16px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 15px;
         color: #818181;
         display: block;
         margin-left: 50px;
@@ -159,7 +157,21 @@ body{
             color: #000;
         }
         
+    } 
+     
+    .logout{
+        margin-top: 60px;
     }
+    .profile-image{
+        width: 40px;
+    }
+    
+    #settings{
+        border-left: 2px solid #444;
+        padding-left: 5px;
+    }
+    
+
 
 }
 
@@ -178,57 +190,6 @@ body{
     }
 }
 
-    
-#settings{
-    border-left: 2px solid #444;
-}
-
-
-// .sidenav {
-//     height: 100%;
-//     width: 0;
-//     position: fixed;
-//     z-index: 1;
-//     top: 0;
-//     left: 0;
-//     background-color: rgba(255,255,255,0.8);
-//     overflow-x: hidden;
-//     transition: 0.5s;
-//     padding-top: 60px;
-//     z-index: 2001;
-
-//     a {
-//         padding: 8px 8px 8px 32px;
-//         text-decoration: none;
-//         font-size: 20px;
-//         color: #818181;
-//         display: block;
-//         transition: 0.3s;
-//     }
-
-//     a:hover {
-//         color: #444;
-//     }
-
-//     span{
-//         height: 10px;
-//         width: 100px;
-//         // border-left: 2px solid #444;
-//         padding-left: 5px;
-//     }
-
-//     .closebtn {
-//         position: absolute;
-//         top: 0;
-//         right: 25px;
-//         font-size: 36px;
-//         margin-left: 50px;
-//     }    
-//     #settings{
-//         border-left: 2px solid #444;
-//     }
-// }
-
 #settingsContent{
 
     .userSettings{
@@ -239,7 +200,7 @@ body{
         align-items: center;
 
         span{
-            margin-right: 20px;
+            margin-right: 60px;
             background: rgba(237, 170, 47, 0.23);
             height: 100px;
             width: 200px;

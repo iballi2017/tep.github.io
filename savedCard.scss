@@ -63,6 +63,14 @@ body{
     a:hover{
         color: $orange;
     }
+    
+    .profile-image{
+        width: 25px;
+    }
+    
+    .basket{
+        width:25px;
+    }
 
 }
 
@@ -108,16 +116,6 @@ body{
 
 }
 
-.profile-image{
-    width: 41px;
-    margin-top: -10px;
-}
-
-.basket{
-    width: 45px;
-    margin-top: -10px;
-}
-
 
 #main{
     margin-top: 20px;
@@ -132,6 +130,7 @@ body{
 
 
 .sidenav {
+    font-family: $poppins;
     height: 100%;
     width: 360px;
     position: fixed;
@@ -148,7 +147,7 @@ body{
     a {
         padding: 6px 8px 6px 16px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 15px;
         color: #818181;
         display: block;
         margin-left: 50px;
@@ -157,6 +156,17 @@ body{
             color: #000;
         }
         
+    }
+    
+    .logout{
+        margin-top: 60px;
+    }
+    .profile-image{
+        width: 40px;
+    }
+    #savedCard{
+        border-left: 2px solid #444;
+        padding-left: 5px;
     }
 
 }
@@ -177,9 +187,6 @@ body{
     }
 }
 
-#savedCard{
-    border-left: 2px solid #444;
-}
 
 
 
@@ -189,7 +196,6 @@ body{
     width: 70%;
     box-shadow: 2px 2px 4px 7px rgba(31, 30, 30, 0.1);
     border-radius: 2px;
-    box-shadow: #444 4, 4, 4, 4;
     margin-top: 100px;
     padding-top: 3px;
 

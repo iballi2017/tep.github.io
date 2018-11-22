@@ -63,6 +63,14 @@ body{
     a:hover{
         color: $orange;
     }
+    
+    .profile-image{
+        width: 25px;
+    }
+    
+    .basket{
+        width:25px;
+    }
 
 }
 
@@ -108,16 +116,6 @@ body{
 
 }
 
-.profile-image{
-    width: 41px;
-    margin-top: -10px;
-}
-
-.basket{
-    width: 45px;
-    margin-top: -10px;
-}
-
 
 #main{
     margin-top: 20px;
@@ -133,6 +131,7 @@ body{
 
 
 .sidenav {
+    font-family: $poppins;
     height: 100%;
     width: 360px;
     position: fixed;
@@ -149,7 +148,7 @@ body{
     a {
         padding: 6px 8px 6px 16px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 15px;
         color: #818181;
         display: block;
         margin-left: 50px;
@@ -158,6 +157,19 @@ body{
             color: #000;
         }
         
+    }
+    
+    .logout{
+        margin-top: 60px;
+    }
+
+    .profile-image{
+        width: 40px;
+    }
+
+    #userInfo{
+        border-left: 2px solid #444;
+        padding-left: 5px;
     }
 
 }
@@ -178,19 +190,12 @@ body{
     }
 }
 
-#userInfo{
-            border-left: 2px solid #444;
-        }
-
 #personalInformationContent{
     width: 100%;
     height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     #info{
-
+        margin-top: 150px;
         p{
             color: #000;;
             font-size: 14px;

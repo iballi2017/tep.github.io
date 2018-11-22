@@ -40,6 +40,10 @@ body {
       background: #d3b091; }
   .mynav a:hover {
     color: #e68631; }
+  .mynav .profile-image {
+    width: 25px; }
+  .mynav .basket {
+    width: 25px; }
 
 .navbar-logo {
   width: 200px;
@@ -70,14 +74,6 @@ body {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px); }
 
-.profile-image {
-  width: 41px;
-  margin-top: -10px; }
-
-.basket {
-  width: 45px;
-  margin-top: -10px; }
-
 #main {
   margin-top: 20px;
   transition: margin-left .5s;
@@ -87,6 +83,7 @@ body {
   margin-top: 100px; }
 
 .sidenav {
+  font-family: "Poppins", sans-serif;
   height: 100%;
   width: 360px;
   position: fixed;
@@ -101,12 +98,19 @@ body {
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     color: #818181;
     display: block;
     margin-left: 50px; }
     .sidenav a :hover {
       color: #000; }
+  .sidenav .logout {
+    margin-top: 60px; }
+  .sidenav .profile-image {
+    width: 40px; }
+  .sidenav #wallet {
+    border-left: 2px solid #444;
+    padding-left: 5px; }
 
 .backbtn {
   position: absolute;
@@ -119,8 +123,53 @@ body {
     text-decoration: none;
     color: #000; }
 
-#wallet {
-  border-left: 2px solid #444; }
+.walletHead {
+  width: 70%;
+  text-align: center;
+  margin-top: 100px;
+  font-family: "Poppins", sans-serif; }
+  .walletHead .walletBalance {
+    font-weight: 600;
+    font-size: 15px; }
+  .walletHead h1 {
+    font-size: 45px;
+    font-weight: bold; }
+  .walletHead button {
+    background: #4C6F35;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 12px; }
+
+.recentorder {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 30px; }
+
+#walletContainer {
+  height: 180px;
+  background: #fff;
+  width: 70%;
+  box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.1);
+  border-radius: 2px;
+  padding-top: 3px;
+  text-align: center;
+  font-family: "Poppins", sans-serif; }
+  #walletContainer .number {
+    background: #ccc;
+    width: 7%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+    #walletContainer .number h1 {
+      font-size: 40px;
+      margin: 0 auto;
+      font-weight: bold; }
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -128,10 +177,5 @@ body {
 
   .sidenav a {
     font-size: 18px; } }
-#walletContainer {
-  height: 200px;
-  background: green;
-  width: 100%;
-  margin-top: 100px; }
 
 /*# sourceMappingURL=wallet.css.map */
