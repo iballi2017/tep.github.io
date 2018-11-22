@@ -71,7 +71,7 @@
   width: 100%;
   height: 730px;
   margin: 0 auto;
-  background-image: url("Backgoundimg.png");
+  background-image: url("photos/Backgoundimg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
   .hero .title {
@@ -252,6 +252,10 @@
   width: 68%;
   margin-left: 40px; }
 
+.textarea {
+  width: 68%;
+  margin-left: 40px; }
+
 .e-message {
   width: 70%; }
   .e-message .form-button {
@@ -261,10 +265,6 @@
     width: 39.5%;
     margin-left: 40px;
     border-radius: 3px; }
-
-.textarea {
-  width: 68%;
-  margin-left: 40px; }
 
 .feedback-heading {
   text-align: center; }

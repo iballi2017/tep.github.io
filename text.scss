@@ -107,7 +107,7 @@ $actionGreen: #4C6F35;
     width: $p100;
     height: ($px100 * 7) + 30px;
     margin: 0 auto;
-    background-image: url("Backgoundimg.png");
+    background-image: url("photos/Backgoundimg.png");
     background-size: $p100 $p100;
     background-repeat: no-repeat;
 
@@ -359,6 +359,12 @@ $actionGreen: #4C6F35;
     margin-left: 40px;
 }
 
+
+.textarea{
+    width: 68%;
+    margin-left: 40px;
+}
+
 .e-message{
     width: 70%;
     
@@ -372,10 +378,6 @@ $actionGreen: #4C6F35;
     }
 }
 
-.textarea{
-    width: 68%;
-    margin-left: 40px;
-}
 
 // .login-form{
 

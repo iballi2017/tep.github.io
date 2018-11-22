@@ -203,7 +203,7 @@ body{
     width: $p100;
     height: ($px100 * 7) + 30px;
     margin: 0 auto;
-    background-image: url("Backgoundimg.png");
+    background-image: url("photos/Backgoundimg.png");
     background-size: $p100 $p100;
     background-repeat: no-repeat;
 
@@ -421,6 +421,33 @@ body{
 .form-close{
     color: $white;
 }
+
+.inputarea{
+    border-radius: 0px;
+    height: 40px;
+    width: 68%;
+    margin-left: 40px;
+}
+
+
+.textarea{
+    width: 68%;
+    margin-left: 40px;
+}
+
+.e-message{
+    width: 70%;
+    
+    .form-button{
+        background: $actionGreen;
+        color: #fff;
+        height: 50px;
+        width: 39.5%;
+        margin-left: 40px;
+        border-radius: 3px;
+    }
+}
+
 
 footer{
 
