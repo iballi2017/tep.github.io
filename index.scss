@@ -384,18 +384,6 @@ footer{
     .desktop-nav{
         display: none;
     }
-    header{
-        width: 95%;
-        margin: 15px auto;
-    }
-    .hero{
-        background: none;
-    }
-
-    .menu{
-        margin-top: -40px;
-    }
-
     .cont {
         display: inline-block;
         cursor: pointer;
@@ -427,6 +415,18 @@ footer{
     
     }
     
+    header{
+        width: 95%;
+        margin: 15px auto;
+    }
+    .hero{
+        background: none;
+    }
+
+    .menu{
+        margin-top: -40px;
+    }
+
     .action-icon .figure{
         margin-top: 30px;
         font-size: 14px;
@@ -460,6 +460,25 @@ footer{
     .title{
         margin-top: -150px;
     }
+
+    .place-order-button{
+        width: $px100 * 2;
+        height: $px100 - 50px;
+        margin-top: 90px;
+        margin-bottom: -60px;
+        border: none;
+        border-radius: 0px;
+        background:  $actionGreen;
+        border-radius: 3px;
+        padding-top: 13px;
+        font-family: $poppins;
+    }
+    
+    .menu{
+        margin-top: 0px;
+    }
+
+
     .breakfast-launch{
         margin-left: 10px;
     }
@@ -575,5 +594,25 @@ footer{
 }
 
     
+}
+
+
+@media only screen and (max-width:320px){
+   
+    .place-order-button{
+        width: $px100 * 2;
+        height: $px100 - 50px;
+        margin-top: 180px;
+        margin-bottom: -60px;
+        border: none;
+        border-radius: 0px;
+        background:  $actionGreen;
+        border-radius: 3px;
+        padding-top: 13px;
+        font-family: $poppins;
+    }
+    .menu{
+        margin-top: 100px;
+    }
 }
 
