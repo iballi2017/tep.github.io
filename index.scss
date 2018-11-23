@@ -593,6 +593,47 @@ footer{
 
 }
 
+
+
+
+.e-message{
+    width: 100%;
+    
+    .form-button{
+        background: $actionGreen;
+        color: #fff;
+        height: 30px;
+        width: 39.5%;
+        margin-left: 0px;
+        font-size: 13px;
+        border-radius: 3px;
+    }
+
+    
+    .inputarea{
+        border-radius: 0px;
+        height: 40px;
+        width: 80%;
+        margin-left: 0px;
+    }
+
+
+    .textarea{
+        width: 80%;
+        margin-left: 0px;
+    }
+
+}
+
+.feedback-heading{
+    font-size: 14px;
+}
+.form-horizontal{
+    margin-left: 2%;
+    margin-top: 30px;
+}
+
+
     
 }
 

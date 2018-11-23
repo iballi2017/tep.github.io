@@ -426,7 +426,33 @@ footer .footer-order {
       font-size: 13px;
       margin: 100px 0 0 10px;
       color: #105a96;
-      font-weight: 600; } }
+      font-weight: 600; }
+
+  .e-message {
+    width: 100%; }
+    .e-message .form-button {
+      background: #4C6F35;
+      color: #fff;
+      height: 30px;
+      width: 39.5%;
+      margin-left: 0px;
+      font-size: 13px;
+      border-radius: 3px; }
+    .e-message .inputarea {
+      border-radius: 0px;
+      height: 40px;
+      width: 80%;
+      margin-left: 0px; }
+    .e-message .textarea {
+      width: 80%;
+      margin-left: 0px; }
+
+  .feedback-heading {
+    font-size: 14px; }
+
+  .form-horizontal {
+    margin-left: 2%;
+    margin-top: 30px; } }
 @media only screen and (max-width: 375px) {
   .title {
     margin-top: -90px;
