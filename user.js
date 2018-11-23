@@ -65,14 +65,14 @@ function myFunction(x) {
        
        // Login onclick modal codes
         $(document).ready(function(){
-            $("#login").click(function(){
+            $(".login").click(function(){
                 $("#myLoginModal").modal();
             });
         });
 
         //Signup onclick modal codes
         $(document).ready(function(){
-            $("#signup").click(function(){
+            $(".signup").click(function(){
                 $("#mySignupModal").modal();
             });
         });

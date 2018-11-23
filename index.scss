@@ -472,3 +472,106 @@ footer{
     
 }
 
+
+.modal{
+    margin-top: 70px;
+}
+
+.modal-content{
+    width: 95%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/food.png);
+    background-repeat: no repeat;
+    background-size: 600px 580px;
+    background-size: cover;
+    font-size: 13px;
+    color: $white;
+}
+
+#mySignupModal{
+    label{
+        font-weight: 200;
+        // font-size: 10px;
+        margin-right: -20px;
+        margin-top: 5px;
+    }
+    .inputarea{
+        border-radius: 3px;
+        height: 40px;
+        width: 110%;
+        margin-left: 40px;
+    }   
+
+    .form-button{
+        background: $actionGreen;
+        color: $white;
+        height: 50px;
+        width: 62%;
+        margin-left: 20px;
+        border-radius: 3px;
+    }
+    
+    .form-horizontal{
+        margin-left: 120px;
+     }
+
+}
+
+#myLoginModal{
+    height: 500px;
+    font-family: $poppins;
+    
+    label{
+        font-weight: 200;
+        // font-size: 10px;
+        // margin-right: -20px;
+        margin-top: 5px;
+    }
+
+    .inputarea{
+        height: 30px;
+        width: 70%;
+        margin-left: 10px;
+    }   
+
+    .form-button{
+        background: $actionGreen;
+        color: $white;
+        font-size: 10px;
+        height: 30px;
+        width: 52%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .form-horizontal{
+       margin-left: 50px;
+    }
+        // 
+    .login-options{
+        margin-left: 50px;
+        margin-top: -20px;
+
+        h3{
+            color: $orange;
+            font-weight: 600;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    }
+    
+    .have-account{
+        font-size: 13px;
+        margin: 100px 0 0 30px;
+    }
+
+    .signup{
+        font-size: 13px;
+        margin: 100px 0 0 10px;
+        color: rgb(16, 90, 150);
+        font-weight: 600;
+    }
+
+}
