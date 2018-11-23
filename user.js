@@ -20,17 +20,10 @@ $(document).ready(function(){
 });
 
 
-
+//Mobile menu button
 function myFunction(x) {
     x.classList.toggle("change");
 }
-
-$(document).ready(function(){
-    $(".cont").click(function(){
-        $(".mobile-nav").toggle(1000);
-    });
-});
-
 
 // Login Form validation 
 

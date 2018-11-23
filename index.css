@@ -47,26 +47,6 @@
 .mobile-nav {
   display: none; }
 
-.cont {
-  display: inline-block;
-  cursor: pointer; }
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s; }
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px); }
-.change .bar2 {
-  opacity: 0; }
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px); }
-
 .hero {
   width: 100%;
   height: 730px;
@@ -82,7 +62,7 @@
       font-family: 'Poppins', sans-serif;
       color: #182900;
       font-weight: 600;
-      margin-top: 150px;
+      margin-top: 120px;
       line-height: 70px; }
     .hero .title .tagline {
       color: #e68631ff;
@@ -178,7 +158,7 @@
   margin-top: 70px; }
 
 .modal-content {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(food.png);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/food.png);
   background-repeat: no repeat;
   background-size: 600px 580px;
   background-size: cover;
@@ -293,8 +273,35 @@ footer .footer-order {
   .desktop-nav {
     display: none; }
 
-  .extranav {
-    display: none; }
+  header {
+    width: 95%;
+    margin: 15px auto; }
+
+  .hero {
+    background: none; }
+
+  .menu {
+    margin-top: -40px; }
+
+  .cont {
+    display: inline-block;
+    cursor: pointer; }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .change .bar2 {
+    opacity: 0; }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
 
   .action-icon .figure {
     margin-top: 30px;
@@ -315,17 +322,9 @@ footer .footer-order {
     font-size: 14px;
     margin-top: 10px; }
 
-  .action-icon #handlogo {
-    width: 42px; }
-
   .mobile-navbutton {
     float: right;
     margin-top: -50px; }
-
-  .mobile-nav {
-    background: rgba(0, 200, 0, 0.2);
-    margin-top: -20px;
-    display: none; }
 
   .logo {
     width: 100px;
@@ -335,6 +334,15 @@ footer .footer-order {
     font-size: 20px; }
 
   .title {
-    margin-top: -150px; } }
+    margin-top: -150px; }
 
-/*# sourceMappingURL=text.css.map */
+  .breakfast-launch {
+    margin-left: 10px; }
+
+  .salads-sandwiches {
+    margin-left: 10px; }
+
+  .hr {
+    margin-left: 10px; } }
+
+/*# sourceMappingURL=index.css.map */
