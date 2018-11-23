@@ -279,7 +279,7 @@ footer .footer-order {
   header {
     position: fixed;
     z-index: 2002;
-    padding-top: 20px;
+    padding-top: 10px;
     background: #ffffff; }
 
   .cont {
@@ -309,8 +309,12 @@ footer .footer-order {
   .hero {
     background: none; }
 
+  .title {
+    margin-top: -50px;
+    margin-bottom: 50px; }
+
   .menu {
-    margin-top: -40px; }
+    margin-top: 50px; }
 
   .action-icon .figure {
     margin-top: 30px;
@@ -341,10 +345,6 @@ footer .footer-order {
 
   .mobile-nav a {
     font-size: 20px; }
-
-  .title {
-    margin-top: -90px;
-    margin-bottom: 50px; }
 
   .place-order-button {
     width: 200px;

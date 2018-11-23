@@ -392,7 +392,7 @@ footer{
     header{
         position: fixed;
         z-index: 2002;
-        padding-top: 20px;
+        padding-top: 10px;
         background: $white;
     }
     .cont {
@@ -434,8 +434,13 @@ footer{
         background: none;
     }
 
+    .title{
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+
     .menu{
-        margin-top: -40px;
+        margin-top: 50px;
     }
 
     .action-icon .figure{
@@ -468,11 +473,6 @@ footer{
     .mobile-nav a{
         font-size: 20px;
     }
-    .title{
-        margin-top: -90px;
-        margin-bottom: 50px;
-    }
-
     .place-order-button{
         width: $px100 * 2;
         height: $px100 - 50px;
