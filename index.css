@@ -429,7 +429,7 @@ footer .footer-order {
       margin: 100px 0 0 10px;
       color: #105a96;
       font-weight: 600; } }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
   .place-order-button {
     width: 200px;
     height: 50px;
