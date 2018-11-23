@@ -67,20 +67,20 @@
     .hero .title .tagline {
       color: #e68631ff;
       font-weight: 300; }
-    .hero .title .place-order-button {
-      width: 200px;
-      height: 50px;
-      border: none;
-      border-radius: 0px;
-      margin-top: 25px;
-      background: #4C6F35;
-      border-radius: 3px;
-      padding-top: 13px;
-      font-family: "Poppins", sans-serif; }
+  .hero .place-order-button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    margin-top: 25px;
+    background: #4C6F35;
+    border-radius: 3px;
+    padding-top: 13px;
+    font-family: "Poppins", sans-serif; }
   .hero .how-it-works {
     text-align: center;
     font-family: "Poppins", sans-serif;
-    margin-top: 170px;
+    margin-top: 110px;
     color: #182900;
     font-weight: 600; }
   .hero .action-icon {

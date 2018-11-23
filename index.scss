@@ -100,23 +100,25 @@ $actionGreen: #4C6F35;
             font-weight: 300;
         }
         
-        .place-order-button{
-            width: $px100 * 2;
-            height: $px100 - 50px;
-            border: none;
-            border-radius: 0px;
-            margin-top: 25px;
-            background:  $actionGreen;
-            border-radius: 3px;
-            padding-top: 13px;
-            font-family: $poppins;
-        }
+    }
+
+    
+    .place-order-button{
+        width: $px100 * 2;
+        height: $px100 - 50px;
+        border: none;
+        border-radius: 0px;
+        margin-top: 25px;
+        background:  $actionGreen;
+        border-radius: 3px;
+        padding-top: 13px;
+        font-family: $poppins;
     }
   
     .how-it-works{
         text-align: center;
         font-family: $poppins;
-        margin-top: $px100 + 70px;
+        margin-top: $px100 + 10px;
         color: $green;
         font-weight: 600;
     }
