@@ -202,7 +202,7 @@ body{
     width: $p100;
     height: ($px100 * 7) + 30px;
     margin: 0 auto;
-    background-image: url("photos/Backgoundimg.png");
+    // background-image: url("photos/Backgoundimg.png");
     background-size: $p100 $p100;
     background-repeat: no-repeat;
 
@@ -241,9 +241,10 @@ body{
     .how-it-works{
         text-align: center;
         font-family: $poppins;
-        margin-top: $px100 + 70px;
+        // margin-top: $px100 + 70px;
         color: $green;
         font-weight: 600;
+        margin-top: 200px;
     }
     
     .action-icon{
@@ -270,6 +271,7 @@ body{
             width: 72px;
         }
     }
+
 }
 
 
@@ -516,6 +518,9 @@ footer{
     }
     .title{
         margin-top: -150px;
+    }
+    .menu{
+        margin-top: 0px;
     }
     
 }
