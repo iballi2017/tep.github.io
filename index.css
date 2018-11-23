@@ -343,75 +343,76 @@ footer .footer-order {
     margin-left: 10px; }
 
   .hr {
-    margin-left: 10px; } }
-.modal {
-  margin-top: 70px; }
-
-.modal-content {
-  width: 95%;
-  margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/food.png);
-  background-repeat: no repeat;
-  background-size: 600px 580px;
-  background-size: cover;
-  font-size: 13px;
-  color: #ffffff; }
-
-#mySignupModal label {
-  font-weight: 200;
-  margin-right: -20px;
-  margin-top: 5px; }
-#mySignupModal .inputarea {
-  border-radius: 3px;
-  height: 40px;
-  width: 110%;
-  margin-left: 40px; }
-#mySignupModal .form-button {
-  background: #4C6F35;
-  color: #ffffff;
-  height: 50px;
-  width: 62%;
-  margin-left: 20px;
-  border-radius: 3px; }
-#mySignupModal .form-horizontal {
-  margin-left: 120px; }
-
-#myLoginModal {
-  height: 500px;
-  font-family: "Poppins", sans-serif; }
-  #myLoginModal label {
-    font-weight: 200;
-    margin-top: 5px; }
-  #myLoginModal .inputarea {
-    height: 30px;
-    width: 70%;
     margin-left: 10px; }
-  #myLoginModal .form-button {
+
+  .modal {
+    margin-top: 70px; }
+
+  .modal-content {
+    width: 95%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/food.png);
+    background-repeat: no repeat;
+    background-size: 600px 580px;
+    background-size: cover;
+    font-size: 13px;
+    color: #ffffff; }
+
+  #mySignupModal label {
+    font-weight: 200;
+    margin-right: -20px;
+    margin-top: 5px; }
+  #mySignupModal .inputarea {
+    border-radius: 3px;
+    height: 40px;
+    width: 110%;
+    margin-left: 40px; }
+  #mySignupModal .form-button {
     background: #4C6F35;
     color: #ffffff;
-    font-size: 10px;
-    height: 30px;
-    width: 52%;
-    margin-left: 10px;
-    margin-bottom: 20px; }
-  #myLoginModal .form-horizontal {
-    margin-left: 50px; }
-  #myLoginModal .login-options {
-    margin-left: 50px;
-    margin-top: -20px; }
-    #myLoginModal .login-options h3 {
-      color: #e68631;
-      font-weight: 600; }
-    #myLoginModal .login-options p {
-      margin-top: 20px;
-      font-size: 14px; }
-  #myLoginModal .have-account {
-    font-size: 13px;
-    margin: 100px 0 0 30px; }
-  #myLoginModal .signup {
-    font-size: 13px;
-    margin: 100px 0 0 10px;
-    color: #105a96;
-    font-weight: 600; }
+    height: 50px;
+    width: 62%;
+    margin-left: 20px;
+    border-radius: 3px; }
+  #mySignupModal .form-horizontal {
+    margin-left: 120px; }
+
+  #myLoginModal {
+    height: 500px;
+    font-family: "Poppins", sans-serif; }
+    #myLoginModal label {
+      font-weight: 200;
+      margin-top: 5px; }
+    #myLoginModal .inputarea {
+      height: 30px;
+      width: 70%;
+      margin-left: 10px; }
+    #myLoginModal .form-button {
+      background: #4C6F35;
+      color: #ffffff;
+      font-size: 10px;
+      height: 30px;
+      width: 52%;
+      margin-left: 10px;
+      margin-bottom: 20px; }
+    #myLoginModal .form-horizontal {
+      margin-left: 50px; }
+    #myLoginModal .login-options {
+      margin-left: 50px;
+      margin-top: -20px; }
+      #myLoginModal .login-options h3 {
+        color: #e68631;
+        font-weight: 600; }
+      #myLoginModal .login-options p {
+        margin-top: 20px;
+        font-size: 14px; }
+    #myLoginModal .have-account {
+      font-size: 13px;
+      margin: 100px 0 0 30px; }
+    #myLoginModal .signup {
+      font-size: 13px;
+      margin: 100px 0 0 10px;
+      color: #105a96;
+      font-weight: 600; } }
 
 /*# sourceMappingURL=index.css.map */
