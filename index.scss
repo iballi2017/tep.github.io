@@ -8,6 +8,9 @@ $px100: 100px;
 $actionGreen: #4C6F35;
 
 
+body{
+    overflow-x: hidden;
+}
 .desktop-nav{
     background: $white;
     width: $p100;
@@ -637,6 +640,11 @@ footer{
     
 }
 
+
+@media only screen and (max-width:360px){
+  
+ }
+ 
 
 @media only screen and (max-width:375px){
    

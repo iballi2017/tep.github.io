@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden; }
+
 .desktop-nav {
   background: #ffffff;
   width: 100%;
