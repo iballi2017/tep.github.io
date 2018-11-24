@@ -298,13 +298,25 @@ footer .footer-order {
 
   header {
     width: 95%;
-    margin: 15px auto; }
+    margin: 0px auto;
+    position: fixed;
+    padding-top: 10px;
+    background: #ffffff;
+    z-index: 2001; }
 
   .hero {
     background: none; }
+    .hero .title .heading {
+      margin-top: 180px; }
+    .hero .action-icon img {
+      width: 50px; }
+    .hero .action-icon #handlogo {
+      width: 42px; }
+    .hero .action-icon .caption {
+      font-size: 13px; }
 
   .menu {
-    margin-top: -40px; }
+    margin-top: 100px; }
 
   .action-icon .figure {
     margin-top: 30px;
@@ -349,9 +361,6 @@ footer .footer-order {
     border-radius: 3px;
     padding-top: 13px;
     font-family: "Poppins", sans-serif; }
-
-  .menu {
-    margin-top: 0px; }
 
   .breakfast-launch {
     margin-left: 10px; }
@@ -462,12 +471,12 @@ footer .footer-order {
     margin-bottom: 120px; }
 
   .menu {
-    margin-top: 100px; } }
+    margin-top: 200px; } }
 @media only screen and (max-width: 320px) {
   .title {
     margin-bottom: 150px; }
 
   .menu {
-    margin-top: 100px; } }
+    margin-top: 220px; } }
 
 /*# sourceMappingURL=index.css.map */
