@@ -54,33 +54,14 @@ body {
 .mobile-nav {
   display: none; }
 
-.cont {
-  display: inline-block;
-  cursor: pointer; }
+.mobile-nav-icons {
+  display: none; }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s; }
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px); }
-.change .bar2 {
-  opacity: 0; }
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px); }
-
-#main {
-  margin-top: 20px;
-  transition: margin-left .5s;
-  padding: 16px; }
-
-.arrow {
-  margin-top: 100px; }
+.inputarea {
+  border-radius: 0px;
+  height: 40px;
+  width: 68%;
+  margin-left: 40px; }
 
 .sidenav {
   font-family: "Poppins", sans-serif;
@@ -174,11 +155,151 @@ body {
       margin: 0 auto;
       font-weight: bold; }
 
-@media screen and (max-height: 450px) {
+@media only screen and (max-width: 425px) {
+  .desktop-nav {
+    display: none; }
+
+  .mobile-nav-icons {
+    display: block;
+    position: relative; }
+    .mobile-nav-icons img {
+      width: 25px;
+      float: right;
+      margin-top: -40px; }
+    .mobile-nav-icons .profile-image {
+      margin-right: 90px; }
+    .mobile-nav-icons .basket {
+      margin-right: 140px;
+      height: 23px; }
+    .mobile-nav-icons .shop-icon {
+      margin-right: 190px;
+      height: 22px; }
+
+  .cont {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px; }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .change .bar2 {
+    opacity: 0; }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+
+  header {
+    width: 100%;
+    margin: 0px auto;
+    position: fixed;
+    padding-top: 10px;
+    background: #EDAA2F;
+    z-index: 2001; }
+
+  .mobile-navbutton {
+    float: right;
+    margin-top: -50px; }
+
+  .logo {
+    width: 100px;
+    margin-top: -20px; }
+
+  .mobile-nav a {
+    font-size: 20px; }
+
+  .backbtn {
+    display: none; }
+
   .sidenav {
-    padding-top: 15px; }
+    display: none; }
 
-  .sidenav a {
-    font-size: 18px; } }
+  .walletHead {
+    width: 70%;
+    text-align: center;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif; }
+    .walletHead .walletBalance {
+      font-weight: 600;
+      font-size: 15px; }
+    .walletHead h1 {
+      font-size: 45px;
+      font-weight: bold;
+      font-size: 30px; }
+    .walletHead button {
+      background: #4C6F35;
+      border: none;
+      border-radius: 3px;
+      width: 110px;
+      height: 30px;
+      color: #ffffff;
+      font-size: 12px; }
+    .walletHead button:hover {
+      background: #444; }
 
-/*# sourceMappingURL=wallet.css.map */
+  .recentorder {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 54px; }
+
+  #walletContainer {
+    height: 180px;
+    background: #fff;
+    width: 70%;
+    box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.1);
+    border-radius: 2px;
+    padding-top: 3px;
+    text-align: center;
+    font-family: "Poppins", sans-serif; }
+    #walletContainer .number {
+      background: #ccc;
+      width: 20%;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 20px; }
+      #walletContainer .number h1 {
+        font-size: 30px;
+        margin: 0 auto;
+        font-weight: bold; } }
+@media only screen and (max-width: 375px) {
+  .mobile-nav-icons {
+    display: block;
+    position: relative; }
+    .mobile-nav-icons img {
+      width: 25px;
+      float: right;
+      margin-top: -40px; }
+    .mobile-nav-icons .profile-image {
+      margin-right: 70px; }
+    .mobile-nav-icons .basket {
+      margin-right: 110px;
+      height: 23px; }
+    .mobile-nav-icons .shop-icon {
+      margin-right: 150px;
+      height: 22px; }
+
+  .recentorder {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 40px; } }
+@media only screen and (max-width: 320px) {
+  .recentorder {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 29px; } }
+
+/*# sourceMappingURL=walletLogin.css.map */

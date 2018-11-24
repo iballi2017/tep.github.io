@@ -278,7 +278,8 @@ footer .footer-order {
 
   .cont {
     display: inline-block;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-right: 10px; }
 
   .bar1, .bar2, .bar3 {
     width: 35px;
@@ -297,7 +298,7 @@ footer .footer-order {
     transform: rotate(45deg) translate(-8px, -8px); }
 
   header {
-    width: 95%;
+    width: 100%;
     margin: 0px auto;
     position: fixed;
     padding-top: 10px;

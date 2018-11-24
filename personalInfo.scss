@@ -8,10 +8,16 @@ $px100: 100px;
 $actionGreen: #4C6F35;
 
 
-
 body{
     overflow-x: hidden;
 }
+
+
+
+
+
+// navigation bar starts here
+
 
 .desktop-nav{
     background: $yellow;
@@ -84,50 +90,25 @@ body{
 .mobile-nav{
     display: none;
 }
-
-.cont {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change {
-
-    .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-
-    .bar2 {
-        opacity: 0;
-    }
-
-    .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
-    }
-
+.mobile-nav-icons{
+    display: none;
 }
 
 
-#main{
-    margin-top: 20px;
-    transition: margin-left .5s;
-    padding: 16px;
+
+.inputarea{
+    border-radius: 0px;
+    height: 40px;
+    width: 68%;
+    margin-left: 40px;
 }
 
-.arrow{
-    margin-top: 100px;
-}
+// Navigation bar ends here
 
 
+
+
+// Sidenav starts here
 
 
 .sidenav {
@@ -174,6 +155,13 @@ body{
 
 }
 
+// Sidenav ends here
+
+
+
+// Back button starts here
+
+
 
 
 .backbtn {
@@ -189,6 +177,16 @@ body{
     color: #000;
     }
 }
+
+
+// Back button ends here
+
+
+
+
+
+// Personal Information starts here
+
 
 #personalInformationContent{
     width: 100%;
@@ -207,3 +205,181 @@ body{
     }
     
 }
+
+
+
+// Personal Information ends here
+
+
+
+
+
+// Footer starts here for desktop
+
+footer{
+
+    p{
+        margin-top: $px100 - 70px;
+        color: $orange;
+        font-weight: 600;
+    }
+
+    .footer-order{
+        color: $green;
+        margin-top: $px100 - 70px;
+    }
+} 
+
+// Footer ends here for desktop
+
+
+
+@media only screen and (max-width:425px){
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 25px;
+            float: right;
+            //position: absolute;
+            margin-top: -40px;
+            //margin-right: 80px;
+        }
+
+        .profile-image{
+            margin-right: 90px;
+        }
+        .basket{
+            //margin-left: 30px;
+            margin-right: 140px;
+            height: 23px;
+        }
+        .shop-icon{
+            margin-right: 190px;
+            height: 22px;
+        }
+    }
+        .cont {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change {
+    
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+    
+        .bar2 {
+            opacity: 0;
+        }
+    
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    
+    }
+    
+    header{
+        width: 100%;
+        margin: 0px auto;
+        position: fixed;
+        padding-top: 10px;
+        background: $yellow;
+        z-index: 2001;
+    }
+   
+    .mobile-navbutton{
+        float: right;
+        margin-top: -50px;
+    }
+    .logo{
+        width: 100px;
+        margin-top: -20px;
+    }
+    .mobile-nav a{
+        font-size: 20px;
+    }
+
+    
+}
+
+
+//Footer starts here
+
+footer{
+
+    p{
+        margin-top: 0px;
+        color: $orange;
+        font-weight: 600;
+    }
+
+    .footer-order{
+        color: $green;
+        margin-top: 0px;
+    }
+} 
+
+
+//Footer ends here
+
+@media only screen and (max-width:425px){
+
+    .sidenav{
+        display: none;
+    }
+  
+ }
+ 
+
+@media only screen and (max-width:375px){
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 25px;
+            float: right;
+            //position: absolute;
+            margin-top: -40px;
+            //margin-right: 80px;
+        }
+
+        .profile-image{
+            margin-right: 70px;
+        }
+        .basket{
+            //margin-left: 30px;
+            margin-right: 110px;
+            height: 23px;
+        }
+        .shop-icon{
+            margin-right: 150px;
+            height: 22px;
+        }
+    }
+   
+ }
+ 
+ 
+
+@media only screen and (max-width:320px){
+   
+}
+

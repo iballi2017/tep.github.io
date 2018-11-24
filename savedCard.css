@@ -54,33 +54,14 @@ body {
 .mobile-nav {
   display: none; }
 
-.cont {
-  display: inline-block;
-  cursor: pointer; }
+.mobile-nav-icons {
+  display: none; }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s; }
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px); }
-.change .bar2 {
-  opacity: 0; }
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px); }
-
-#main {
-  margin-top: 20px;
-  transition: margin-left .5s;
-  padding: 16px; }
-
-.arrow {
-  margin-top: 100px; }
+.inputarea {
+  border-radius: 0px;
+  height: 40px;
+  width: 68%;
+  margin-left: 40px; }
 
 .sidenav {
   font-family: "Poppins", sans-serif;
@@ -157,11 +138,104 @@ body {
     font-weight: 500;
     margin-left: 190px; }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px; }
+@media only screen and (max-width: 425px) {
+  .desktop-nav {
+    display: none; }
 
-  .sidenav a {
-    font-size: 18px; } }
+  .sidenav {
+    display: none; }
+
+  .mobile-nav-icons {
+    display: block;
+    position: relative; }
+    .mobile-nav-icons img {
+      width: 25px;
+      float: right;
+      margin-top: -40px; }
+    .mobile-nav-icons .profile-image {
+      margin-right: 90px; }
+    .mobile-nav-icons .basket {
+      margin-right: 140px;
+      height: 23px; }
+    .mobile-nav-icons .shop-icon {
+      margin-right: 190px;
+      height: 22px; }
+
+  .cont {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px; }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .change .bar2 {
+    opacity: 0; }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+
+  header {
+    width: 100%;
+    margin: 0px auto;
+    position: fixed;
+    padding-top: 10px;
+    background: #EDAA2F;
+    z-index: 2001; }
+
+  .mobile-navbutton {
+    float: right;
+    margin-top: -50px; }
+
+  .logo {
+    width: 100px;
+    margin-top: -20px; }
+
+  .mobile-nav a {
+    font-size: 20px; }
+
+  #savedCardContainer {
+    height: 400px;
+    background: #fff;
+    width: 100%; }
+    #savedCardContainer table {
+      font-size: 13px; }
+    #savedCardContainer button {
+      margin-top: 10px; }
+    #savedCardContainer .cardDelete {
+      margin-top: 10px;
+      font-size: 12px;
+      margin-left: 100px; } }
+@media only screen and (max-width: 375px) {
+  .mobile-nav-icons {
+    display: block;
+    position: relative; }
+    .mobile-nav-icons img {
+      width: 25px;
+      float: right;
+      margin-top: -40px; }
+    .mobile-nav-icons .profile-image {
+      margin-right: 70px; }
+    .mobile-nav-icons .basket {
+      margin-right: 110px;
+      height: 23px; }
+    .mobile-nav-icons .shop-icon {
+      margin-right: 150px;
+      height: 22px; }
+
+  #savedCardContainer table {
+    font-size: 11px; }
+  #savedCardContainer .cardDelete {
+    margin-left: 65px; } }
+@media only screen and (max-width: 320px) {
+  #savedCardContainer .cardDelete {
+    margin-left: 29px; } }
 
 /*# sourceMappingURL=savedCard.css.map */

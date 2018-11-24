@@ -8,10 +8,17 @@ $px100: 100px;
 $actionGreen: #4C6F35;
 
 
-
 body{
     overflow-x: hidden;
+
 }
+
+
+
+
+
+// navigation bar starts here
+
 
 .desktop-nav{
     background: $yellow;
@@ -84,49 +91,27 @@ body{
 .mobile-nav{
     display: none;
 }
-
-.cont {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change {
-
-    .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-
-    .bar2 {
-        opacity: 0;
-    }
-
-    .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
-    }
-
+.mobile-nav-icons{
+    display: none;
 }
 
 
-#main{
-    margin-top: 20px;
-    transition: margin-left .5s;
-    padding: 16px;
+
+.inputarea{
+    border-radius: 0px;
+    height: 40px;
+    width: 68%;
+    margin-left: 40px;
 }
 
-.arrow{
-    margin-top: 100px;
-}
+// Navigation bar ends here
 
+
+
+
+
+
+// Sidenav starts here
 
 
 .sidenav {
@@ -161,15 +146,26 @@ body{
     .logout{
         margin-top: 60px;
     }
+
     .profile-image{
         width: 40px;
     }
+
     #savedCard{
         border-left: 2px solid #444;
         padding-left: 5px;
     }
 
 }
+
+// Sidenav ends here
+
+
+
+
+
+// Back button starts here
+
 
 
 
@@ -186,6 +182,15 @@ body{
     color: #000;
     }
 }
+
+
+// Back button ends here
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+
+// SavedCard starts here
 
 
 
@@ -235,7 +240,173 @@ body{
 
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+
+
+// SavedCard ends here
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+@media only screen and (max-width:425px){
+    .desktop-nav{
+        display: none;
+    }
+
+    .sidenav{
+        display: none;
+    }
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 25px;
+            float: right;
+            //position: absolute;
+            margin-top: -40px;
+            //margin-right: 80px;
+        }
+
+        .profile-image{
+            margin-right: 90px;
+        }
+        .basket{
+            //margin-left: 30px;
+            margin-right: 140px;
+            height: 23px;
+        }
+        .shop-icon{
+            margin-right: 190px;
+            height: 22px;
+        }
+    }
+        .cont {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change {
+    
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+    
+        .bar2 {
+            opacity: 0;
+        }
+    
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    
+    }
+    
+    header{
+        width: 100%;
+        margin: 0px auto;
+        position: fixed;
+        padding-top: 10px;
+        background: $yellow;
+        z-index: 2001;
+    }
+   
+    .mobile-navbutton{
+        float: right;
+        margin-top: -50px;
+    }
+    .logo{
+        width: 100px;
+        margin-top: -20px;
+    }
+    .mobile-nav a{
+        font-size: 20px;
+    }
+
+    #savedCardContainer{
+    height: 400px;
+    background: #fff;
+    width: 100%;
+
+        table{
+            font-size: 13px;
+        }
+        button{
+            margin-top: 10px;
+        }
+        .cardDelete{
+            margin-top: 10px;
+            font-size: 12px;
+            margin-left: 100px;
+        }
+    }
+
+    
 }
+
+
+
+
+@media only screen and (max-width:375px){
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 25px;
+            float: right;
+            //position: absolute;
+            margin-top: -40px;
+            //margin-right: 80px;
+        }
+
+        .profile-image{
+            margin-right: 70px;
+        }
+        .basket{
+            //margin-left: 30px;
+            margin-right: 110px;
+            height: 23px;
+        }
+        .shop-icon{
+            margin-right: 150px;
+            height: 22px;
+        }
+    }
+    #savedCardContainer{
+
+        table{
+            font-size: 11px;
+        }
+        .cardDelete{
+            margin-left: 65px;
+        }
+    }
+   
+ }
+ 
+ 
+
+@media only screen and (max-width:320px){
+   
+    #savedCardContainer{
+
+        .cardDelete{
+            margin-left: 29px;
+        }
+    }
+}
+
+           

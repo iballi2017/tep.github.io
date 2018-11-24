@@ -8,10 +8,16 @@ $px100: 100px;
 $actionGreen: #4C6F35;
 
 
-
 body{
     overflow-x: hidden;
 }
+
+
+
+
+
+// navigation bar starts here
+
 
 .desktop-nav{
     background: $yellow;
@@ -63,6 +69,7 @@ body{
     a:hover{
         color: $orange;
     }
+    
     .profile-image{
         width: 25px;
     }
@@ -83,49 +90,27 @@ body{
 .mobile-nav{
     display: none;
 }
-
-.cont {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change {
-
-    .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-
-    .bar2 {
-        opacity: 0;
-    }
-
-    .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
-    }
-
+.mobile-nav-icons{
+    display: none;
 }
 
 
-#main{
-    margin-top: 20px;
-    transition: margin-left .5s;
-    padding: 16px;
+
+.inputarea{
+    border-radius: 0px;
+    height: 40px;
+    width: 68%;
+    margin-left: 40px;
 }
 
-.arrow{
-    margin-top: 100px;
-}
+// Navigation bar ends here
 
+
+
+
+
+
+// Sidenav starts here
 
 
 .sidenav {
@@ -142,6 +127,7 @@ body{
     padding-top: 150px;
     padding-left: 100px;
 
+    
     a {
         padding: 6px 8px 6px 16px;
         text-decoration: none;
@@ -171,6 +157,15 @@ body{
 
 }
 
+// Sidenav ends here
+
+
+
+
+
+// Back button starts here
+
+
 
 
 .backbtn {
@@ -186,6 +181,15 @@ body{
     color: #000;
     }
 }
+
+
+// Back button ends here
+
+
+
+
+
+// Wallet starts here
 
 
 .walletHead{
@@ -258,9 +262,242 @@ body{
 }
 
 
+// Wallet ends here
 
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+
+@media only screen and (max-width:425px){
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 25px;
+            float: right;
+            //position: absolute;
+            margin-top: -40px;
+            //margin-right: 80px;
+        }
+
+        .profile-image{
+            margin-right: 90px;
+        }
+        .basket{
+            //margin-left: 30px;
+            margin-right: 140px;
+            height: 23px;
+        }
+        .shop-icon{
+            margin-right: 190px;
+            height: 22px;
+        }
+    }
+        .cont {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change {
+    
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+    
+        .bar2 {
+            opacity: 0;
+        }
+    
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    
+    }
+    
+    header{
+        width: 100%;
+        margin: 0px auto;
+        position: fixed;
+        padding-top: 10px;
+        background: $yellow;
+        z-index: 2001;
+    }
+   
+    .mobile-navbutton{
+        float: right;
+        margin-top: -50px;
+    }
+    .logo{
+        width: 100px;
+        margin-top: -20px;
+    }
+    .mobile-nav a{
+        font-size: 20px;
+    }
+
+    //Back button
+
+    .backbtn{
+        display: none;
+    }
+
+    //Sidenav
+
+    .sidenav{
+        display: none;
+    }
+
+    ////////////////////////////////////////////////////////////////////////
+
+
+
+//// Wallet starts here
+
+
+    .walletHead{
+        // background: green;
+        width: 70%;
+        text-align: center;
+        margin-top: 100px;
+        font-family: $poppins;
+        
+        .walletBalance{
+            font-weight: 600;
+            font-size: 15px;
+        }
+        h1{
+            font-size: 45px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        button{
+            background: $actionGreen;
+            border: none;
+            border-radius: 3px;
+            width: 110px;
+            height: 30px;
+            color: $white;
+            font-size: 12px;
+
+        }
+        button:hover{
+            background: #444;
+        }
+
+    }
+
+    .recentorder{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 54px;
+    }
+    #walletContainer{
+        height: 180px;
+        background: #fff;
+        width: 70%;
+        box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.1);
+        border-radius: 2px;
+        padding-top: 3px;
+        text-align: center;
+        font-family: $poppins;
+
+
+    .number{
+        background: #ccc;
+        width: 20%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+        h1{
+
+            font-size: 30px;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+
+    }
+
 }
+
+
+
+
+// Wallet ends here
+
+
+
+ ///////////////////////////////////////////////////////////////////////
+
+
+}
+
+
+
+@media only screen and (max-width:375px){
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 25px;
+            float: right;
+            //position: absolute;
+            margin-top: -40px;
+            //margin-right: 80px;
+        }
+
+        .profile-image{
+            margin-right: 70px;
+        }
+        .basket{
+            //margin-left: 30px;
+            margin-right: 110px;
+            height: 23px;
+        }
+        .shop-icon{
+            margin-right: 150px;
+            height: 22px;
+        }
+    }
+
+    .recentorder{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 40px;
+        }
+   
+ }
+ 
+ 
+
+@media only screen and (max-width:320px){
+   
+    .recentorder{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 29px;
+        }
+}
+
+           
