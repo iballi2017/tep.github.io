@@ -168,22 +168,26 @@ body {
   font-size: 13px;
   color: #ffffff; }
 
+#mySignupModal .col-sm-2 {
+  width: 30%; }
 #mySignupModal label {
   font-weight: 200;
   margin-right: -20px;
   margin-top: 5px; }
 #mySignupModal .inputarea {
   border-radius: 3px;
-  height: 40px;
+  height: 30px;
   width: 110%;
-  margin-left: 40px; }
+  margin-left: 0px; }
 #mySignupModal .form-button {
   background: #4C6F35;
   color: #ffffff;
-  height: 50px;
-  width: 62%;
-  margin-left: 20px;
-  border-radius: 3px; }
+  height: 30px;
+  width: 35%;
+  margin-left: 44px;
+  border-radius: 3px;
+  font-size: 13px;
+  padding-bottom: 9px; }
 #mySignupModal .form-horizontal {
   margin-left: 120px; }
 
@@ -194,6 +198,21 @@ body {
     font-weight: 200;
     margin-right: -20px;
     margin-top: 5px; }
+  #myLoginModal .social {
+    width: 100%;
+    margin-top: 20px; }
+    #myLoginModal .social img {
+      width: 6%;
+      border-radius: 24px;
+      box-shadow: 1px 1px 1px 1px rgba(31, 30, 30, 0.3); }
+      #myLoginModal .social img:hover {
+        width: 6.2%; }
+    #myLoginModal .social .twitter-icon {
+      position: absolute;
+      margin-left: 160px;
+      margin-top: -35px; }
+    #myLoginModal .social .google-icon {
+      margin-left: 100px; }
   #myLoginModal .inputarea {
     border-radius: 3px;
     height: 40px;
@@ -221,10 +240,10 @@ body {
       margin-top: 20px;
       font-size: 14px; }
   #myLoginModal .have-account {
-    font-size: 13px;
+    font-size: 11px;
     margin: 100px 0 0 119px; }
   #myLoginModal .signup {
-    font-size: 13px;
+    font-size: 11.7px;
     margin: 100px 0 0 40px;
     color: #105a96;
     font-weight: 600; }
@@ -392,16 +411,16 @@ footer .footer-order {
   #mySignupModal .inputarea {
     height: 30px;
     width: 70%;
-    margin-left: 10px; }
+    margin-left: 0px; }
   #mySignupModal .form-button {
     background: #4C6F35;
     color: #ffffff;
     height: 50px;
     width: 62%;
-    margin-left: 20px;
+    margin-left: 0px;
     border-radius: 3px; }
   #mySignupModal .form-horizontal {
-    margin-left: 120px; }
+    margin-left: 0px; }
 
   #myLoginModal {
     height: 500px;
@@ -409,22 +428,28 @@ footer .footer-order {
     #myLoginModal label {
       font-weight: 200;
       margin-top: 5px; }
+    #myLoginModal .social .google-icon {
+      margin-left: 0px; }
+    #myLoginModal .social .twitter-icon {
+      margin-top: -23px;
+      margin-left: 35px;
+      height: 23px; }
     #myLoginModal .inputarea {
       height: 30px;
       width: 70%;
-      margin-left: 10px; }
+      margin-left: 0px; }
     #myLoginModal .form-button {
       background: #4C6F35;
       color: #ffffff;
       font-size: 10px;
       height: 30px;
-      width: 52%;
-      margin-left: 10px;
+      width: 32%;
+      margin-left: 0px;
       margin-bottom: 20px; }
     #myLoginModal .form-horizontal {
-      margin-left: 50px; }
+      margin-left: 0px; }
     #myLoginModal .login-options {
-      margin-left: 50px;
+      margin-left: 0px;
       margin-top: -20px; }
       #myLoginModal .login-options h3 {
         color: #e68631;
@@ -433,10 +458,10 @@ footer .footer-order {
         margin-top: 20px;
         font-size: 14px; }
     #myLoginModal .have-account {
-      font-size: 13px;
-      margin: 100px 0 0 30px; }
+      font-size: 10px;
+      margin: 100px 0 0 16px; }
     #myLoginModal .signup {
-      font-size: 13px;
+      font-size: 10px;
       margin: 100px 0 0 10px;
       color: #105a96;
       font-weight: 600; }
@@ -472,12 +497,20 @@ footer .footer-order {
     margin-bottom: 120px; }
 
   .menu {
-    margin-top: 200px; } }
+    margin-top: 200px; }
+
+  #myLoginModal .social .twitter-icon {
+    margin-top: -19.9px;
+    height: 20px; } }
 @media only screen and (max-width: 320px) {
   .title {
     margin-bottom: 150px; }
 
   .menu {
-    margin-top: 220px; } }
+    margin-top: 220px; }
+
+  #myLoginModal .social .twitter-icon {
+    margin-top: -15.9px;
+    height: 16px; } }
 
 /*# sourceMappingURL=index.css.map */
