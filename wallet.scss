@@ -34,7 +34,7 @@ body{
 }
 .mynav{
     margin-top: $px100 - 80px;
-    margin-right: $px100 + 50px;
+    margin-right: $px100;
     float: right;
     font-family: $poppins;
 
@@ -261,6 +261,22 @@ body{
 
 }
 
+footer{
+
+    p{
+        margin-top: 200px;
+        font-size: 10px;
+        color: $orange;
+        font-weight: 600;
+    }
+
+    .footer-order{
+        color: $green;
+        margin-top: -10px;
+        margin-left: 0px;
+    }
+}
+
 
 // Wallet ends here
 
@@ -334,8 +350,11 @@ body{
         width: 100px;
         margin-top: -20px;
     }
-    .mobile-nav a{
-        font-size: 15px;
+    .mobile-nav{
+
+        a{
+            font-size: 15px;
+        }
     }
 
     //Back button
@@ -354,7 +373,7 @@ body{
 
 
 
-//// Wallet starts here
+    //// Wallet starts here
 
 
     .walletHead{
@@ -406,40 +425,52 @@ body{
         font-family: $poppins;
 
 
-    .number{
-        background: #ccc;
-        width: 20%;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 40px;
-        margin-bottom: 20px;
-
-        h1{
-
-            font-size: 30px;
+        .number{
+            background: #ccc;
+            width: 20%;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 0 auto;
-            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+            h1{
+
+                font-size: 30px;
+                margin: 0 auto;
+                font-weight: bold;
+            }
+
         }
 
     }
 
+    // Wallet ends here
+
+    
+
+    footer{
+
+        p{
+            margin-top: 200px;
+            font-size: 10px;
+            color: $orange;
+            font-weight: 600;
+        }
+
+        .footer-order{
+            color: $green;
+            margin-top: -10px;
+            margin-left: 0px;
+        }
+    } 
+    
+
 }
 
-
-
-
-// Wallet ends here
-
-
-
- ///////////////////////////////////////////////////////////////////////
-
-
-}
-
+////////////////////////////////////////////////////////////
 
 
 @media only screen and (max-width:375px){

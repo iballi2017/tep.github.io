@@ -26,7 +26,7 @@ body{
 }
 .mynav{
     margin-top: $px100 - 80px;
-    margin-right: $px100 + 50px;
+    margin-right: $px100;
     float: right;
     font-family: $poppins;
 
@@ -78,8 +78,8 @@ body{
 
 .hero{
     width: $p100;
-    height: ($px100 * 7) + 30px;
     margin: 0 auto;
+    height: ($px100 * 7) + 30px;
     background-image: url("photos/Backgoundimg.png");
     background-size: $p100 $p100;
     background-repeat: no-repeat;
@@ -539,163 +539,176 @@ footer{
         margin-left: 10px;
     }
 
-    
-.modal{
-    margin-top: 70px;
-}
-
-.modal-content{
-    width: 95%;
-    margin: 0 auto;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/food.png);
-    background-repeat: no repeat;
-    background-size: 600px 580px;
-    background-size: cover;
-    font-size: 13px;
-    color: $white;
-}
-
-#mySignupModal{
-    label{
-        font-weight: 200;
-        // font-size: 10px;
-        margin-right: -20px;
-        margin-top: 5px;
+        
+    .modal{
+        margin-top: 70px;
     }
-    .inputarea{
-        height: 30px;
-        width: 70%;
-        margin-left: 0px;
-    }   
 
-    .form-button{
-        background: $actionGreen;
+    .modal-content{
+        width: 95%;
+        margin: 0 auto;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(photos/food.png);
+        background-repeat: no repeat;
+        background-size: 600px 580px;
+        background-size: cover;
+        font-size: 13px;
         color: $white;
-        height: 50px;
-        width: 62%;
-        margin-left: 0px;
-        border-radius: 3px;
-    }
-    
-    .form-horizontal{
-        margin-left: 0px;
-     }
-
-}
-
-#myLoginModal{
-    height: 500px;
-    font-family: $poppins;
-    
-    label{
-        font-weight: 200;
-        // font-size: 10px;
-        // margin-right: -20px;
-        margin-top: 5px;
     }
 
-    .social{
-        .google-icon{
+    #mySignupModal{
+        label{
+            font-weight: 200;
+            // font-size: 10px;
+            margin-right: -20px;
+            margin-top: 5px;
+        }
+        .inputarea{
+            height: 30px;
+            width: 70%;
             margin-left: 0px;
+        }   
+
+        .form-button{
+            background: $actionGreen;
+            color: $white;
+            height: 50px;
+            width: 62%;
+            margin-left: 0px;
+            border-radius: 3px;
         }
         
-        .twitter-icon{
-            margin-top: -23px;
-            margin-left: 35px;
-            height: 22px;
+        .form-horizontal{
+            margin-left: 0px;
+         }
+
+    }
+
+    #myLoginModal{
+        height: 500px;
+        font-family: $poppins;
+        
+        label{
+            font-weight: 200;
+            // font-size: 10px;
+            // margin-right: -20px;
+            margin-top: 5px;
         }
+
+        .social{
+            .google-icon{
+                margin-left: 0px;
+            }
+            
+            .twitter-icon{
+                margin-top: -23px;
+                margin-left: 35px;
+                height: 22px;
+            }
+        }
+
+        .inputarea{
+            height: 30px;
+            width: 70%;
+            margin-left: 0px;
+        }   
+
+        .form-button{
+            background: $actionGreen;
+            color: $white;
+            font-size: 10px;
+            height: 30px;
+            width: 32%;
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
+
+        .form-horizontal{
+           margin-left: 0px;
+        }
+            // 
+        .login-options{
+            margin-left: 0px;
+            margin-top: -20px;
+
+            h3{
+                color: $orange;
+                font-weight: 600;
+            }
+            p{
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        }
+        
+        .have-account{
+            font-size: 10px;
+            margin: 100px 0 0 16px;
+        }
+
+        .signup{
+            font-size: 10px;
+            margin: 100px 0 0 10px;
+            color: rgb(16, 90, 150);
+            font-weight: 600;
+        }
+
     }
 
-    .inputarea{
-        height: 30px;
-        width: 70%;
-        margin-left: 0px;
-    }   
 
-    .form-button{
-        background: $actionGreen;
-        color: $white;
-        font-size: 10px;
-        height: 30px;
-        width: 32%;
-        margin-left: 0px;
-        margin-bottom: 20px;
+
+
+    .e-message{
+        width: 100%;
+        
+        .form-button{
+            background: $actionGreen;
+            color: #fff;
+            height: 30px;
+            width: 39.5%;
+            margin-left: 0px;
+            font-size: 13px;
+            border-radius: 3px;
+        }
+
+        
+        .inputarea{
+            border-radius: 0px;
+            height: 40px;
+            width: 80%;
+            margin-left: 0px;
+        }
+
+
+        .textarea{
+            width: 80%;
+            margin-left: 0px;
+        }
+
     }
 
+    .feedback-heading{
+        font-size: 14px;
+    }
     .form-horizontal{
-       margin-left: 0px;
+        margin-left: 2%;
+        margin-top: 30px;
     }
-        // 
-    .login-options{
-        margin-left: 0px;
-        margin-top: -20px;
 
-        h3{
+    footer{
+
+        p{
+            margin-top: 45px;
+            font-size: 10px;
             color: $orange;
             font-weight: 600;
         }
-        p{
-            margin-top: 20px;
-            font-size: 14px;
+
+        .footer-order{
+            color: $green;
+            margin-top: -10px;
+            margin-left: 0px;
         }
-    }
-    
-    .have-account{
-        font-size: 10px;
-        margin: 100px 0 0 16px;
-    }
-
-    .signup{
-        font-size: 10px;
-        margin: 100px 0 0 10px;
-        color: rgb(16, 90, 150);
-        font-weight: 600;
-    }
-
-}
-
-
-
-
-.e-message{
-    width: 100%;
-    
-    .form-button{
-        background: $actionGreen;
-        color: #fff;
-        height: 30px;
-        width: 39.5%;
-        margin-left: 0px;
-        font-size: 13px;
-        border-radius: 3px;
-    }
-
-    
-    .inputarea{
-        border-radius: 0px;
-        height: 40px;
-        width: 80%;
-        margin-left: 0px;
-    }
-
-
-    .textarea{
-        width: 80%;
-        margin-left: 0px;
-    }
-
-}
-
-.feedback-heading{
-    font-size: 14px;
-}
-.form-horizontal{
-    margin-left: 2%;
-    margin-top: 30px;
-}
-
-
-    
+    } 
 }
 
 

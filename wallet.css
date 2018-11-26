@@ -14,7 +14,7 @@ body {
 
 .mynav {
   margin-top: 20px;
-  margin-right: 150px;
+  margin-right: 100px;
   float: right;
   font-family: "Poppins", sans-serif; }
   .mynav a {
@@ -155,6 +155,16 @@ body {
       margin: 0 auto;
       font-weight: bold; }
 
+footer p {
+  margin-top: 200px;
+  font-size: 10px;
+  color: #e68631;
+  font-weight: 600; }
+footer .footer-order {
+  color: #182900;
+  margin-top: -10px;
+  margin-left: 0px; }
+
 @media only screen and (max-width: 425px) {
   .desktop-nav {
     display: none; }
@@ -267,7 +277,17 @@ body {
       #walletContainer .number h1 {
         font-size: 30px;
         margin: 0 auto;
-        font-weight: bold; } }
+        font-weight: bold; }
+
+  footer p {
+    margin-top: 200px;
+    font-size: 10px;
+    color: #e68631;
+    font-weight: 600; }
+  footer .footer-order {
+    color: #182900;
+    margin-top: -10px;
+    margin-left: 0px; } }
 @media only screen and (max-width: 375px) {
   .mobile-nav-icons {
     display: block;

@@ -14,7 +14,7 @@ body {
 
 .mynav {
   margin-top: 20px;
-  margin-right: 150px;
+  margin-right: 100px;
   float: right;
   font-family: "Poppins", sans-serif; }
   .mynav a {
@@ -52,8 +52,8 @@ body {
 
 .hero {
   width: 100%;
-  height: 730px;
   margin: 0 auto;
+  height: 730px;
   background-image: url("photos/Backgoundimg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
@@ -490,7 +490,17 @@ footer .footer-order {
 
   .form-horizontal {
     margin-left: 2%;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  footer p {
+    margin-top: 45px;
+    font-size: 10px;
+    color: #e68631;
+    font-weight: 600; }
+  footer .footer-order {
+    color: #182900;
+    margin-top: -10px;
+    margin-left: 0px; } }
 @media only screen and (max-width: 375px) {
   .title {
     margin-top: -90px;

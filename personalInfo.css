@@ -14,7 +14,7 @@ body {
 
 .mynav {
   margin-top: 20px;
-  margin-right: 150px;
+  margin-right: 100px;
   float: right;
   font-family: "Poppins", sans-serif; }
   .mynav a {
@@ -83,8 +83,12 @@ body {
     color: #818181;
     display: block;
     margin-left: 50px; }
-    .sidenav a :hover {
+    .sidenav a:hover {
       color: #000; }
+  .sidenav .name-email {
+    font-size: 12px;
+    margin-left: 80px;
+    padding-bottom: 50px; }
   .sidenav .logout {
     margin-top: 60px; }
   .sidenav .profile-image {
@@ -182,12 +186,14 @@ footer .footer-order {
   .mobile-nav a {
     font-size: 15px; } }
 footer p {
-  margin-top: 0px;
+  margin-top: 200px;
+  font-size: 10px;
   color: #e68631;
   font-weight: 600; }
 footer .footer-order {
   color: #182900;
-  margin-top: 0px; }
+  margin-top: -10px;
+  margin-left: 0px; }
 
 @media only screen and (max-width: 375px) {
   .mobile-nav-icons {

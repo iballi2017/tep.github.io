@@ -14,7 +14,7 @@ body {
 
 .mynav {
   margin-top: 20px;
-  margin-right: 150px;
+  margin-right: 100px;
   float: right;
   font-family: "Poppins", sans-serif; }
   .mynav a {
@@ -138,6 +138,16 @@ body {
     font-weight: 500;
     margin-left: 190px; }
 
+footer p {
+  margin-top: 200px;
+  font-size: 10px;
+  color: #e68631;
+  font-weight: 600; }
+footer .footer-order {
+  color: #182900;
+  margin-top: -10px;
+  margin-left: 0px; }
+
 @media only screen and (max-width: 425px) {
   .desktop-nav {
     display: none; }
@@ -207,7 +217,17 @@ body {
     #savedCardContainer .cardDelete {
       margin-top: 10px;
       font-size: 12px;
-      margin-left: 100px; } }
+      margin-left: 100px; }
+
+  footer p {
+    margin-top: 200px;
+    font-size: 10px;
+    color: #e68631;
+    font-weight: 600; }
+  footer .footer-order {
+    color: #182900;
+    margin-top: -10px;
+    margin-left: 0px; } }
 @media only screen and (max-width: 375px) {
   .mobile-nav-icons {
     display: block;

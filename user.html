@@ -22,10 +22,10 @@
         <div class="desktop-nav">
             <nav class="navbar  navbar-fixed-top mynav">
                 <div class="navbar-logo"><a class="navbar-brand" href="user.html"><img src="photos/Logo.png" class="img img-responsive"></a></div>
-         	<a href="#"><img src="photos/profile-image.png" class="img img-responsive profile-image"></a>
-         	<a href="#"><img src="photos/basket.png" class="img img-responsive basket"></a>
+         	    <a href="#"><img src="photos/profile-image.png" class="img img-responsive profile-image"></a>
+         	    <a href="#"><img src="photos/basket.png" class="img img-responsive basket"></a>
                 <a href="#feedback"><span>Feedback</span></a>
-                <a href="#order"><span>Place your order</span></a>
+                <a href="menu.html"><span>Place your order</span></a>
             </nav>
         </div>
 
@@ -42,32 +42,43 @@
          	<a href="#"><img src="photos/basket.png" class="img img-responsive basket"></a>
          	
          </div>
-        <div class="mobile-nav">
+         <div class="mobile-nav">
             <ul class="nav nav-pills nav-stacked">
-                <li class="active">
-                     <a href="personalInfo.html" class="personalInfo">Personal Info</a>
-                </li>
-                <li>
-                    <a href="savedCard.html" class="savedCard">Saved Cards</a>
-                </li>
-                <li>
-                    <a href="wallet.html" class="login">Wallet</a>
-                </li>
-                <li>
-                    <a href="history.html" class="history">Order History</a>
-                </li>
-                <li>
-                    <a href="settings.html" class="settings">Settings</a>
-                </li>
-                <li>
-                    <a href="index.html" class="Logout">Logout</a>
-                </li>
-             </ul>
-         </div>
+                 <li>
+                      <a href="menu.html">Place Your Order</a>
+                 </li>
+                 <li>
+                     <a href="#">Feedback</a>
+                 </li>
+                 <li>
+                     <a href="#" id="profile">Profile</a>
+                     <ul class="nav nav-pills nav-stacked" id="profileInfo" style="background: #ccc; display: none">
+                            <li>
+                                 <a href="#">Personal Info</a>
+                            </li>
+                            <li>
+                                <a href="savedCard.html">Saved Cards</a>
+                            </li>
+                            <li>
+                                <a href="wallet.html" class="login">Wallet</a>
+                            </li>
+                            <li>
+                                <a href="#" class="history">Order History</a>
+                            </li>
+                            <li>
+                                <a href="settings.html" class="settings">Settings</a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="signup">Logout</a>
+                            </li>
+                      </ul>
+                 </li>
+            </ul>
+        </div>
     </header>
 
     
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-12 hero">
                 <div class="title">
@@ -76,7 +87,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="#order" class="btn btn-success place-order-button">Place your order</a>
+                        <a href="menu.html" class="btn btn-success place-order-button">Place your order</a>
                     </div>
                 </div>
                 <div class="row">
@@ -302,7 +313,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container-fluid">
                 <div class="row feedback-area">
                     <div class="col-md-12">
                             <h3 class="feedback-heading" id="feedback">Let us get your feedback so we can serve you better</h3>
@@ -334,21 +345,21 @@
                                 </div>
                             </form>
                         <!-- </div> -->
-                    </div>
                 </div>
             </div>
-    
-         <footer class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                   <p>© Copyright 2018</p>  
-                </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <p class="footer-order">Ordermeals Powered by Tep Ventures</p>
-                </div>
-            </div>
-        </footer>
+        </div>
     </div>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                  <p>© Copyright 2018</p>  
+             </div>
+             <div class="col-md-5"></div>
+             <div class="col-md-3">
+                 <p class="footer-order">Ordermeals Powered by Tep Ventures</p>
+             </div>
+         </div>
+    </footer>
 </body>
 </html>
