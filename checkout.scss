@@ -14,7 +14,7 @@ body{
 
 
 
-
+////////////////////////////////////////////////////////////////////////////////////
 
 // navigation bar starts here
 
@@ -107,14 +107,16 @@ body{
 
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Sidenav starts here
+
+// leftSide starts here
 
 
-.sidenav {
+.leftSide {
     font-family: $poppins;
     height: 100%;
-    width: 360px;
+    width: 50%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -122,41 +124,33 @@ body{
     background-color: #fff;
     border-right: 1px solid #444;
     overflow-x: hidden;
-    padding-top: 150px;
+    padding-top: 70px;
     padding-left: 100px;
 
-    
-    a {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 15px;
-        color: #818181;
-        display: block;
-        margin-left: 50px;
+    .mobileCheckoutSummary{
+        display: none;
+    }
 
-        :hover {
-            color: #000;
-        }
-        
+    .hr-line{
+        width: 100%;
+        border: 1px solid #000;
     }
     
-    .logout{
-        margin-top: 60px;
+    .btn-success {
+        width: 68%;
+        margin-left: -103px;
+        background: $actionGreen;
     }
 
-    .profile-image{
-        width: 40px;
+    input[type="text"]{
+        box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(31, 30, 30, 0.3);
     }
-
-    #userInfo{
-        border-left: 2px solid #444;
-        padding-left: 5px;
-    }
-
 }
 
-// Sidenav ends here
+// leftSide ends here
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 // Back button starts here
@@ -182,64 +176,41 @@ body{
 // Back button ends here
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 
+// Order Summary starts here
 
-// Personal Information starts here
-
-
-#personalInformationContent{
+#orderSummary{
     width: 100%;
-    height: 400px;
+    padding-top: 70px;
+    padding-left: 20px;
+    background: rgba(237, 170, 47, 0.23);
+    .summary{
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        // background: rgba(5, 56, 71, 0.23);
 
-    #info{
-        margin-top: 150px;
-        p{
-            color: #000;;
-            font-size: 14px;
-            line-height: 30px;
-        }
-        #delivery{
-            margin-top: 50px;
+        table{
+            font-size: 11px;
+            img{
+                width: 50px;
+            }
+            .total{
+                font-weight: 600;
+                font-size: 12px;
+            }
         }
     }
-    
 }
 
+// Order Summary ends here
 
 
-// Personal Information ends here
-
-
-
-
-
-// Footer starts here for desktop
-
-footer{
-
-    p{
-        margin-top: $px100 - 70px;
-        color: $orange;
-        font-weight: 600;
-    }
-
-    .footer-order{
-        color: $green;
-        margin-top: $px100 - 70px;
-    }
-} 
-
-// Footer ends here for desktop
-
-
+///////////////////////////////////////////////////////////////////////////////
 
 @media only screen and (max-width:425px){
-    
-    .sidenav{
-        display: none;
-    }
-  
     .desktop-nav{
         display: none;
     }
@@ -251,7 +222,7 @@ footer{
             width: 20px;
             height: auto;
             float: right;
-            margin-top: -45px;
+            margin-top: -40px;
         }
 
         .profile-image{
@@ -269,7 +240,7 @@ footer{
     
     .bar1, .bar2, .bar3 {
         width: 35px;
-        height: 2px;
+        height: 5px;
         background-color: #333;
         margin: 6px 0;
         transition: 0.4s;
@@ -313,30 +284,88 @@ footer{
     .mobile-nav a{
         font-size: 20px;
     }
+     .sidenav{
+        display: none;
+    }
+    
+    
+    // Order Summary starts here
+    #orderSummary{
+        display: block;
+
+        
+    .mobileCheckoutSummary{
+        display: block;
+
+        span{
+            width: 30%;
+            background: #e68631;
+            border-radius: 3px;
+            padding: 3px;
+        }
+
+        .mobileSummary{
+            margin-left: 10px;
+        }
+    }
+    }
+
+    // Order Summary ends here
+    
+    //////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// leftSide starts here
+
+
+.leftSide {
+    display: none;
+    width: 100%;
+    position: fixed;
+    border-right: 1px solid #fff;
+    padding-left: 20px;
+
+    .mobileCheckoutSummary{
+        display: block;
+
+        span{
+            width: 30%;
+            background: #e68631;
+            border-radius: 3px;
+            padding: 3px;
+        }
+
+        .mobileSummary{
+            margin-left: 10px;
+        }
+    }
+    .hr-line{
+        width: 100%;
+        border: 1px solid #000;
+    }
+    
+    .btn-success {
+        width: 50%;
+        margin-left: 0px;
+        background: $actionGreen;
+    }
+
+    input[type="text"]{
+        box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(31, 30, 30, 0.3);
+        width: 50%;
+    }
+
+    #expiry{
+        width: 17%;
+    }
+}
+
+// leftSide ends here
 
     
 }
 
 
-//Footer starts here
-
-footer{
-
-    p{
-        margin-top: 0px;
-        color: $orange;
-        font-weight: 600;
-    }
-
-    .footer-order{
-        color: $green;
-        margin-top: 0px;
-    }
-} 
-
-
-//Footer ends here
-
+///////////////////////////////////////////////////////////////////////////////////////
 
 @media only screen and (max-width:375px){
     .mobile-nav-icons{
@@ -344,15 +373,27 @@ footer{
         position: relative;
 
         img{
-            width: 18px;
+            width: 25px;
+            float: right;
+            //position: absolute;
+            margin-top: -40px;
+            //margin-right: 80px;
+        }
+
+        .profile-image{
+            margin-right: 70px;
+        }
+        .basket{
+            //margin-left: 30px;
+            margin-right: 110px;
+            height: 23px;
+        }
+        .shop-icon{
+            margin-right: 150px;
+            height: 22px;
         }
     }
    
  }
- 
- 
 
-@media only screen and (max-width:320px){
-   
-}
-
+           

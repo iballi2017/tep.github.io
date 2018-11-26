@@ -1,4 +1,4 @@
-// text.html codes................
+// index.html codes................
 
 $(document).ready(function(){
     $("#login").click(function(){
@@ -150,3 +150,19 @@ function closeNav() {
 function goBack() {
     window.history.back();
 }
+
+
+// The funtion of the following code is to control swapping between "Checkout view" and "Summary" view on mobile
+
+$(document).ready(function(){
+    $(".mobileCheckout").click(function(){
+        $(".leftSide").show();
+    });
+});
+
+$(document).ready(function(){
+    $(".mobileSummary").click(function(){
+        $(".leftSide").hide();
+        $("#orderSummary").show();
+    });
+});

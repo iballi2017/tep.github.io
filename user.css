@@ -287,17 +287,14 @@ footer .footer-order {
     display: block;
     position: relative; }
     .mobile-nav-icons img {
-      width: 25px;
+      width: 20px;
+      height: auto;
       float: right;
-      margin-top: -40px; }
+      margin-top: -45px; }
     .mobile-nav-icons .profile-image {
-      margin-right: 90px; }
+      margin-right: 60px; }
     .mobile-nav-icons .basket {
-      margin-right: 140px;
-      height: 23px; }
-    .mobile-nav-icons .shop-icon {
-      margin-right: 190px;
-      height: 22px; }
+      margin-right: 93px; }
 
   .cont {
     display: inline-block;
@@ -306,7 +303,7 @@ footer .footer-order {
 
   .bar1, .bar2, .bar3 {
     width: 35px;
-    height: 5px;
+    height: 2px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s; }
@@ -502,17 +499,7 @@ footer .footer-order {
     display: block;
     position: relative; }
     .mobile-nav-icons img {
-      width: 25px;
-      float: right;
-      margin-top: -40px; }
-    .mobile-nav-icons .profile-image {
-      margin-right: 70px; }
-    .mobile-nav-icons .basket {
-      margin-right: 110px;
-      height: 23px; }
-    .mobile-nav-icons .shop-icon {
-      margin-right: 150px;
-      height: 22px; }
+      width: 18px; }
 
   .title {
     margin-top: -90px;
@@ -527,4 +514,4 @@ footer .footer-order {
   .menu {
     margin-top: 220px; } }
 
-/*# sourceMappingURL=userlogin.css.map */
+/*# sourceMappingURL=user.css.map */

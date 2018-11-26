@@ -63,10 +63,10 @@ body {
   width: 68%;
   margin-left: 40px; }
 
-.sidenav {
+.leftSide {
   font-family: "Poppins", sans-serif;
   height: 100%;
-  width: 360px;
+  width: 50%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -74,24 +74,19 @@ body {
   background-color: #fff;
   border-right: 1px solid #444;
   overflow-x: hidden;
-  padding-top: 150px;
+  padding-top: 70px;
   padding-left: 100px; }
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    color: #818181;
-    display: block;
-    margin-left: 50px; }
-    .sidenav a :hover {
-      color: #000; }
-  .sidenav .logout {
-    margin-top: 60px; }
-  .sidenav .profile-image {
-    width: 40px; }
-  .sidenav #userInfo {
-    border-left: 2px solid #444;
-    padding-left: 5px; }
+  .leftSide .mobileCheckoutSummary {
+    display: none; }
+  .leftSide .hr-line {
+    width: 100%;
+    border: 1px solid #000; }
+  .leftSide .btn-success {
+    width: 68%;
+    margin-left: -103px;
+    background: #4C6F35; }
+  .leftSide input[type="text"] {
+    box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(31, 30, 30, 0.3); }
 
 .backbtn {
   position: absolute;
@@ -104,30 +99,24 @@ body {
     text-decoration: none;
     color: #000; }
 
-#personalInformationContent {
+#orderSummary {
   width: 100%;
-  height: 400px; }
-  #personalInformationContent #info {
-    margin-top: 150px; }
-    #personalInformationContent #info p {
-      color: #000;
-      font-size: 14px;
-      line-height: 30px; }
-    #personalInformationContent #info #delivery {
-      margin-top: 50px; }
-
-footer p {
-  margin-top: 30px;
-  color: #e68631;
-  font-weight: 600; }
-footer .footer-order {
-  color: #182900;
-  margin-top: 30px; }
+  padding-top: 70px;
+  padding-left: 20px;
+  background: rgba(237, 170, 47, 0.23); }
+  #orderSummary .summary {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto; }
+    #orderSummary .summary table {
+      font-size: 11px; }
+      #orderSummary .summary table img {
+        width: 50px; }
+      #orderSummary .summary table .total {
+        font-weight: 600;
+        font-size: 12px; }
 
 @media only screen and (max-width: 425px) {
-  .sidenav {
-    display: none; }
-
   .desktop-nav {
     display: none; }
 
@@ -138,7 +127,7 @@ footer .footer-order {
       width: 20px;
       height: auto;
       float: right;
-      margin-top: -45px; }
+      margin-top: -40px; }
     .mobile-nav-icons .profile-image {
       margin-right: 60px; }
     .mobile-nav-icons .basket {
@@ -151,7 +140,7 @@ footer .footer-order {
 
   .bar1, .bar2, .bar3 {
     width: 35px;
-    height: 2px;
+    height: 5px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s; }
@@ -182,20 +171,65 @@ footer .footer-order {
     margin-top: -20px; }
 
   .mobile-nav a {
-    font-size: 20px; } }
-footer p {
-  margin-top: 0px;
-  color: #e68631;
-  font-weight: 600; }
-footer .footer-order {
-  color: #182900;
-  margin-top: 0px; }
+    font-size: 20px; }
 
+  .sidenav {
+    display: none; }
+
+  #orderSummary {
+    display: block; }
+    #orderSummary .mobileCheckoutSummary {
+      display: block; }
+      #orderSummary .mobileCheckoutSummary span {
+        width: 30%;
+        background: #e68631;
+        border-radius: 3px;
+        padding: 3px; }
+      #orderSummary .mobileCheckoutSummary .mobileSummary {
+        margin-left: 10px; }
+
+  .leftSide {
+    display: none;
+    width: 100%;
+    position: fixed;
+    border-right: 1px solid #fff;
+    padding-left: 20px; }
+    .leftSide .mobileCheckoutSummary {
+      display: block; }
+      .leftSide .mobileCheckoutSummary span {
+        width: 30%;
+        background: #e68631;
+        border-radius: 3px;
+        padding: 3px; }
+      .leftSide .mobileCheckoutSummary .mobileSummary {
+        margin-left: 10px; }
+    .leftSide .hr-line {
+      width: 100%;
+      border: 1px solid #000; }
+    .leftSide .btn-success {
+      width: 50%;
+      margin-left: 0px;
+      background: #4C6F35; }
+    .leftSide input[type="text"] {
+      box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(31, 30, 30, 0.3);
+      width: 50%; }
+    .leftSide #expiry {
+      width: 17%; } }
 @media only screen and (max-width: 375px) {
   .mobile-nav-icons {
     display: block;
     position: relative; }
     .mobile-nav-icons img {
-      width: 18px; } }
+      width: 25px;
+      float: right;
+      margin-top: -40px; }
+    .mobile-nav-icons .profile-image {
+      margin-right: 70px; }
+    .mobile-nav-icons .basket {
+      margin-right: 110px;
+      height: 23px; }
+    .mobile-nav-icons .shop-icon {
+      margin-right: 150px;
+      height: 22px; } }
 
-/*# sourceMappingURL=personalInfo.css.map */
+/*# sourceMappingURL=checkout.css.map */

@@ -233,24 +233,17 @@ body{
         position: relative;
 
         img{
-            width: 25px;
+            width: 20px;
+            height: auto;
             float: right;
-            //position: absolute;
-            margin-top: -40px;
-            //margin-right: 80px;
+            margin-top: -45px;
         }
 
         .profile-image{
-            margin-right: 90px;
+            margin-right: 60px;
         }
         .basket{
-            //margin-left: 30px;
-            margin-right: 140px;
-            height: 23px;
-        }
-        .shop-icon{
-            margin-right: 190px;
-            height: 22px;
+            margin-right: 93px;
         }
     }
         .cont {
@@ -261,7 +254,7 @@ body{
     
     .bar1, .bar2, .bar3 {
         width: 35px;
-        height: 5px;
+        height: 2px;
         background-color: #333;
         margin: 6px 0;
         transition: 0.4s;
@@ -310,16 +303,7 @@ body{
     }
     
 
-    
-}
-
-
-///////////////////////////////////////////////////////////////////////////////////////
-
-@media only screen and (max-width:425px){
-
-   
-    // Settings starts here
+      // Settings starts here
 
 #settingsContent{
 
@@ -360,36 +344,22 @@ body{
     }
 }
 
-
-
 // Settings ends here
- }
- 
+    
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
 
 @media only screen and (max-width:375px){
     .mobile-nav-icons{
         display: block;
         position: relative;
 
+  
         img{
-            width: 25px;
-            float: right;
-            //position: absolute;
-            margin-top: -40px;
-            //margin-right: 80px;
-        }
-
-        .profile-image{
-            margin-right: 70px;
-        }
-        .basket{
-            //margin-left: 30px;
-            margin-right: 110px;
-            height: 23px;
-        }
-        .shop-icon{
-            margin-right: 150px;
-            height: 22px;
+            width: 18px;
         }
     }
    
