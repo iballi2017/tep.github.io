@@ -21,7 +21,7 @@
     <header>
         <div class="desktop-nav">
             <nav class="navbar  navbar-fixed-top mynav">
-                <div class="navbar-logo"><a class="navbar-brand" href="#"><img src="photos/Logo.png" class="img img-responsive"></a></div>
+                <div class="navbar-logo"><a class="navbar-brand" href="user.html"><img src="photos/Logo.png" class="img img-responsive"></a></div>
          	<a href="#"><img src="photos/profile-image.png" class="img img-responsive profile-image"></a>
          	<a href="#"><img src="photos/basket.png" class="img img-responsive basket"></a>
                 <a href="#feedback"><span>Feedback</span></a>
@@ -30,7 +30,7 @@
         </div>
 
     <!-- Mobile navigation bar content-->
-        <span class="navbar-header"><a class="navbar-brand" href="#"><img src="photos/Logo.png" class="img img-responsive logo"></a></span>
+        <span class="navbar-header"><a class="navbar-brand" href="user.html"><img src="photos/Logo.png" class="img img-responsive logo"></a></span>
         <div class="mobile-navbutton">
             <div class="cont" onclick="myFunction(this)">
                 <div class="bar1"></div>
@@ -40,31 +40,41 @@
         </div>
          <div class="mobile-nav-icons">
          	<a href="#"><img src="photos/basket.png" class="img img-responsive basket"></a>
-         	<a href="personalInfo.html"><img src="photos/profile-image.png" class="img img-responsive profile-image"></a>
          	
          </div>
-        <div class="mobile-nav">
+         <div class="mobile-nav">
             <ul class="nav nav-pills nav-stacked">
-                <li>
-                     <a href="personalInfo.html" class="personalInfo">Personal Info</a>
-                </li>
-                <li>
-                    <a href="savedCard.html" class="savedCard">Saved Cards</a>
-                </li>
-                <li class="active">
-                    <a href="wallet.html" class="login">Wallet</a>
-                </li>
-                <li>
-                    <a href="history.html" class="history">Order History</a>
-                </li>
-                <li>
-                    <a href="settings.html" class="settings">Settings</a>
-                </li>
-                <li>
-                    <a href="index.html" class="logout">Logout</a>
-                </li>
-             </ul>
-         </div>
+                 <li>
+                      <a href="#">Place Your Order</a>
+                 </li>
+                 <li>
+                     <a href="#">Feedback</a>
+                 </li>
+                 <li>
+                     <a href="#" id="profile">Profile</a>
+                     <ul class="nav nav-pills nav-stacked" id="profileInfo" style="background: #ccc; display: none">
+                            <li>
+                                 <a href="#">Personal Info</a>
+                            </li>
+                            <li>
+                                <a href="savedCard.html">Saved Cards</a>
+                            </li>
+                            <li>
+                                <a href="wallet.html" class="login">Wallet</a>
+                            </li>
+                            <li>
+                                <a href="#" class="history">Order History</a>
+                            </li>
+                            <li>
+                                <a href="settings.html" class="settings">Settings</a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="signup">Logout</a>
+                            </li>
+                      </ul>
+                 </li>
+            </ul>
+        </div>
     </header>
     <div class="container">
     <div class="row">

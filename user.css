@@ -291,10 +291,8 @@ footer .footer-order {
       height: auto;
       float: right;
       margin-top: -45px; }
-    .mobile-nav-icons .profile-image {
-      margin-right: 60px; }
     .mobile-nav-icons .basket {
-      margin-right: 93px; }
+      margin-right: 63px; }
 
   .cont {
     display: inline-block;
@@ -367,7 +365,7 @@ footer .footer-order {
     margin-top: -20px; }
 
   .mobile-nav a {
-    font-size: 20px; }
+    font-size: 15px; }
 
   .title {
     margin-top: -90px;

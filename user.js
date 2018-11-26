@@ -166,3 +166,13 @@ $(document).ready(function(){
         $("#orderSummary").show();
     });
 });
+
+///////////////////////////////////////////////////////////////
+
+// The following code is to hide and show the profile submenu
+
+$(document).ready(function(){
+    $("#profile").click(function(){
+        $("#profileInfo").toggle(1000);
+    });
+});
