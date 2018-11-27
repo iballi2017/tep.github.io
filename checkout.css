@@ -179,7 +179,8 @@ body {
   #orderSummary {
     display: block; }
     #orderSummary .mobileCheckoutSummary {
-      display: block; }
+      display: block;
+      margin-top: 100px; }
       #orderSummary .mobileCheckoutSummary span {
         width: 30%;
         background: #e68631;
