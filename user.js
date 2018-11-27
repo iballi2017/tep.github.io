@@ -176,3 +176,15 @@ $(document).ready(function(){
         $("#profileInfo").toggle(1000);
     });
 });
+
+//////////////////////////////////////////////////////////////
+
+// Form validation
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}

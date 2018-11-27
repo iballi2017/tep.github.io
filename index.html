@@ -277,7 +277,7 @@
                                     <div class="form-group">
                                         <label for="phone" class="col-sm-2" name="phone">Phone number</label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control inputarea" id="lastname" required>
+                                            <input type="text" class="form-control inputarea" id="lastname" pattern="[0-9]*" maxlength="11" required>
                                          </div>
                                     </div>
                                     <div class="form-group">
@@ -301,7 +301,7 @@
                     <div class="col-md-12">
                             <h3 class="feedback-heading" id="feedback">Let us get your feedback so we can serve you better</h3>
                         <!-- <div class="feedback-container"> -->
-                            <form class="form-horizontal e-message" role="form">
+                            <form class="form-horizontal e-message" role="form" action="">
                                 <div class="form-group">
                                     <label for="name" class="col-sm-2">Name</label>
                                     <div class="col-sm-6">
