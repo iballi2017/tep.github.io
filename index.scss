@@ -33,23 +33,21 @@ body{
     a{
         font-size: $px100 - 86px;
         color: $green;
-        font-weight: 600;
-        font-size: $px100 - 84px;
+        font-weight: 400;
         cursor: pointer;
         text-decoration: none;
     
 
         button{
             width: $px100 + 20px;
-            height: $px100 - 60px;
+            height: auto;
             font-weight: bold;
             font-size: $px100 - 86px;
             border-radius: $px100 - 97px;
             color: $green;
             border: 1px solid $orange;
-            font-weight: 600;
-            margin-top: $px100 - 110px;
-            margin-right: -$px100;
+            font-weight: 400;
+            margin-top: -5px;
             background: none;
         }
 
@@ -60,6 +58,7 @@ body{
         
     a:hover{
         color: $orange;
+        font-weight: 400;
     }
 
 }
@@ -95,12 +94,15 @@ body{
             color: $green;
             font-weight: 600;
             margin-top: $px100 + 20px;
+            margin-left: 6.2%;
             line-height: $px100 - 30px;
         }
         
         .tagline{
             color: #e68631ff;
             font-weight: 300;
+            font-size: 35px;
+            margin-left: 6.2%;
         }
         
     }
@@ -112,6 +114,7 @@ body{
         border: none;
         border-radius: 0px;
         margin-top: 50px;
+        margin-left: 6.2%;
         background:  $actionGreen;
         border-radius: 3px;
         padding-top: 13px;
@@ -152,28 +155,13 @@ body{
     }
 }
 
-.menu{
-    text-align: center;
+.most-popular{
     font-size: 24px;
-    margin-top: 50px;
+    margin-top: 100px;
     font-weight: 600;
-}
-
-.breakfast-launch{
     color: $green;
-    font-weight: 600;
-    font-size: 18px;
-    margin-top: 20px;
 }
 
-.hr{
-    width: 37px;
-
-    hr{
-        border-bottom: 3px solid #E68631;
-        margin-top: 10px;
-    }
-}
 
 .food-row-1{
     p{
@@ -196,23 +184,6 @@ body{
 
 .add-to-cart:hover{
     background: rgb(211, 176, 145);
-}
-
-.food-row-2{
-    margin-bottom: 60px;
-}
-
-.food-row-2 {
-    p{
-        padding-left: 20px;
-    }
-}
-
-.salads-sandwiches{
-    color: $green;
-    font-weight: 600;
-    font-size: 18px;
-    margin-top: $px100 - 50px;
 }
 
 .caption{
@@ -390,6 +361,7 @@ body{
     font-family: $poppins;
     background: $yellow;
     color: #fff;
+    margin-top: 100px;
 }
 .form-horizontal{
     margin-left: 30%;
@@ -413,6 +385,58 @@ footer{
         margin-top: $px100 - 70px;
     }
 } 
+
+
+
+
+
+
+@media only screen and (max-width:768px){
+
+    .mynav{
+
+        margin-top: $px100 - 80px;
+        margin-right: 70px;
+
+        a{
+            font-size: 12px;
+            cursor: pointer;
+            text-decoration: none;
+        
+
+            button{
+                width: $px100 + 20px;
+                font-weight: bold;
+                font-weight: 400;
+                margin-top: -5px;
+            }
+
+            &:hover{
+            font-weight: 400;
+            }
+        }
+    }  
+        
+        .hero{
+
+            .title{
+
+                .heading{
+
+                    font-size: 37px;
+                    margin-top: 80px;
+                }
+
+                .tagline{
+
+                    font-size: 20px;
+                }
+            }
+        }
+}
+
+
+
 
 
 @media only screen and (max-width:425px){

@@ -24,18 +24,6 @@ body {
     font-size: 16px;
     cursor: pointer;
     text-decoration: none; }
-    .mynav a button {
-      width: 120px;
-      height: 40px;
-      font-weight: bold;
-      font-size: 14px;
-      border-radius: 3px;
-      color: #182900;
-      border: 1px solid #e68631;
-      font-weight: 600;
-      margin-top: -10px;
-      margin-right: -100px;
-      background: none; }
     .mynav a button:hover {
       background: #d3b091; }
   .mynav a:hover {
