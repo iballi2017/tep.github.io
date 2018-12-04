@@ -20,14 +20,13 @@ body {
   .mynav a {
     font-size: 14px;
     color: #182900;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 400;
     cursor: pointer;
     text-decoration: none; }
+    .mynav a:hover {
+      font-weight: 600; }
     .mynav a button:hover {
       background: #d3b091; }
-  .mynav a:hover {
-    color: #e68631; }
   .mynav .profile-image {
     width: 25px; }
   .mynav .basket {
@@ -102,23 +101,10 @@ body {
     .hero .action-icon #handlogo {
       width: 72px; }
 
-.menu {
-  text-align: center;
+.most-popular {
   font-size: 24px;
   margin-top: 50px;
   font-weight: 600; }
-
-.breakfast-launch {
-  color: #182900;
-  font-weight: 600;
-  font-size: 18px;
-  margin-top: 20px; }
-
-.hr {
-  width: 37px; }
-  .hr hr {
-    border-bottom: 3px solid #E68631;
-    margin-top: 10px; }
 
 .food-row-1 p {
   padding-left: 20px; }
@@ -137,23 +123,11 @@ body {
 .add-to-cart:hover {
   background: #d3b091; }
 
-.food-row-2 {
-  margin-bottom: 60px; }
-
-.food-row-2 p {
-  padding-left: 20px; }
-
-.salads-sandwiches {
-  color: #182900;
-  font-weight: 600;
-  font-size: 18px;
-  margin-top: 50px; }
-
 .caption {
   font-weight: bold; }
 
 .price {
-  font-weight: 600; }
+  font-weight: 400; }
 
 .modal {
   margin-top: 70px; }
@@ -247,13 +221,13 @@ body {
     margin-left: 40px;
     border-radius: 3px; }
 
-.feedback-heading {
-  text-align: center; }
-
 .feedback-area {
   font-family: "Poppins", sans-serif;
   background: #EDAA2F;
-  color: #fff; }
+  color: #fff;
+  margin-top: 100px; }
+  .feedback-area .feedback-heading {
+    text-align: center; }
 
 .form-horizontal {
   margin-left: 30%;
@@ -265,11 +239,48 @@ body {
 footer p {
   margin-top: 30px;
   color: #e68631;
-  font-weight: 600; }
+  font-weight: 400; }
 footer .footer-order {
   color: #182900;
   margin-top: 30px; }
 
+@media only screen and (max-width: 768px) {
+  .mynav {
+    margin-top: 20px;
+    margin-right: 70px; }
+    .mynav a {
+      font-size: 12px;
+      cursor: pointer;
+      text-decoration: none; }
+      .mynav a button {
+        width: 120px;
+        font-weight: bold;
+        font-weight: 400;
+        margin-top: -5px; }
+      .mynav a:hover {
+        font-weight: 400; }
+
+  .hero .title .heading {
+    font-size: 37px;
+    margin-top: 80px;
+    line-height: 60px; }
+  .hero .title .tagline {
+    font-size: 20px; }
+  .hero .place-order-button {
+    margin-top: 0px; }
+  .hero .how-it-works {
+    margin-top: 170px; }
+
+  .food-row-1 .caption {
+    font-weight: 400;
+    font-size: 10px; }
+  .food-row-1 button {
+    width: 150px;
+    height: auto;
+    margin-left: 10px; }
+
+  .feedback-area .feedback-heading {
+    font-size: 15px; } }
 @media only screen and (max-width: 425px) {
   .desktop-nav {
     display: none; }

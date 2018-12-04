@@ -34,20 +34,19 @@ body{
     a{
         font-size: $px100 - 86px;
         color: $green;
-        font-weight: 600;
-        font-size: $px100 - 84px;
+        font-weight: 400;
         cursor: pointer;
         text-decoration: none;
 
+        &:hover{
+            font-weight: 600;
+        }
 
         button:hover{
             background: rgb(211, 176, 145);
         }
     }
-        
-    a:hover{
-        color: $orange;
-    }
+    
     
     .profile-image{
         width: 25px;
@@ -153,27 +152,10 @@ body{
     }
 }
 
-.menu{
-    text-align: center;
+.most-popular{
     font-size: 24px;
     margin-top: 50px;
     font-weight: 600;
-}
-
-.breakfast-launch{
-    color: $green;
-    font-weight: 600;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-.hr{
-    width: 37px;
-
-    hr{
-        border-bottom: 3px solid #E68631;
-        margin-top: 10px;
-    }
 }
 
 .food-row-1{
@@ -199,29 +181,12 @@ body{
     background: rgb(211, 176, 145);
 }
 
-.food-row-2{
-    margin-bottom: 60px;
-}
-
-.food-row-2 {
-    p{
-        padding-left: 20px;
-    }
-}
-
-.salads-sandwiches{
-    color: $green;
-    font-weight: 600;
-    font-size: 18px;
-    margin-top: $px100 - 50px;
-}
-
 .caption{
     font-weight: bold;
 }
 
 .price{
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .modal{
@@ -354,13 +319,16 @@ body{
     }
 }
 
-.feedback-heading{
-    text-align: center;
-}
 .feedback-area{
     font-family: $poppins;
     background: $yellow;
     color: #fff;
+    margin-top: 100px;
+
+        
+    .feedback-heading{
+        text-align: center;
+    }
 }
 .form-horizontal{
     margin-left: 30%;
@@ -376,7 +344,7 @@ footer{
     p{
         margin-top: $px100 - 70px;
         color: $orange;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .footer-order{
@@ -384,6 +352,92 @@ footer{
         margin-top: $px100 - 70px;
     }
 } 
+
+
+
+@media only screen and (max-width:768px){
+
+    .mynav{
+
+        margin-top: $px100 - 80px;
+        margin-right: 70px;
+
+        a{
+            font-size: 12px;
+            cursor: pointer;
+            text-decoration: none;
+        
+
+            button{
+                width: $px100 + 20px;
+                font-weight: bold;
+                font-weight: 400;
+                margin-top: -5px;
+            }
+
+            &:hover{
+            font-weight: 400;
+            }
+        }
+    }  
+        
+        .hero{
+
+            .title{
+
+                .heading{
+
+                    font-size: 37px;
+                    margin-top: 80px;
+                    line-height: 60px;
+                }
+
+                .tagline{
+
+                    font-size: 20px;
+                }
+            }
+
+            .place-order-button {
+
+                margin-top: 0px;
+            }
+
+            .how-it-works{
+
+                margin-top: 170px;
+            }
+        }
+
+        .food-row-1{
+
+            .caption {
+
+            font-weight: 400;
+            font-size: 10px;
+            }
+
+            button{
+
+                width: 150px;
+                height: auto;
+                margin-left: 10px;
+            }
+
+        }
+
+        .feedback-area{
+
+            .feedback-heading{
+                font-size: 15px;
+            }
+        }
+}
+
+
+
+
+
 
 
 @media only screen and (max-width:425px){

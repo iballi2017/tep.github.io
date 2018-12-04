@@ -41,10 +41,13 @@ body{
     a{
         font-size: $px100 - 86px;
         color: $green;
-        font-weight: 600;
-        font-size: $px100 - 84px;
+        font-weight: 400;
         cursor: pointer;
         text-decoration: none;
+        
+        &:hover{
+            font-weight: 600;
+        }
     
 
         button{

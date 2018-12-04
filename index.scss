@@ -187,7 +187,7 @@ body{
 }
 
 .caption{
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .price{
@@ -354,14 +354,16 @@ body{
     }
 }
 
-.feedback-heading{
-    text-align: center;
-}
 .feedback-area{
     font-family: $poppins;
     background: $yellow;
     color: #fff;
     margin-top: 100px;
+
+
+    .feedback-heading{
+        text-align: center;
+    }
 }
 .form-horizontal{
     margin-left: 30%;
@@ -377,11 +379,11 @@ footer{
     p{
         margin-top: $px100 - 70px;
         color: $orange;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .footer-order{
-        color: $green;
+        color: #000;
         margin-top: $px100 - 70px;
     }
 } 
@@ -417,22 +419,58 @@ footer{
         }
     }  
         
-        .hero{
+    .hero{
 
-            .title{
+        .title{
 
-                .heading{
+            .heading{
 
-                    font-size: 37px;
-                    margin-top: 80px;
-                }
+                font-size: 37px;
+                margin-top: 80px;
+                line-height: 60px;
+            }
 
-                .tagline{
+            .tagline{
 
-                    font-size: 20px;
-                }
+                font-size: 20px;
+                
+            }
+
+            .place-order-button {
+
+                margin-top: 0px;
+            }
+
+            .how-it-works{
+
+                margin-top: 170px;
             }
         }
+
+        .food-row-1{
+
+            .caption {
+
+                font-weight: 400;
+                font-size: 10px;
+            }
+
+            button{
+
+                width: 150px;
+                height: auto;
+                margin-left: 10px;
+            }
+        }
+
+    }
+
+    .feedback-area{
+
+        .feedback-heading{
+            font-size: 15px;
+        }
+    }
 }
 
 
