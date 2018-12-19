@@ -81,9 +81,7 @@ body {
     .cartView1Container .itemContainer img {
       width: 120px; }
     .cartView1Container .itemContainer .fooditem {
-      position: absolute;
-      margin-left: -70px;
-      margin-top: 30px; }
+      position: absolute; }
     .cartView1Container .itemContainer input {
       text-align: center; }
     .cartView1Container .itemContainer #price {
