@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="icon" type="image/png" href="photos/logo.png" sizes="16x16">
+      <link rel="stylesheet" href="dashboard-settings.css">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Order meals</title>
+
+      
+    <script src="user.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="desktop-nav">
+            <nav class="navbar  navbar-fixed-top mynav">
+                    <a href="#feedback"><span>Admin Name</span></a>
+         	<a href="#"><img src="photos/admin-image.png" class="img img-responsive admin-image"></a>
+         	<a href="#"><img src="photos/admin-note.png" class="img img-responsive admin-note"><span id="noteNum" style="display: block;">1</span></a>
+            </nav>
+        </div>
+
+    <!-- Mobile navigation bar content-->
+        <!-- <span class="navbar-header"><a class="navbar-brand" href="user.html"><img src="photos/Logo.png" class="img img-responsive logo"></a></span> -->
+        <div class="mobile-navbutton">
+            <div class="cont" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+         <div class="mobile-nav-icons">
+         	<a href="#"><img src="photos/basket.png" class="img img-responsive basket"></a>
+         	
+         </div>
+         <div class="mobile-nav">
+            <ul class="nav nav-pills nav-stacked">
+                 <li>
+                      <a href="menu.html">Profile</a>
+                 </li>
+                 <li>
+                     <a href="dashboard.html">Dashboard</a>
+                 </li>
+                 <li>
+                     <a href="dashboardMenuSettings.html">Menu Settings</a>
+                 </li>
+                 <li>
+                     <a href="dashboard-settings">Settings</a>
+                 </li>
+                 <li>
+                     <a href="#">Logout</a>
+                 </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+            <section>
+                <!-- Side bar -->
+                <div id="mySidenav" class="sidenav">
+                    <span class="admin-info">
+                        <img src="photos/profile-image.png" alt="profile image" class="img img-responsive profile-image" id="profileImage" style="position:relative; margin-left: 0px">
+                        <p>Admin Name<br><b>Role</b></p>
+                    </span>
+                    
+                    <a href="dashboard.html"><span id="dashboard">Dashboard</span></a>
+                <a href="dashboardMenuSettings.html"><span id="dashboardMenuSettings">Menu Settings</span></a>
+                    <a href="dashboard-settings.html"><span id="dashboardSettings">Settings</span></a>
+                    
+                    <a href="#"><p class="logout">Logout</p></a>
+                </div>
+                <!-- Side bar ends -->
+            </section>
+        
+            </div>
+        </div>
+
+    <div class="row">
+            <div class="col-xs-12 col-md-8 col-md-offset-3">
+                    <a href="javascript:void(0)" class="backbtn" onclick="goBack()">&#11013;</a>
+                
+                 <!-- Settings content begins here -->
+                <div id="DashboardSettingsContent">
+                    <div class="userSettings">
+                        <span class="dashboardProfile-settings"><img src="photos/profile-image2.png" alt="" class="img img-responsive"><a href="dashboardProfile-settings.html">Edit profile</a></span>
+                        <span class="dashboardPassword-settings"><img src="photos/lock.png" alt=""><a href="dashboardPassword-settings.html" class="img img-responsive">Password settings</a></span>
+                    </div>
+                </div>
+                <!-- Settings content ends here -->
+                
+            </div>
+    </div>
+            <!-- Dashboard-settings information ends here -->
+
+
+    <footer class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                   <p>© Copyright 2018</p> <p class="footer-order">Ordermeals Powered by Tep Ventures</p>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

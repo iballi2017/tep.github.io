@@ -7,7 +7,7 @@ body {
   height: 70px;
   position: fixed;
   z-index: 2000;
-  box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.3); }
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); }
   .desktop-nav a {
     margin-right: 30px;
     float: right; }
@@ -25,6 +25,14 @@ body {
     text-decoration: none; }
     .mynav a:hover {
       font-weight: 600; }
+    .mynav a #cartNum {
+      display: none;
+      background: #fff;
+      position: absolute;
+      margin: -25px 0 0 15px;
+      width: 12px;
+      text-align: center;
+      border-radius: 100px; }
     .mynav a button {
       width: 120px;
       height: 40px;
@@ -88,8 +96,11 @@ body {
     border-bottom: 3px solid #E68631;
     margin-top: 10px; }
 
+.food-row-1 img {
+  box-shadow: 0px 5px 10px rgba(32, 32, 32, 0.1);
+  margin-top: 15px; }
 .food-row-1 p {
-  padding-left: 20px; }
+  margin-top: 10px; }
 
 .add-to-cart {
   width: 200px;
@@ -99,7 +110,6 @@ body {
   background: #ffffff;
   font-weight: 600;
   text-align: center;
-  margin-left: 20px;
   border-radius: 3px; }
 
 .add-to-cart:hover {
@@ -107,9 +117,11 @@ body {
 
 .food-row-2 {
   margin-bottom: 60px; }
-
-.food-row-2 p {
-  padding-left: 20px; }
+  .food-row-2 img {
+    box-shadow: 20px 5px 10px rgba(32, 32, 32, 0.1);
+    margin-top: 15px; }
+  .food-row-2 p {
+    margin-top: 10px; }
 
 .salads-sandwiches {
   color: #182900;

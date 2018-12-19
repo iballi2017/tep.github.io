@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="icon" type="image/png" href="photos/logo.png" sizes="16x16">
+      <link rel="stylesheet" href="dashboard-AddNew.css">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Order meals</title>
+
+      
+    <script src="user.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="desktop-nav">
+            <nav class="navbar  navbar-fixed-top mynav">
+                    <a href="#feedback"><span>Admin Name</span></a>
+         	<a href="#"><img src="photos/admin-image.png" class="img img-responsive admin-image"></a>
+         	<a href="#"><img src="photos/admin-note.png" class="img img-responsive admin-note"><span id="noteNum" style="display: block;">1</span></a>
+            </nav>
+        </div>
+
+    <!-- Mobile navigation bar content-->
+        <!-- <span class="navbar-header"><a class="navbar-brand" href="user.html"><img src="photos/Logo.png" class="img img-responsive logo"></a></span> -->
+        <div class="mobile-navbutton">
+            <div class="cont" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+         <div class="mobile-nav-icons">
+         	<a href="#"><img src="photos/basket.png" class="img img-responsive basket"></a>
+         	
+         </div>
+         <div class="mobile-nav">
+            <ul class="nav nav-pills nav-stacked">
+                 <li>
+                      <a href="menu.html">Profile</a>
+                 </li>
+                 <li>
+                     <a href="dashboard.html">Dashboard</a>
+                 </li>
+                 <li>
+                     <a href="dashboardMenuSettings.html">Menu Settings</a>
+                 </li>
+                 <li>
+                     <a href="dashboard-settings">Settings</a>
+                 </li>
+                 <li>
+                     <a href="#">Logout</a>
+                 </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+            <section>
+                <!-- Side bar -->
+                <div id="mySidenav" class="sidenav">
+                    <span class="admin-info">
+                        <img src="photos/profile-image.png" alt="profile image" class="img img-responsive profile-image" id="profileImage" style="position:relative; margin-left: 0px">
+                        <p>Admin Name<br><b>Role</b></p>
+                    </span>
+                    
+                    <a href="dashboard.html"><span id="dashboard">Dashboard</span></a>
+                <a href="dashboardMenuSettings.html"><span id="dashboardMenuSettings">Menu Settings</span></a>
+                    <a href="dashboard-settings.html"><span id="dashboardSettings">Settings</span></a>
+                    
+                    <a href="#"><p class="logout">Logout</p></a>
+                </div>
+                <!-- Side bar ends -->
+            </section>
+        
+            </div>
+        </div>
+
+    <div class="row">
+            <div class="col-xs-12 col-md-7 col-md-offset-4">
+                    <a href="javascript:void(0)" class="backbtn" onclick="goBack()">&#11013;</a>
+                
+                 <!-- Add New Item Settings content begins here -->
+
+                 
+                <h3>Add New Item</h3>
+
+                 <div class="row" id="dashboardContainer">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <div class="col-sm-8">
+                                    <select class="form-control" style="width: 150px">
+                                        <option>Categories</option>
+                                        <option>Swallows</option>
+                                        <option>Sandwiches</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="meal" placeholder="Meal">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-8">
+                                    <input type="file" class="form-control" id="image">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" id="description" rows="6" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                         <div class="col-sm-7">
+                                               <input type="text" class="form-control" id="price" placeholder="Price (#)">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                            <label for="sel1" class="col-sm-4">Qty</label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="sel1">
+                                              <option>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                              <option>5</option>
+                                              <option>6</option>
+                                              <option>7</option>
+                                              <option>8</option>
+                                              <option>9</option>
+                                              <option>10</option>
+                                              <option>11</option>
+                                              <option>12</option>
+                                              <option>13</option>
+                                              <option>14</option>
+                                              <option>15</option>
+                                              <option>16</option>
+                                              <option>17</option>
+                                              <option>18</option>
+                                              <option>19</option>
+                                              <option>20</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="" style="">
+                                    <button type="submit" class="btn btn-success">Sign in</button>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+                <!-- Add New Item Settings content ends here -->
+                
+            </div>
+    </div>
+
+</body>
+</html>

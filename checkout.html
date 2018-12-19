@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="icon" type="image/png" href="photos/logo.png" sizes="16x16">
       <link rel="stylesheet" href="checkout.css">
       <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <title>Order meals</title>
@@ -63,7 +64,7 @@
                                 <a href="wallet.html" class="login">Wallet</a>
                             </li>
                             <li>
-                                <a href="#" class="history">Order History</a>
+                                <a href="orderHistory.html" class="history">Order History</a>
                             </li>
                             <li>
                                 <a href="settings.html" class="settings">Settings</a>
@@ -90,9 +91,11 @@
                 <p class="department">Admin Department</p>
                 <hr>
                 <h4 class="paymentDetails">Payment details</h4>
-                <p><input type="checkbox"> Pay With Card</p>
 
-                <form class="form-horizontal" role="form" action="">
+                <!-- Payment with card option begins here -->
+                <p><input type="checkbox" id="cardOptionClick"> Pay With Card</p>
+
+                <form class="form-horizontal" role="form" action="" id="cardInfo">
                     <div class="form-group">
                         <label for="firstname" class="col-sm-8">Name On Card</label>
                         <div class="col-sm-7">
@@ -102,19 +105,31 @@
                     <div class="form-group">
                         <label for="lastname" class="col-sm-8">Card Number</label>
                         <div class="col-sm-7">
-                            <input type="text" class="form-control" id="lastname">
+                            <input type="text" class="form-control" id="lastname"">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="lastname" class="col-sm-3">Expiry Date</label>
-                        <div class="col-sm-2">
-                            <input type="text" class="form-control" id="expiry">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="lastname" class="col-sm-8">Expiry Date</label>
+                                 <div class="col-sm-7">
+                                       <input type="text" class="form-control" id="expiry">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lastname" class="col-sm-8">CVV</label>
+                                 <div class="col-sm-7">
+                                       <input type="text" class="form-control" id="cvv">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-10">
                             <div class="checkbox">
-                                <label><input type="checkbox">Save card for my futre purchase</label>
+                                <label><input type="checkbox">Save card for my future purchase</label>
                             </div>
                         </div>
                     </div>
@@ -123,14 +138,93 @@
                             <button type="submit" class="btn btn-success">Pay Now</button>
                         </div>
                     </div>
+                </form>
+                
+                     <!-- Payment with card option ends here -->
+                     
+                     
+                    <!-- Payment with wallet option begins here -->
+                <p><input type="checkbox" id="walletOptionClick"> Pay With Your Wallet</p>
+                <form id="walletInfo">
                     <div class="form-group">
-                        <div class="col-sm-10">
-                            <div class="checkbox">
-                                <label><input type="checkbox">Pay With Your Wallet</label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Banlance</h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>#0</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Amount Charged</h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>- #0</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><strong>Current Balance</strong></h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><strong>#0</strong></h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-success">Pay Now</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
+
                 </form>
+                        
+                      <!-- Payment with wallet option ends here -->
+                
+                      
+                      <!-- Payment with Bank transfer option begins here -->
+                <p><input type="checkbox" id="transferOptionClick">Bank transfer</p>
+                
+                    <form class="form-horizontal" role="form" action="" id="transferInfo">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div>
+                                        <h5><strong>Ordermeals Nigeria</strong></h5>
+                                        <h5><strong>Account number: </strong>1122334455</p></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-8">Teller</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="firstname">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="col-sm-8">Amount</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="lastname"">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-success">Pay Now</button>
+                                </div>
+                            </div>
+                    </form>
+                      <!-- Payment with Bank transfer option ends here -->
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+
                 <div class="mobileCheckoutSummary">
                     <span class="mobileSummary">Summary</span>
                 </div>
@@ -154,27 +248,27 @@
                                 <table class="table">
                                     <tbody>
                                         <tr> 
-                                            <td><span><img src="photos/Rice-and-spaghetti.png" class="img img-responsive"></span><span>Rice and stew</span></td> 
-                                            <td>02</td> 
-                                            <td>#750</td> 
-                                        </tr> 
-                                        <tr> 
-                                            <td><span><img src="photos/Beans-and-Corn.png" class="img img-responsive"></span><span>Bread and beans</span></td> 
-                                            <td>02</td> 
-                                            <td>#750</td> 
+                                            <td width="100"><span><img src="photos/Rice-and-spaghetti.png" class="img img-responsive"></span></td> 
+                                            <td><p>Rice and stew</p></td>
+                                            <td><p>02</p></td> 
+                                            <td><p>#750</p></td>
+                                            <td><img src="photos/delete.svg" class="img img-responsive" id="del"></td>
                                         </tr> 
                                         <tr> 
                                             <td>Subtotal</td> 
+                                            <td></td> 
                                             <td></td> 
                                             <td>#1500</td> 
                                         </tr> 
                                         <tr> 
                                             <td>Shipping</td> 
                                             <td></td> 
+                                            <td></td> 
                                             <td>#0</td> 
                                         </tr> 
                                         <tr class="total"> 
                                             <td>Total</td> 
+                                            <td></td> 
                                             <td></td> 
                                             <td>#1500</td> 
                                         </tr>
@@ -189,6 +283,32 @@
                 </div>
             <!-- Checkout content ends here -->
             
+    <div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body" style="text-align: center">
+            <h2>Confirmation</h2>
+            <p><h4>Your order was Successful</h4></p>
+            <p><h5>Go back to the Main Page</h5></p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    
+    </div>
+
         </div>
     </div>
     

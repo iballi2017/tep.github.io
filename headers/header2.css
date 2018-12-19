@@ -1,0 +1,122 @@
+body {
+  overflow-x: hidden; }
+
+.desktop-nav {
+  background: #ffffff;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 2000;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); }
+  .desktop-nav a {
+    margin-right: 30px;
+    float: right; }
+
+.mynav {
+  margin-top: 20px;
+  margin-right: 100px;
+  float: right;
+  font-family: "Poppins", sans-serif; }
+  .mynav a {
+    font-size: 14px;
+    color: #182900;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none; }
+    .mynav a button {
+      width: 120px;
+      height: auto;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 3px;
+      color: #182900;
+      border: 1px solid #e68631;
+      font-weight: 400;
+      margin-top: -5px;
+      background: none; }
+    .mynav a button:hover {
+      background: #d3b091; }
+  .mynav a:hover {
+    color: #e68631;
+    font-weight: 400; }
+
+.navbar-logo {
+  width: 200px;
+  margin-left: 80px;
+  position: absolute;
+  margin-top: -20px; }
+
+.mobile-nav {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .mynav {
+    margin-top: 20px;
+    margin-right: 70px; }
+    .mynav a {
+      font-size: 12px;
+      cursor: pointer;
+      text-decoration: none; }
+      .mynav a button {
+        width: 120px;
+        font-weight: bold;
+        font-weight: 400;
+        margin-top: -5px; }
+      .mynav a:hover {
+        font-weight: 400; }
+
+  .food-row-1 .caption {
+    font-weight: 400;
+    font-size: 10px; }
+  .food-row-1 button {
+    width: 150px;
+    height: auto;
+    margin-left: 10px; }
+
+  .feedback-area .feedback-heading {
+    font-size: 15px; } }
+@media only screen and (max-width: 425px) {
+  .desktop-nav {
+    display: none; }
+
+  .cont {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px; }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .change .bar2 {
+    opacity: 0; }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+
+  header {
+    width: 100%;
+    margin: 0px auto;
+    position: fixed;
+    padding-top: 10px;
+    background: #ffffff;
+    z-index: 2001; }
+
+  .mobile-navbutton {
+    float: right;
+    margin-top: -50px; }
+
+  .logo {
+    width: 100px;
+    margin-top: -20px; }
+
+  .mobile-nav a {
+    font-size: 20px; } }
+
+/*# sourceMappingURL=header2.css.map */

@@ -17,7 +17,7 @@ body{
     height: $px100 - 30px;
     position: fixed;
     z-index: 2000;
-    box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.3);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 
     a{
     margin-right: 30px;
@@ -39,6 +39,16 @@ body{
 
         &:hover{
             font-weight: 600;
+        }
+
+        #cartNum{
+            display: none;
+            background: #fff;
+            position: absolute;
+            margin: -25px 0 0 15px;
+            width: 12px;
+            text-align: center;
+            border-radius: 100px;
         }
 
         button{
@@ -132,8 +142,12 @@ body{
 }
 
 .food-row-1{
+    img{
+        box-shadow: 0px 5px 10px rgba(32, 32, 32, 0.1);
+        margin-top: 15px;
+    }
     p{
-        padding-left: 20px;
+        margin-top:  10px;
     }
 
 }
@@ -146,7 +160,6 @@ body{
     background: $white;
     font-weight: 600;
     text-align: center;
-    margin-left: 20px;
     border-radius: 3px;
 }
 
@@ -156,13 +169,16 @@ body{
 
 .food-row-2{
     margin-bottom: 60px;
-}
 
-.food-row-2 {
+    img{
+        box-shadow: 20px 5px 10px rgba(32, 32, 32, 0.1);
+        margin-top: 15px;
+    }
     p{
-        padding-left: 20px;
+        margin-top:  10px;
     }
 }
+
 
 .salads-sandwiches{
     color: $green;

@@ -1,0 +1,372 @@
+$green: #182900;
+$orange: #e68631;
+$white: #ffffff;
+$yellow: #EDAA2F;
+$poppins: 'Poppins', sans-serif;
+$p100: 100%;
+$px100: 100px;
+$actionGreen: #4C6F35;
+
+
+body{
+    overflow-x: hidden;
+}
+.desktop-nav{
+    background: $yellow;
+    width: $p100;
+    height: $px100 - 30px;
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+    a{
+    margin-right: 30px;
+    float: right;
+    }
+}
+.mynav{
+    margin-top: $px100 - 80px;
+    margin-right: $px100 + 50px;
+    float: right;
+    font-family: $poppins;
+
+    a{
+        font-size: $px100 - 86px;
+        color: $green;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover{
+            font-weight: 600;
+        }
+
+        #cartNum{
+            display: none;
+            background: #fff;
+            position: absolute;
+            margin: -25px 0 0 15px;
+            width: 12px;
+            text-align: center;
+            border-radius: 100px;
+        }
+
+        button{
+            width: $px100 + 20px;
+            height: $px100 - 60px;
+            font-weight: bold;
+            font-size: $px100 - 86px;
+            border-radius: $px100 - 97px;
+            color: $green;
+            border: 1px solid $orange;
+            font-weight: 600;
+            margin-top: $px100 - 110px;
+            margin-right: -$px100;
+            background: none;
+        }
+
+        button:hover{
+            background: rgb(211, 176, 145);
+        }
+    }
+        
+    a:hover{
+        color: $orange;
+    }
+    
+    .profile-image{
+        width: 25px;
+    }
+    
+    .basket{
+        width:25px;
+    }
+
+}
+
+.navbar-logo{
+    width: 200px;
+    margin-left: 80px;
+    position: absolute;
+    margin-top: -20px;
+}
+
+.mobile-nav{
+    display: none;
+}
+.mobile-nav-icons{
+    display: none;
+}
+
+
+
+
+// Back button starts here
+
+.backbtn {
+    position: absolute;
+    top: 0;
+    left: -55px;
+    top: 40px;
+    font-size: 36px;
+    color: #818181;
+
+    :hover{            
+    text-decoration: none;
+    color: #000;
+    }
+}
+
+// Back button ends here
+
+.main-content{
+    margin-top: 50px;
+
+
+    .meal-Image{
+
+            img {
+            width: 700px;
+            height: 350px;
+            }
+    }
+
+    .order-input{
+        
+        .inputQty{
+            width: 40px;
+            height: 40px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+        }
+
+        button{
+            background: $actionGreen;
+            color: #fff;
+
+            &:hover{
+                background: $green;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+
+
+footer{
+
+    p{
+        margin-top: $px100 - 70px;
+        color: $orange;
+        font-weight: 600;
+    }
+
+    .footer-order{
+        color: $green;
+    margin-top: 30px;
+    margin-left: 42px;
+    }
+} 
+
+
+@media only screen and (max-width:425px){
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 20px;
+            height: auto;
+            float: right;
+            margin-top: -45px;
+        }
+        .basket{
+            margin-right: 63px;
+        }
+    }
+        .cont {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 2px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change {
+    
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+    
+        .bar2 {
+            opacity: 0;
+        }
+    
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    
+    }
+    
+    header{
+        width: 100%;
+        margin: 0px auto;
+        position: fixed;
+        padding-top: 10px;
+        background: $yellow;
+        z-index: 2001;
+    }
+    .hero{
+        background-size: 100% 100%;
+        height: 200px;
+        .title{
+            .heading{
+                margin-top: 180px;
+                font-size: 20px;
+            }
+        }
+        .action-icon{
+            img{
+                width: 50px;
+            }
+            #handlogo{
+                width: 42px;
+            }
+            .caption{
+                font-size: 13px;
+            }
+        }
+    }
+
+    .menu{
+        margin-top: 100px;
+    }
+
+    .action-icon .figure{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .how-it-works{
+        margin-top: 320px;
+        color: #182900;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .action-icon img{
+        width: 50px;
+        margin-top: 0px;
+    }
+    .action-icon .caption{
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .mobile-navbutton{
+        float: right;
+        margin-top: -50px;
+    }
+    .logo{
+        width: 100px;
+        margin-top: -20px;
+    }
+    
+    
+    .mobile-nav{
+
+        a{
+            font-size: 15px;
+        }
+    }
+    
+    .title{
+        margin-top: -90px;
+        margin-bottom: 50px;
+    }
+
+    .place-order-button{
+        width: $px100 * 2;
+        height: $px100 - 50px;
+        border: none;
+        border-radius: 0px;
+        background:  $actionGreen;
+        border-radius: 3px;
+        padding-top: 13px;
+        font-family: $poppins;
+    }
+
+    .breakfast-launch{
+        margin-left: 10px;
+    }
+    .salads-sandwiches{
+        margin-left: 10px;
+    }
+    .hr{
+        margin-left: 10px;
+    }
+
+    footer{
+
+        p{
+            margin-top: 45px;
+            font-size: 10px;
+            color: $orange;
+            font-weight: 600;
+        }
+
+        .footer-order{
+            color: $green;
+            margin-top: -10px;
+            margin-left: 0px;
+        }
+    } 
+    
+}
+
+//////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+@media only screen and (max-width:375px){
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 18px;
+        }
+    }
+    .title{
+        margin-top: -90px;
+        margin-bottom: 120px;
+    }
+    
+    .menu{
+        margin-top: 200px;
+    }
+}
+ 
+ 
+
+@media only screen and (max-width:320px){
+   .title{
+       margin-bottom: 150px;
+   }
+    .menu{
+        margin-top: 220px;
+    }
+}
+

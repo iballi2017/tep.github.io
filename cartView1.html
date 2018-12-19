@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="icon" type="image/png" href="photos/logo.png" sizes="16x16">
+      <link rel="stylesheet" href="cartView1.css">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Order meals</title>
+
+      
+    <script src="user.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="desktop-nav">
+            <nav class="navbar  navbar-fixed-top mynav">
+                <div class="navbar-logo"><a class="navbar-brand" href="user.html"><img src="photos/Logo.png" class="img img-responsive"></a></div>
+         	<a href="PersonalInfo.html"><img src="photos/profile-image.png" class="img img-responsive profile-image"></a>
+         	<a href="#"><img src="photos/basket.png" class="img img-responsive basket"><span id="cartNum">0</span></a>
+                <a href="#feedback"><span>Feedback</span></a>
+                <a href="menu.html"><span>Place your order</span></a>
+            </nav>
+        </div>
+    <!-- Mobile navigation bar content-->
+        <span class="navbar-header"><a class="navbar-brand" href="user.html"><img src="photos/Logo.png" class="img img-responsive logo"></a></span>
+        <div class="mobile-navbutton">
+            <div class="cont" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+         <div class="mobile-nav-icons">
+         	<a href="checkout.html"><img src="photos/basket.png" class="img img-responsive basket"></a>
+         	
+         </div>
+         <div class="mobile-nav">
+            <ul class="nav nav-pills nav-stacked">
+                 <li>
+                      <a href="menu.html">Place Your Order</a>
+                 </li>
+                 <li>
+                     <a href="#">Feedback</a>
+                 </li>
+                 <li>
+                     <a href="user.html" id="profile">Profile</a>
+                     <ul class="nav nav-pills nav-stacked" id="profileInfo" style="background: #ccc; display: none">
+                            <li>
+                                 <a href="PersonalInfo.html">Personal Info</a>
+                            </li>
+                            <li>
+                                <a href="savedCard.html">Saved Cards</a>
+                            </li>
+                            <li>
+                                <a href="wallet.html" class="login">Wallet</a>
+                            </li>
+                            <li>
+                                <a href="orderHistory.html" class="history">Order History</a>
+                            </li>
+                            <li>
+                                <a href="settings.html" class="settings">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Logout</a>
+                            </li>
+                      </ul>
+                 </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+       <div class="row">
+           <div class="col-md-12">
+                <div class="container cartView1Container">
+
+                    <!-- /////////////////////////// -->
+                <div class="row itemContainer">
+                       <div class="col-md-7 colum1">
+                           <div class="row">
+                               <div class="col-md-4">
+                                    <img src="photos/Tuna-salad.png" alt="" class="img img-responsive">
+                               </div>
+                               <div class="col-md-8">
+                                    <h4 class="fooditem">Rice and Beans</h4>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-md-5 colum2">
+                           <div class="row">
+                               <div class="col-md-6">
+                                    <h4>#<b><input type="text" id="price" value="500" id="price"></b>
+                                        <button>-</button><input type="text" id="qtyNum" value="1" onkeyup="multiply()"><button>+</button>
+                                    </h4>
+                               </div>
+                               <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                            <h4>#<span type="text" value="500" id="subAmount">500</span></h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4 id="remove">Remove</h4>
+
+                                    </div>
+                                </div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                   <!-- //////////// -->
+
+                   
+                
+                     <div class="row remove-cont">
+                         <div class="col-md-10">
+                             <h4>Remove All</h4>
+                         </div>
+                         <div class="col-md-2">
+                             <h4>Continue Shopping</h4>
+                         </div>
+                     </div>
+
+                     <div class="row totalAmount">
+                         <div class="col-md-9">
+                             <p>2 items(2)</p>
+                         </div>
+                         <div class="col-md-1">
+                             <h4>#1000</h4>
+                         </div>
+                         <div class="col-md-2">
+                             <button>Pay Now</button>
+                         </div>
+                     </div>
+                </div>
+           </div>
+       </div>
+        
+    </div>
+</div>
+</body>
+</html>

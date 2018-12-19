@@ -41,7 +41,17 @@ function myFunction(x) {
         }
     }
 
+//Cart notification
 
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+  })();
+  
+  function addToCart(){
+    document.getElementById("cartNum").innerHTML = add();
+    document.getElementById("cartNum").style.display="block"
+  }
 
 
 
@@ -179,3 +189,42 @@ $(document).ready(function(){
 
 //////////////////////////////////////////////////////////////
 
+// PAYMENT OPTION CODES
+// card option open and close
+$(document).ready(function(){
+    $("#cardOptionClick").click(function(){
+        $("#cardInfo").toggle(1000);
+    });
+});
+
+// wallet option open and close
+$(document).ready(function(){
+    $("#walletOptionClick").click(function(){
+        $("#walletInfo").toggle(1000);
+    });
+});
+
+// transfer option open and close
+$(document).ready(function(){
+    $("#transferOptionClick").click(function(){
+        $("#transferInfo").toggle(1000);
+    });
+});
+
+
+////cartView1 codes to update price per quantity
+function multiply(){
+    var b = document.getElementById("price").value;
+    var a = document.getElementById("qtyNum").value;
+    var c = parseInt(a) * parseInt(b);
+    // document.write(c);
+
+    if(a !== NaN){
+        document.getElementById("subAmount").textContent = c;
+    }else{
+        document.getElementById("subAmount").textContent = b;
+    }
+}
+
+
+$('#myModal').modal(options)

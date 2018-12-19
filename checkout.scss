@@ -25,7 +25,7 @@ body{
     height: $px100 - 30px;
     position: fixed;
     z-index: 2000;
-    box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.3);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 
     a{
     margin-right: 30px;
@@ -150,6 +150,14 @@ body{
     input[type="text"]{
         box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(31, 30, 30, 0.3);
     }
+
+    #expiry{
+        width: 80px;
+    }
+
+    #cvv{
+        width: 70px;
+    }
 }
 
 // leftSide ends here
@@ -187,6 +195,7 @@ body{
 // Order Summary starts here
 
 #orderSummary{
+    font-family: $poppins;
     width: 100%;
     padding-top: 70px;
     padding-left: 20px;
@@ -200,7 +209,16 @@ body{
         table{
             font-size: 11px;
             img{
-                width: 50px;
+                width: 40px;
+                border-radius: 200px;
+            }
+            p{
+                margin-top: 10px;
+            }
+            #del{
+                width: 15px;
+                margin-top: 10px;
+                cursor: pointer;
             }
             .total{
                 font-weight: 600;
@@ -209,7 +227,21 @@ body{
         }
     }
 }
+.mobileCheckout{
+    display: none;
+}
 
+#cardInfo{
+    display: none;
+}
+
+#walletInfo{
+    display: none;
+}
+
+#transferInfo{
+    display: none;
+}
 // Order Summary ends here
 
 
@@ -312,6 +344,10 @@ body{
         .mobileSummary{
             margin-left: 10px;
         }
+    }
+
+    .mobileCheckout{
+        display: block;
     }
 }
 

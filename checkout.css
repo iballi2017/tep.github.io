@@ -7,7 +7,7 @@ body {
   height: 70px;
   position: fixed;
   z-index: 2000;
-  box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.3); }
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); }
   .desktop-nav a {
     margin-right: 30px;
     float: right; }
@@ -90,6 +90,10 @@ body {
     background: #4C6F35; }
   .leftSide input[type="text"] {
     box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(31, 30, 30, 0.3); }
+  .leftSide #expiry {
+    width: 80px; }
+  .leftSide #cvv {
+    width: 70px; }
 
 .backbtn {
   position: absolute;
@@ -103,6 +107,7 @@ body {
     color: #000; }
 
 #orderSummary {
+  font-family: "Poppins", sans-serif;
   width: 100%;
   padding-top: 70px;
   padding-left: 20px;
@@ -114,10 +119,29 @@ body {
     #orderSummary .summary table {
       font-size: 11px; }
       #orderSummary .summary table img {
-        width: 50px; }
+        width: 40px;
+        border-radius: 200px; }
+      #orderSummary .summary table p {
+        margin-top: 10px; }
+      #orderSummary .summary table #del {
+        width: 15px;
+        margin-top: 10px;
+        cursor: pointer; }
       #orderSummary .summary table .total {
         font-weight: 600;
         font-size: 12px; }
+
+.mobileCheckout {
+  display: none; }
+
+#cardInfo {
+  display: none; }
+
+#walletInfo {
+  display: none; }
+
+#transferInfo {
+  display: none; }
 
 @media only screen and (max-width: 425px) {
   .desktop-nav {
@@ -189,6 +213,8 @@ body {
         padding: 3px; }
       #orderSummary .mobileCheckoutSummary .mobileSummary {
         margin-left: 10px; }
+    #orderSummary .mobileCheckout {
+      display: block; }
 
   .leftSide {
     display: none;

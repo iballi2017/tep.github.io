@@ -1,0 +1,90 @@
+$green: #182900;
+$orange: #e68631;
+$white: #ffffff;
+$yellow: #EDAA2F;
+$poppins: 'Poppins', sans-serif;
+$p100: 100%;
+$px100: 100px;
+$actionGreen: #4C6F35;
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+
+// navigation bar starts here
+
+
+.desktop-nav{
+    background: $white;
+    width: $p100;
+    height: $px100 - 30px;
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+    a{
+    margin-right: 30px;
+    float: right;
+    }
+}
+.mynav{
+    margin-top: $px100 - 80px;
+    margin-right: $px100;
+    float: right;
+    font-family: $poppins;
+
+    a{
+        font-size: $px100 - 86px;
+        color: $green;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover{
+            font-weight: 600;
+            color: $orange;
+        }
+
+        
+        #noteNum {
+            display: none;
+            background: $orange;
+            color: $white;
+            position: absolute;
+            margin: -25px 0 0 15px;
+            width: 12px;
+            text-align: center;
+            border-radius: 100px;
+        }
+    }
+        
+    .admin-image{
+        width: 25px;
+    }
+    
+    .admin-note{
+        width:23px;
+    
+    }
+}
+
+.mobile-nav{
+    display: none;
+}
+.mobile-nav-icons{
+    display: none;
+}
+
+.inputarea{
+    border-radius: 0px;
+    height: 40px;
+    width: 68%;
+    margin-left: 40px;
+}
+
+// Navigation bar ends here

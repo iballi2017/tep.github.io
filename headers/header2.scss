@@ -1,0 +1,191 @@
+$green: #182900;
+$orange: #e68631;
+$white: #ffffff;
+$yellow: #EDAA2F;
+$poppins: 'Poppins', sans-serif;
+$p100: 100%;
+$px100: 100px;
+$actionGreen: #4C6F35;
+
+
+body{
+    overflow-x: hidden;
+}
+.desktop-nav{
+    background: $white;
+    width: $p100;
+    height: $px100 - 30px;
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+    a{
+    margin-right: 30px;
+    float: right;
+    }
+}
+.mynav{
+    margin-top: $px100 - 80px;
+    margin-right: $px100;
+    float: right;
+    font-family: $poppins;
+
+    a{
+        font-size: $px100 - 86px;
+        color: $green;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+    
+
+        button{
+            width: $px100 + 20px;
+            height: auto;
+            font-weight: bold;
+            font-size: $px100 - 86px;
+            border-radius: $px100 - 97px;
+            color: $green;
+            border: 1px solid $orange;
+            font-weight: 400;
+            margin-top: -5px;
+            background: none;
+        }
+
+        button:hover{
+            background: rgb(211, 176, 145);
+        }
+    }
+        
+    a:hover{
+        color: $orange;
+        font-weight: 400;
+    }
+
+}
+
+.navbar-logo{
+    width: 200px;
+    margin-left: 80px;
+    position: absolute;
+    margin-top: -20px;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+@media only screen and (max-width:768px){
+
+    .mynav{
+
+        margin-top: $px100 - 80px;
+        margin-right: 70px;
+
+        a{
+            font-size: 12px;
+            cursor: pointer;
+            text-decoration: none;
+        
+
+            button{
+                width: $px100 + 20px;
+                font-weight: bold;
+                font-weight: 400;
+                margin-top: -5px;
+            }
+
+            &:hover{
+            font-weight: 400;
+            }
+        }
+    }  
+        .food-row-1{
+
+            .caption {
+
+                font-weight: 400;
+                font-size: 10px;
+            }
+
+            button{
+
+                width: 150px;
+                height: auto;
+                margin-left: 10px;
+            }
+        }
+
+    .feedback-area{
+
+        .feedback-heading{
+            font-size: 15px;
+        }
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:425px){
+    .desktop-nav{
+        display: none;
+    }
+    .cont {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 2px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change {
+    
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+    
+        .bar2 {
+            opacity: 0;
+        }
+    
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    
+    }
+    
+    header{
+        width: 100%;
+        margin: 0px auto;
+        position: fixed;
+        padding-top: 10px;
+        background: $white;
+        z-index: 2001;
+    }
+    .mobile-navbutton{
+        float: right;
+        margin-top: -50px;
+    }
+    .logo{
+        width: 100px;
+        margin-top: -20px;
+    }
+    .mobile-nav a{
+        font-size: 20px;
+    }
+
+
+}
+
+
+ 
+
