@@ -292,6 +292,9 @@ footer .footer-order {
     margin-bottom: 150px; }
 
   .menu {
-    margin-top: 220px; } }
+    margin-top: 220px; }
+
+  .cartView1Container .itemContainer #qtyNum {
+    width: 30px; } }
 
 /*# sourceMappingURL=cartView1.css.map */
