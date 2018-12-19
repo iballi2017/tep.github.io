@@ -132,11 +132,12 @@ h3 {
   #dashboardContainer #price {
     font-size: 12px; }
   #dashboardContainer button {
-    background: #e68631;
     border: none;
-    float: left;
-    margin-left: 19px;
-    width: 100px; }
+    width: 100px;
+    margin-left: -60px; }
+  #dashboardContainer .delete {
+    margin-left: -102px;
+    background: #f00; }
   #dashboardContainer .Qty {
     margin-left: 13px; }
   #dashboardContainer label {

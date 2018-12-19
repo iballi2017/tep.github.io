@@ -227,4 +227,13 @@ function multiply(){
 }
 
 
-$('#myModal').modal(options)
+///////This code snippet enables the delete of an item column from the dashboard
+//////on file "dashboard-Edtitem.html"
+function deleteConfirmation(){
+    var retVal = confirm("Do you want to continue ?");
+    if(retVal == true){
+        return true;
+    }else{
+        return false;
+    }
+}

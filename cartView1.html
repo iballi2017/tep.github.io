@@ -51,28 +51,55 @@
                      <a href="#">Feedback</a>
                  </li>
                  <li>
-                     <a href="user.html" id="profile">Profile</a>
-                     <ul class="nav nav-pills nav-stacked" id="profileInfo" style="background: #ccc; display: none">
-                            <li>
-                                 <a href="PersonalInfo.html">Personal Info</a>
-                            </li>
-                            <li>
-                                <a href="savedCard.html">Saved Cards</a>
-                            </li>
-                            <li>
-                                <a href="wallet.html" class="login">Wallet</a>
-                            </li>
-                            <li>
-                                <a href="orderHistory.html" class="history">Order History</a>
-                            </li>
-                            <li>
-                                <a href="settings.html" class="settings">Settings</a>
-                            </li>
-                            <li>
-                                <a href="#" class="">Logout</a>
-                            </li>
-                      </ul>
+                    <a href="#" id="profile">Profile</a>
+                    <ul class="nav nav-pills nav-stacked" id="profileInfo" style="background: #ccc; display: none">
+                        <li>
+                            <a href="PersonalInfo.html">Personal Info</a>
+                        </li>
+                        <li>
+                            <a href="savedCard.html">Saved Cards</a>
+                        </li>
+                        <li>
+                            <a href="wallet.html" class="login">Wallet</a>
+                        </li>
+                        <li>
+                            <a href="orderHistory.html" class="history">Order History</a>
+                        </li>
+                        <li>
+                            <a href="settings.html" class="settings">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#" class="">Logout</a>
+                        </li>
+                    </ul>
                  </li>
+
+                 <!-- ///////////////////////////////////// -->
+
+                 <!-- <li>
+                    <a href="#" id="profile">Profile</a>
+                    <ul class="nav nav-pills nav-stacked" id="profileInfo" style="background: #ccc; display: none">
+                        <li>
+                            <a href="personalInfo.html">Personal Info</a>
+                        </li>
+                        <li>
+                            <a href="savedCard.html">Saved Cards</a>
+                        </li>
+                        <li>
+                            <a href="wallet.html" class="login">Wallet</a>
+                        </li>
+                        <li>
+                            <a href="orderHistory.html" class="history">Order History</a>
+                        </li>
+                        <li>
+                            <a href="settings.html" class="settings">Settings</a>
+                        </li>
+                        <li>
+                           <a href="#" class="">Logout</a>
+                        </li>
+                    </ul>
+                 </li> -->
+                 <!-- //////////////////////////////////// -->
             </ul>
         </div>
     </header>
@@ -84,19 +111,19 @@
 
                     <!-- /////////////////////////// -->
                 <div class="row itemContainer">
-                       <div class="col-md-7 colum1">
+                       <div class="col-md-7 col-sm-7 col-sm-7 colum1">
                            <div class="row">
-                               <div class="col-md-4 col-xs-5">
-                                    <img src="photos/Tuna-salad.png" alt="" class="img img-responsive">
+                               <div class="col-md-3 col-xs-5">
+                                    <img src="photos/Tuna-salad.png" alt="item-image" class="img img-responsive">
                                </div>
                                <div class="col-md-8 col-xs-5">
                                     <h4 class="fooditem">Rice and Beans</h4>
                                </div>
                            </div>
                        </div>
-                       <div class="col-md-5 colum2">
+                       <div class="col-md-5 col-sm-5 colum2">
                            <div class="row">
-                               <div class="col-md-6 col-xs-5">
+                               <div class="col-md-6 col-xs-7">
                                     <h4>#<b><input type="text" id="price" value="500" id="price"></b>
                                         <button>-</button><input type="text" id="qtyNum" value="1" onkeyup="multiply()"><button>+</button>
                                     </h4>
@@ -107,7 +134,7 @@
                                                 <h4>#<span type="text" value="500" id="subAmount">500</span></h4>
                                         </div>
                                         <div class="col-md-6">
-                                            <h4 id="remove">Remove</h4>
+                                            <h4 id="remove"></h4><img src="photos/remove.svg" style="width: 25px;"></h4>
                                         </div>
                                     </div>
                                </div>

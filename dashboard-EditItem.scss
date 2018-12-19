@@ -223,11 +223,14 @@ h3{
     }
 
     button{
-        background: $orange;
         border: none;
-        float: left;
-        margin-left: 19px;
         width: 100px;
+        margin-left: -60px;
+    }
+
+    .delete{
+        margin-left: -102px;
+        background: #f00;
     }
 
     .Qty{
