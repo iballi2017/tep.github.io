@@ -1,0 +1,423 @@
+$green: #182900;
+$orange: #e68631;
+$white: #ffffff;
+$yellow: #EDAA2F;
+$poppins: 'Poppins', sans-serif;
+$p100: 100%;
+$px100: 100px;
+$actionGreen: #4C6F35;
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// navigation bar starts here
+
+
+.desktop-nav{
+    background: $yellow;
+    width: $p100;
+    height: $px100 - 30px;
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.3);
+
+    a{
+    margin-right: 30px;
+    float: right;
+    }
+}
+.mynav{
+    margin-top: $px100 - 80px;
+    margin-right: $px100;
+    float: right;
+    font-family: $poppins;
+
+    a{
+        font-size: $px100 - 86px;
+        color: $green;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        
+        &:hover{
+            font-weight: 600;
+        }
+
+        button{
+            width: $px100 + 20px;
+            height: $px100 - 60px;
+            font-weight: bold;
+            font-size: $px100 - 86px;
+            border-radius: $px100 - 97px;
+            color: $green;
+            border: 1px solid $orange;
+            font-weight: 600;
+            margin-top: $px100 - 110px;
+            margin-right: -$px100;
+            background: none;
+        }
+
+        button:hover{
+            background: rgb(211, 176, 145);
+        }
+    }
+        
+    a:hover{
+        color: $orange;
+    }
+    
+    .profile-image{
+        width: 25px;
+    }
+    
+    .basket{
+        width:25px;
+    }
+
+}
+
+.navbar-logo{
+    width: 200px;
+    margin-left: 80px;
+    position: absolute;
+    margin-top: -20px;
+}
+
+.mobile-nav{
+    display: none;
+}
+.mobile-nav-icons{
+    display: none;
+}
+
+
+
+.inputarea{
+    border-radius: 0px;
+    height: 40px;
+    width: 68%;
+    margin-left: 40px;
+}
+
+// Navigation bar ends here
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// leftSide starts here
+
+
+.leftSide {
+    font-family: $poppins;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-right: 1px solid #444;
+    overflow-x: hidden;
+    padding-top: 70px;
+    padding-left: 100px;
+
+    .mobileCheckoutSummary{
+        display: none;
+    }
+
+    .email{
+        margin-left: 40px;
+    }
+    hr{
+        width: 100%;
+        border: 0.7px solid #000;
+    }
+    
+    .btn-success {
+        width: 68%;
+        margin-left: -103px;
+        background: $actionGreen;
+    }
+
+    input[type="text"]{
+        box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(31, 30, 30, 0.3);
+    }
+
+    #expiry{
+        width: 80px;
+    }
+
+    #cvv{
+        width: 70px;
+    }
+}
+
+// leftSide ends here
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Back button starts here
+
+
+
+
+.backbtn {
+    position: absolute;
+    top: 0;
+    left: -55px;
+    top: 40px;
+    font-size: 36px;
+    color: #818181;
+
+    :hover{            
+    text-decoration: none;
+    color: #000;
+    }
+}
+
+
+// Back button ends here
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Order Summary starts here
+
+#orderSummary{
+    font-family: $poppins;
+    width: 100%;
+    padding-top: 70px;
+    padding-left: 20px;
+    background: rgba(237, 170, 47, 0.23);
+    .summary{
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        // background: rgba(5, 56, 71, 0.23);
+
+        table{
+            font-size: 11px;
+            img{
+                width: 40px;
+                border-radius: 200px;
+            }
+            p{
+                margin-top: 10px;
+            }
+            #del{
+                width: 15px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            .total{
+                font-weight: 600;
+                font-size: 12px;
+            }
+        }
+    }
+}
+.mobileCheckout{
+    display: none;
+}
+
+#cardInfo{
+    display: none;
+}
+
+#walletInfo{
+    display: none;
+}
+
+#transferInfo{
+    display: none;
+}
+// Order Summary ends here
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+@media only screen and (max-width:425px){
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 20px;
+            height: auto;
+            float: right;
+            margin-top: -45px;
+        }
+
+        .basket{
+            margin-right: 63px;
+        }
+    }
+        .cont {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 2px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change {
+    
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+    
+        .bar2 {
+            opacity: 0;
+        }
+    
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    
+    }
+    
+    header{
+        width: 100%;
+        margin: 0px auto;
+        position: fixed;
+        padding-top: 10px;
+        background: $yellow;
+        z-index: 2001;
+    }
+   
+    .mobile-navbutton{
+        float: right;
+        margin-top: -50px;
+    }
+    .logo{
+        width: 100px;
+        margin-top: -20px;
+    }
+    .mobile-nav {
+            a{
+            font-size: 15px;
+        }
+    }
+     .sidenav{
+        display: none;
+    }
+    
+    
+    // Order Summary starts here
+    #orderSummary{
+        display: block;
+
+        
+    .mobileCheckoutSummary{
+        display: block;
+        margin-top: 100px;
+
+        span{
+            width: 30%;
+            background: #e68631;
+            border-radius: 3px;
+            padding: 3px;
+        }
+
+        .mobileSummary{
+            margin-left: 10px;
+        }
+    }
+
+    .mobileCheckout{
+        display: block;
+    }
+}
+
+    // Order Summary ends here
+    
+    //////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// leftSide starts here
+
+
+.leftSide {
+    display: none;
+    width: 100%;
+    position: fixed;
+    border-right: 1px solid #fff;
+    padding-left: 20px;
+
+    .mobileCheckoutSummary{
+        display: block;
+
+        span{
+            width: 30%;
+            background: #e68631;
+            border-radius: 3px;
+            padding: 3px;
+        }
+
+        .mobileSummary{
+            margin-left: 10px;
+        }
+    }
+    .hr-line{
+        width: 100%;
+        border-top: 1px solid #000;
+    }
+    
+    .btn-success {
+        width: 50%;
+        margin-left: 0px;
+        background: $actionGreen;
+    }
+
+    input[type="text"]{
+        box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(31, 30, 30, 0.3);
+        width: 50%;
+    }
+
+    #expiry{
+        width: 17%;
+    }
+}
+
+// leftSide ends here
+
+    
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+@media only screen and (max-width:375px){
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 18px;
+        }
+    }
+   
+ }
+
+           

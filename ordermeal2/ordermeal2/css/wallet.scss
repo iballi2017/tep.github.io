@@ -1,0 +1,509 @@
+$green: #182900;
+$orange: #e68631;
+$white: #ffffff;
+$yellow: #EDAA2F;
+$poppins: 'Poppins', sans-serif;
+$p100: 100%;
+$px100: 100px;
+$actionGreen: #4C6F35;
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+
+// navigation bar starts here
+
+
+.desktop-nav{
+    background: $yellow;
+    width: $p100;
+    height: $px100 - 30px;
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+    a{
+    margin-right: 30px;
+    float: right;
+    }
+}
+.mynav{
+    margin-top: $px100 - 80px;
+    margin-right: $px100;
+    float: right;
+    font-family: $poppins;
+
+    a{
+        font-size: $px100 - 86px;
+        color: $green;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+    
+        &:hover{
+            font-weight: 600;
+        }
+
+        button{
+            width: $px100 + 20px;
+            height: $px100 - 60px;
+            font-weight: bold;
+            font-size: $px100 - 86px;
+            border-radius: $px100 - 97px;
+            color: $green;
+            border: 1px solid $orange;
+            font-weight: 600;
+            margin-top: $px100 - 110px;
+            margin-right: -$px100;
+            background: none;
+        }
+
+        button:hover{
+            background: rgb(211, 176, 145);
+        }
+    }
+        
+    a:hover{
+        color: $orange;
+    }
+    
+    .profile-image{
+        width: 25px;
+    }
+    
+    .basket{
+        width:25px;
+    }
+
+}
+
+.navbar-logo{
+    width: 200px;
+    margin-left: 80px;
+    position: absolute;
+    margin-top: -20px;
+}
+
+.mobile-nav{
+    display: none;
+}
+.mobile-nav-icons{
+    display: none;
+}
+
+
+
+.inputarea{
+    border-radius: 0px;
+    height: 40px;
+    width: 68%;
+    margin-left: 40px;
+}
+
+// Navigation bar ends here
+
+
+
+
+
+
+// Sidenav starts here
+
+
+.sidenav {
+    font-family: $poppins;
+    height: 100%;
+    width: 360px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-right: 1px solid #444;
+    overflow-x: hidden;
+    padding-top: 150px;
+    padding-left: 100px;
+
+    
+    a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        margin-left: 50px;
+
+        :hover {
+            color: #000;
+        }
+        
+    }
+    
+    .logout{
+        margin-top: 60px;
+    }
+
+    .profile-image{
+        width: 40px;
+    }
+
+    #wallet{
+        border-left: 2px solid #444;
+        padding-left: 5px;
+    }
+
+}
+
+// Sidenav ends here
+
+
+
+
+
+// Back button starts here
+
+
+
+
+.backbtn {
+    position: absolute;
+    top: 0;
+    left: -55px;
+    top: 40px;
+    font-size: 36px;
+    color: #818181;
+
+    :hover{            
+    text-decoration: none;
+    color: #000;
+    }
+}
+
+
+// Back button ends here
+
+
+
+
+
+// Wallet starts here
+
+
+.walletHead{
+    // background: green;
+    width: 70%;
+    text-align: center;
+    margin-top: 100px;
+    font-family: $poppins;
+    
+    .walletBalance{
+        font-weight: 600;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 45px;
+        font-weight: bold;
+    }
+    button{
+        background: $actionGreen;
+        border: none;
+        border-radius: 3px;
+        width: 110px;
+        height: 30px;
+        color: $white;
+        font-size: 12px;
+
+    }
+    button:hover{
+        background: #444;
+    }
+
+}
+
+.recentorder{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+#walletContainer{
+    height: 180px;
+    background: #fff;
+    width: 70%;
+    box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.1);
+    border-radius: 2px;
+    padding-top: 3px;
+    text-align: center;
+    font-family: $poppins;
+
+
+    .number{
+        background: #ccc;
+        width: 7%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+        h1{
+
+            font-size: 40px;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+
+    }
+
+}
+
+footer{
+
+    p{
+        margin-top: 200px;
+        font-size: 10px;
+        color: $orange;
+        font-weight: 600;
+    }
+
+    .footer-order{
+        color: $green;
+        margin-top: -10px;
+        margin-left: 0px;
+    }
+}
+
+
+// Wallet ends here
+
+
+
+@media only screen and (max-width:425px){
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 20px;
+            height: auto;
+            float: right;
+            margin-top: -45px;
+        }
+
+        .basket{
+            margin-right: 63px;
+        }
+    }
+        .cont {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 2px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change {
+    
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+    
+        .bar2 {
+            opacity: 0;
+        }
+    
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    
+    }
+    
+    header{
+        width: 100%;
+        margin: 0px auto;
+        position: fixed;
+        padding-top: 10px;
+        background: $yellow;
+        z-index: 2001;
+    }
+   
+    .mobile-navbutton{
+        float: right;
+        margin-top: -50px;
+    }
+    .logo{
+        width: 100px;
+        margin-top: -20px;
+    }
+    .mobile-nav{
+
+        a{
+            font-size: 15px;
+        }
+    }
+
+    //Back button
+
+    .backbtn{
+        display: none;
+    }
+
+    //Sidenav
+
+    .sidenav{
+        display: none;
+    }
+
+    ////////////////////////////////////////////////////////////////////////
+
+
+
+    //// Wallet starts here
+
+
+    .walletHead{
+        // background: green;
+        width: 70%;
+        text-align: center;
+        margin-top: 100px;
+        font-family: $poppins;
+        
+        .walletBalance{
+            font-weight: 600;
+            font-size: 15px;
+        }
+        h1{
+            font-size: 45px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        button{
+            background: $actionGreen;
+            border: none;
+            border-radius: 3px;
+            width: 110px;
+            height: 30px;
+            color: $white;
+            font-size: 12px;
+
+        }
+        button:hover{
+            background: #444;
+        }
+
+    }
+
+    .recentorder{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 54px;
+    }
+    #walletContainer{
+        height: 180px;
+        background: #fff;
+        width: 70%;
+        box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.1);
+        border-radius: 2px;
+        padding-top: 3px;
+        text-align: center;
+        font-family: $poppins;
+
+
+        .number{
+            background: #ccc;
+            width: 20%;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+            h1{
+
+                font-size: 30px;
+                margin: 0 auto;
+                font-weight: bold;
+            }
+
+        }
+
+    }
+
+    // Wallet ends here
+
+    
+
+    footer{
+
+        p{
+            margin-top: 200px;
+            font-size: 10px;
+            color: $orange;
+            font-weight: 600;
+        }
+
+        .footer-order{
+            color: $green;
+            margin-top: -10px;
+            margin-left: 0px;
+        }
+    } 
+    
+
+}
+
+////////////////////////////////////////////////////////////
+
+
+@media only screen and (max-width:375px){
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 18px;
+        }
+    }
+
+    .recentorder{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 40px;
+        }
+   
+ }
+ 
+ 
+
+@media only screen and (max-width:320px){
+   
+    .recentorder{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-left: 29px;
+        }
+}
+
+           

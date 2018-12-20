@@ -1,0 +1,524 @@
+body {
+  overflow-x: hidden; }
+
+.desktop-nav {
+  background: #EDAA2F;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 2000;
+  box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.3); }
+  .desktop-nav a {
+    margin-right: 30px;
+    float: right; }
+
+.mynav {
+  margin-top: 20px;
+  margin-right: 100px;
+  float: right;
+  font-family: "Poppins", sans-serif; }
+  .mynav a {
+    font-size: 14px;
+    color: #182900;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none; }
+    .mynav a:hover {
+      font-weight: 600; }
+    .mynav a button:hover {
+      background: #d3b091; }
+  .mynav .profile-image {
+    width: 25px; }
+  .mynav .basket {
+    width: 25px; }
+
+.navbar-logo {
+  width: 200px;
+  margin-left: 80px;
+  position: absolute;
+  margin-top: -20px; }
+
+.mobile-nav {
+  display: none; }
+
+.mobile-nav-icons {
+  display: none; }
+
+.hero {
+  width: 100%;
+  height: 730px;
+  margin: 0 auto;
+  background-image: url("../photos/Backgoundimg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  .hero .title {
+    width: 100%;
+    height: 200px; }
+    .hero .title .heading {
+      font-size: 47px;
+      font-family: 'Poppins', sans-serif;
+      color: #182900;
+      font-weight: 600;
+      margin-top: 120px;
+      margin-left: 6.2%;
+      line-height: 70px; }
+    .hero .title .tagline {
+      color: #e68631ff;
+      font-weight: 300;
+      margin-left: 6.2%; }
+  .hero .place-order-button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    margin-top: 50px;
+    margin-left: 6.5%;
+    background: #4C6F35;
+    border-radius: 3px;
+    padding-top: 13px;
+    font-family: "Poppins", sans-serif; }
+  .hero .how-it-works {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 110px;
+    color: #182900;
+    font-weight: 600; }
+  .hero .action-icon {
+    text-align: center;
+    align-content: center; }
+    .hero .action-icon .figure {
+      margin-top: 0px;
+      font-weight: 500;
+      font-size: 18px; }
+    .hero .action-icon img {
+      width: 90px;
+      margin-top: 0px; }
+    .hero .action-icon .caption {
+      color: #182900;
+      font-weight: 600;
+      font-size: 18px;
+      margin-top: 20px; }
+    .hero .action-icon #handlogo {
+      width: 72px; }
+
+.most-popular {
+  font-size: 24px;
+  margin-top: 50px;
+  margin-left: 20px;
+  font-weight: 400; }
+
+.food-row-1 p {
+  padding-left: 20px; }
+
+.add-to-cart {
+  width: 200px;
+  height: 40px;
+  color: #182900;
+  border: 1px solid #e68631;
+  background: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 20px;
+  border-radius: 3px; }
+
+.add-to-cart:hover {
+  background: #d3b091; }
+
+.caption {
+  font-weight: bold; }
+
+.price {
+  font-weight: 400; }
+
+.modal {
+  margin-top: 70px; }
+
+.modal-content {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../photos/food.png);
+  background-repeat: no repeat;
+  background-size: 600px 580px;
+  background-size: cover;
+  font-size: 13px;
+  color: #ffffff; }
+
+#mySignupModal label {
+  font-weight: 200;
+  margin-right: -20px;
+  margin-top: 5px; }
+#mySignupModal .inputarea {
+  border-radius: 3px;
+  height: 40px;
+  width: 110%;
+  margin-left: 40px; }
+#mySignupModal .form-button {
+  background: #4C6F35;
+  color: #ffffff;
+  height: 50px;
+  width: 62%;
+  margin-left: 20px;
+  border-radius: 3px; }
+#mySignupModal .form-horizontal {
+  margin-left: 120px; }
+
+#myLoginModal {
+  height: 500px;
+  font-family: "Poppins", sans-serif; }
+  #myLoginModal label {
+    font-weight: 200;
+    margin-right: -20px;
+    margin-top: 5px; }
+  #myLoginModal .inputarea {
+    border-radius: 3px;
+    height: 40px;
+    width: 110%;
+    margin-left: 40px;
+    box-shadow: 2px 2px 2px 2px rgba(31, 30, 30, 0.3); }
+  #myLoginModal .form-button {
+    background: #4C6F35;
+    color: #ffffff;
+    height: 50px;
+    width: 62%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px rgba(31, 30, 30, 0.3); }
+  #myLoginModal .form-horizontal {
+    margin-left: 100px; }
+  #myLoginModal .login-options {
+    margin-left: 100px;
+    margin-top: -20px; }
+    #myLoginModal .login-options h3 {
+      color: #e68631;
+      font-weight: 600; }
+    #myLoginModal .login-options p {
+      margin-top: 20px;
+      font-size: 14px; }
+  #myLoginModal .have-account {
+    font-size: 13px;
+    margin: 100px 0 0 119px; }
+  #myLoginModal .signup {
+    font-size: 13px;
+    margin: 100px 0 0 40px;
+    color: #105a96;
+    font-weight: 600; }
+
+.inputarea {
+  border-radius: 0px;
+  height: 40px;
+  width: 68%;
+  margin-left: 40px; }
+
+.textarea {
+  width: 68%;
+  margin-left: 40px; }
+
+.e-message {
+  width: 70%; }
+  .e-message .form-button {
+    background: #4C6F35;
+    color: #fff;
+    height: 50px;
+    width: 39.5%;
+    margin-left: 40px;
+    border-radius: 3px; }
+
+.feedback-area {
+  font-family: "Poppins", sans-serif;
+  background: #EDAA2F;
+  color: #fff;
+  margin-top: 100px; }
+  .feedback-area .feedback-heading {
+    text-align: center; }
+
+.form-horizontal {
+  margin-left: 30%;
+  margin-top: 30px; }
+
+.form-close {
+  color: #ffffff; }
+
+footer p {
+  margin-top: 30px;
+  color: #e68631;
+  font-weight: 400; }
+footer .footer-order {
+  color: #182900;
+  margin-top: 30px; }
+
+@media only screen and (max-width: 768px) {
+  .mynav {
+    margin-top: 20px;
+    margin-right: 70px; }
+    .mynav a {
+      font-size: 12px;
+      cursor: pointer;
+      text-decoration: none; }
+      .mynav a button {
+        width: 120px;
+        font-weight: bold;
+        font-weight: 400;
+        margin-top: -5px; }
+      .mynav a:hover {
+        font-weight: 400; }
+
+  .hero .title .heading {
+    font-size: 37px;
+    margin-top: 80px;
+    line-height: 60px; }
+  .hero .title .tagline {
+    font-size: 20px; }
+  .hero .place-order-button {
+    margin-top: 0px; }
+  .hero .how-it-works {
+    margin-top: 170px; }
+
+  .most-popular {
+    font-size: 20px;
+    margin-left: 10px; }
+
+  .food-row-1 .caption {
+    font-weight: 400;
+    font-size: 10px; }
+  .food-row-1 button {
+    width: 150px;
+    height: auto;
+    margin-left: 10px; }
+
+  .feedback-area .feedback-heading {
+    font-size: 15px; } }
+@media only screen and (max-width: 425px) {
+  .desktop-nav {
+    display: none; }
+
+  .mobile-nav-icons {
+    display: block;
+    position: relative; }
+    .mobile-nav-icons img {
+      width: 20px;
+      height: auto;
+      float: right;
+      margin-top: -45px; }
+    .mobile-nav-icons .basket {
+      margin-right: 63px; }
+
+  .cont {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px; }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .change .bar2 {
+    opacity: 0; }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+
+  header {
+    width: 100%;
+    margin: 0px auto;
+    position: fixed;
+    padding-top: 10px;
+    background: #EDAA2F;
+    z-index: 2001; }
+
+  .hero {
+    background: none; }
+    .hero .title .heading {
+      margin-top: 180px; }
+    .hero .action-icon img {
+      width: 50px; }
+    .hero .action-icon #handlogo {
+      width: 42px; }
+    .hero .action-icon .caption {
+      font-size: 13px; }
+
+  .menu {
+    margin-top: 100px; }
+
+  .action-icon .figure {
+    margin-top: 30px;
+    font-size: 14px; }
+
+  .how-it-works {
+    margin-top: 320px;
+    color: #182900;
+    font-weight: 600;
+    font-size: 20px; }
+
+  .action-icon img {
+    width: 50px;
+    margin-top: 0px; }
+
+  .action-icon .caption {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px; }
+
+  .mobile-navbutton {
+    float: right;
+    margin-top: -50px; }
+
+  .logo {
+    width: 100px;
+    margin-top: -20px; }
+
+  .mobile-nav a {
+    font-size: 15px; }
+
+  .title {
+    margin-top: -90px;
+    margin-bottom: 50px; }
+
+  .place-order-button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    background: #4C6F35;
+    border-radius: 3px;
+    padding-top: 13px;
+    font-family: "Poppins", sans-serif; }
+
+  .breakfast-launch {
+    margin-left: 10px; }
+
+  .salads-sandwiches {
+    margin-left: 10px; }
+
+  .hr {
+    margin-left: 10px; }
+
+  .modal {
+    margin-top: 70px; }
+
+  .modal-content {
+    width: 95%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../photos/food.png);
+    background-repeat: no repeat;
+    background-size: 600px 580px;
+    background-size: cover;
+    font-size: 13px;
+    color: #ffffff; }
+
+  #mySignupModal label {
+    font-weight: 200;
+    margin-right: -20px;
+    margin-top: 5px; }
+  #mySignupModal .inputarea {
+    height: 30px;
+    width: 70%;
+    margin-left: 10px; }
+  #mySignupModal .form-button {
+    background: #4C6F35;
+    color: #ffffff;
+    height: 50px;
+    width: 62%;
+    margin-left: 20px;
+    border-radius: 3px; }
+  #mySignupModal .form-horizontal {
+    margin-left: 120px; }
+
+  #myLoginModal {
+    height: 500px;
+    font-family: "Poppins", sans-serif; }
+    #myLoginModal label {
+      font-weight: 200;
+      margin-top: 5px; }
+    #myLoginModal .inputarea {
+      height: 30px;
+      width: 70%;
+      margin-left: 10px; }
+    #myLoginModal .form-button {
+      background: #4C6F35;
+      color: #ffffff;
+      font-size: 10px;
+      height: 30px;
+      width: 52%;
+      margin-left: 10px;
+      margin-bottom: 20px; }
+    #myLoginModal .form-horizontal {
+      margin-left: 50px; }
+    #myLoginModal .login-options {
+      margin-left: 50px;
+      margin-top: -20px; }
+      #myLoginModal .login-options h3 {
+        color: #e68631;
+        font-weight: 600; }
+      #myLoginModal .login-options p {
+        margin-top: 20px;
+        font-size: 14px; }
+    #myLoginModal .have-account {
+      font-size: 13px;
+      margin: 100px 0 0 30px; }
+    #myLoginModal .signup {
+      font-size: 13px;
+      margin: 100px 0 0 10px;
+      color: #105a96;
+      font-weight: 600; }
+
+  .e-message {
+    width: 100%; }
+    .e-message .form-button {
+      background: #4C6F35;
+      color: #fff;
+      height: 30px;
+      width: 39.5%;
+      margin-left: 0px;
+      font-size: 13px;
+      border-radius: 3px; }
+    .e-message .inputarea {
+      border-radius: 0px;
+      height: 40px;
+      width: 80%;
+      margin-left: 0px; }
+    .e-message .textarea {
+      width: 80%;
+      margin-left: 0px; }
+
+  .feedback-heading {
+    font-size: 14px; }
+
+  .form-horizontal {
+    margin-left: 2%;
+    margin-top: 30px; }
+
+  footer p {
+    margin-top: 45px;
+    font-size: 10px;
+    color: #e68631;
+    font-weight: 600; }
+  footer .footer-order {
+    color: #182900;
+    margin-top: -10px;
+    margin-left: 0px; } }
+@media only screen and (max-width: 375px) {
+  .mobile-nav-icons {
+    display: block;
+    position: relative; }
+    .mobile-nav-icons img {
+      width: 18px; }
+
+  .title {
+    margin-top: -90px;
+    margin-bottom: 120px; }
+
+  .menu {
+    margin-top: 200px; } }
+@media only screen and (max-width: 320px) {
+  .title {
+    margin-bottom: 150px; }
+
+  .menu {
+    margin-top: 220px; } }
+
+/*# sourceMappingURL=user.css.map */

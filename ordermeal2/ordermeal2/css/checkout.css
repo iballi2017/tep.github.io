@@ -1,0 +1,260 @@
+body {
+  overflow-x: hidden; }
+
+.desktop-nav {
+  background: #EDAA2F;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 2000;
+  box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.3); }
+  .desktop-nav a {
+    margin-right: 30px;
+    float: right; }
+
+.mynav {
+  margin-top: 20px;
+  margin-right: 100px;
+  float: right;
+  font-family: "Poppins", sans-serif; }
+  .mynav a {
+    font-size: 14px;
+    color: #182900;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none; }
+    .mynav a:hover {
+      font-weight: 600; }
+    .mynav a #cartNum {
+      background: #fff;
+      position: absolute;
+      margin: -25px 0 0 15px;
+      width: 12px;
+      text-align: center;
+      border-radius: 100px; }
+    .mynav a button {
+      width: 120px;
+      height: 40px;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 3px;
+      color: #182900;
+      border: 1px solid #e68631;
+      font-weight: 600;
+      margin-top: -10px;
+      margin-right: -100px;
+      background: none; }
+    .mynav a button:hover {
+      background: #d3b091; }
+  .mynav a:hover {
+    color: #e68631; }
+  .mynav .profile-image {
+    width: 25px; }
+  .mynav .basket {
+    width: 25px; }
+
+.navbar-logo {
+  width: 200px;
+  margin-left: 80px;
+  position: absolute;
+  margin-top: -20px; }
+
+.mobile-nav {
+  display: none; }
+
+.mobile-nav-icons {
+  display: none; }
+
+.inputarea {
+  border-radius: 0px;
+  height: 40px;
+  width: 68%;
+  margin-left: 40px; }
+
+.leftSide {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-right: 1px solid #444;
+  overflow-x: hidden;
+  padding-top: 70px;
+  padding-left: 100px; }
+  .leftSide .mobileCheckoutSummary {
+    display: none; }
+  .leftSide .email {
+    margin-left: 40px; }
+  .leftSide hr {
+    width: 100%;
+    border: 0.7px solid #000; }
+  .leftSide .btn-success {
+    width: 68%;
+    margin-left: -103px;
+    background: #4C6F35; }
+  .leftSide input[type="text"] {
+    box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(31, 30, 30, 0.3); }
+  .leftSide #expiry {
+    width: 80px; }
+  .leftSide #cvv {
+    width: 70px; }
+
+.backbtn {
+  position: absolute;
+  top: 0;
+  left: -55px;
+  top: 40px;
+  font-size: 36px;
+  color: #818181; }
+  .backbtn :hover {
+    text-decoration: none;
+    color: #000; }
+
+#orderSummary {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding-top: 70px;
+  padding-left: 20px;
+  background: rgba(237, 170, 47, 0.23); }
+  #orderSummary .summary {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto; }
+    #orderSummary .summary table {
+      font-size: 11px; }
+      #orderSummary .summary table img {
+        width: 40px;
+        border-radius: 200px; }
+      #orderSummary .summary table p {
+        margin-top: 10px; }
+      #orderSummary .summary table #del {
+        width: 15px;
+        margin-top: 10px;
+        cursor: pointer; }
+      #orderSummary .summary table .total {
+        font-weight: 600;
+        font-size: 12px; }
+
+.mobileCheckout {
+  display: none; }
+
+#cardInfo {
+  display: none; }
+
+#walletInfo {
+  display: none; }
+
+#transferInfo {
+  display: none; }
+
+@media only screen and (max-width: 425px) {
+  .desktop-nav {
+    display: none; }
+
+  .mobile-nav-icons {
+    display: block;
+    position: relative; }
+    .mobile-nav-icons img {
+      width: 20px;
+      height: auto;
+      float: right;
+      margin-top: -45px; }
+    .mobile-nav-icons .basket {
+      margin-right: 63px; }
+
+  .cont {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px; }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s; }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); }
+  .change .bar2 {
+    opacity: 0; }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px); }
+
+  header {
+    width: 100%;
+    margin: 0px auto;
+    position: fixed;
+    padding-top: 10px;
+    background: #EDAA2F;
+    z-index: 2001; }
+
+  .mobile-navbutton {
+    float: right;
+    margin-top: -50px; }
+
+  .logo {
+    width: 100px;
+    margin-top: -20px; }
+
+  .mobile-nav a {
+    font-size: 15px; }
+
+  .sidenav {
+    display: none; }
+
+  #orderSummary {
+    display: block; }
+    #orderSummary .mobileCheckoutSummary {
+      display: block;
+      margin-top: 100px; }
+      #orderSummary .mobileCheckoutSummary span {
+        width: 30%;
+        background: #e68631;
+        border-radius: 3px;
+        padding: 3px; }
+      #orderSummary .mobileCheckoutSummary .mobileSummary {
+        margin-left: 10px; }
+    #orderSummary .mobileCheckout {
+      display: block; }
+
+  .leftSide {
+    display: none;
+    width: 100%;
+    position: fixed;
+    border-right: 1px solid #fff;
+    padding-left: 20px; }
+    .leftSide .mobileCheckoutSummary {
+      display: block; }
+      .leftSide .mobileCheckoutSummary span {
+        width: 30%;
+        background: #e68631;
+        border-radius: 3px;
+        padding: 3px; }
+      .leftSide .mobileCheckoutSummary .mobileSummary {
+        margin-left: 10px; }
+    .leftSide .hr-line {
+      width: 100%;
+      border-top: 1px solid #000; }
+    .leftSide .btn-success {
+      width: 50%;
+      margin-left: 0px;
+      background: #4C6F35; }
+    .leftSide input[type="text"] {
+      box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(31, 30, 30, 0.3);
+      width: 50%; }
+    .leftSide #expiry {
+      width: 17%; } }
+@media only screen and (max-width: 375px) {
+  .mobile-nav-icons {
+    display: block;
+    position: relative; }
+    .mobile-nav-icons img {
+      width: 18px; } }
+
+/*# sourceMappingURL=checkout.css.map */

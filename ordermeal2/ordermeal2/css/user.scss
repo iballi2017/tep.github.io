@@ -1,0 +1,793 @@
+$green: #182900;
+$orange: #e68631;
+$white: #ffffff;
+$yellow: #EDAA2F;
+$poppins: 'Poppins', sans-serif;
+$p100: 100%;
+$px100: 100px;
+$actionGreen: #4C6F35;
+
+
+body{
+    overflow-x: hidden;
+}
+.desktop-nav{
+    background: $yellow;
+    width: $p100;
+    height: $px100 - 30px;
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 4px 4px 4px 4px rgba(31, 30, 30, 0.3);
+
+    a{
+    margin-right: 30px;
+    float: right;
+    }
+
+}
+.mynav{
+    margin-top: $px100 - 80px;
+    margin-right: $px100;
+    float: right;
+    font-family: $poppins;
+
+    a{
+        font-size: $px100 - 86px;
+        color: $green;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover{
+            font-weight: 600;
+        }
+
+        button:hover{
+            background: rgb(211, 176, 145);
+        }
+    }
+    
+    
+    .profile-image{
+        width: 25px;
+    }
+    
+    .basket{
+        width:25px;
+    }
+
+}
+
+.navbar-logo{
+    width: 200px;
+    margin-left: 80px;
+    position: absolute;
+    margin-top: -20px;
+}
+
+.mobile-nav{
+    display: none;
+}
+.mobile-nav-icons{
+    display: none;
+}
+
+
+.hero{
+    width: $p100;
+    height: ($px100 * 7) + 30px;
+    margin: 0 auto;
+    background-image: url("../photos/Backgoundimg.png");
+    background-size: $p100 $p100;
+    background-repeat: no-repeat;
+
+    
+    .title{
+        width: $p100;
+        height: $px100 * 2;
+        
+        .heading{
+            font-size: 47px;
+            font-family: 'Poppins', sans-serif;
+            color: $green;
+            font-weight: 600;
+            margin-top: $px100 + 20px;
+            margin-left: 6.2%;
+            line-height: $px100 - 30px;
+        }
+        
+        .tagline{
+            color: #e68631ff;
+            font-weight: 300;
+            margin-left: 6.2%;
+        }
+        
+    }
+
+    
+    .place-order-button{
+        width: $px100 * 2;
+        height: $px100 - 50px;
+        border: none;
+        border-radius: 0px;
+        margin-top: 50px;
+        margin-left: 6.5%;
+        background:  $actionGreen;
+        border-radius: 3px;
+        padding-top: 13px;
+        font-family: $poppins;
+    }
+  
+    .how-it-works{
+        text-align: center;
+        font-family: $poppins;
+        margin-top: $px100 + 10px;
+        color: $green;
+        font-weight: 600;
+    }
+    
+    .action-icon{
+        text-align: center;
+        align-content: center;
+
+        .figure{
+            margin-top: 0px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        img{
+            width: $px100 - 10px;
+            margin-top: 0px;
+        }
+        .caption{
+            color: $green;
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        
+        #handlogo{
+            width: 72px;
+        }
+    }
+}
+
+.most-popular{
+    font-size: 24px;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+.food-row-1{
+    p{
+        padding-left: 20px;
+    }
+
+}
+
+.add-to-cart{
+    width: $px100 + $px100;
+    height: 40px;
+    color: $green;
+    border: 1px solid $orange;
+    background: $white;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
+.add-to-cart:hover{
+    background: rgb(211, 176, 145);
+}
+
+.caption{
+    font-weight: bold;
+}
+
+.price{
+    font-weight: 400;
+}
+
+.modal{
+    margin-top: 70px;
+}
+
+.modal-content{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../photos/food.png);
+    background-repeat: no repeat;
+    background-size: 600px 580px;
+    background-size: cover;
+    font-size: 13px;
+    color: $white;
+}
+
+#mySignupModal{
+    label{
+        font-weight: 200;
+        // font-size: 10px;
+        margin-right: -20px;
+        margin-top: 5px;
+    }
+    .inputarea{
+        border-radius: 3px;
+        height: 40px;
+        width: 110%;
+        margin-left: 40px;
+    }   
+
+    .form-button{
+        background: $actionGreen;
+        color: $white;
+        height: 50px;
+        width: 62%;
+        margin-left: 20px;
+        border-radius: 3px;
+    }
+    
+    .form-horizontal{
+        margin-left: 120px;
+     }
+
+}
+
+#myLoginModal{
+    height: 500px;
+    font-family: $poppins;
+    
+    label{
+        font-weight: 200;
+        // font-size: 10px;
+        margin-right: -20px;
+        margin-top: 5px;
+    }
+
+    .inputarea{
+        border-radius: 3px;
+        height: 40px;
+        width: 110%;
+        margin-left: 40px;
+        box-shadow:  2px 2px 2px 2px rgba(31, 30, 30, 0.3);
+    }   
+
+    .form-button{
+        background: $actionGreen;
+        color: $white;
+        height: 50px;
+        width: 62%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        box-shadow:  1px 1px 1px 1px rgba(31, 30, 30, 0.3);
+    }
+
+    .form-horizontal{
+       margin-left: 100px;
+    }
+        // 
+    .login-options{
+        margin-left: 100px;
+        margin-top: -20px;
+
+        h3{
+            color: $orange;
+            font-weight: 600;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    }
+    
+    .have-account{
+        font-size: 13px;
+        margin: 100px 0 0 119px;
+    }
+
+    .signup{
+        font-size: 13px;
+        margin: 100px 0 0 40px;
+        color: rgb(16, 90, 150);
+        font-weight: 600;
+    }
+
+}
+
+.inputarea{
+    border-radius: 0px;
+    height: 40px;
+    width: 68%;
+    margin-left: 40px;
+}
+
+
+.textarea{
+    width: 68%;
+    margin-left: 40px;
+}
+
+.e-message{
+    width: 70%;
+    
+    .form-button{
+        background: $actionGreen;
+        color: #fff;
+        height: 50px;
+        width: 39.5%;
+        margin-left: 40px;
+        border-radius: 3px;
+    }
+}
+
+.feedback-area{
+    font-family: $poppins;
+    background: $yellow;
+    color: #fff;
+    margin-top: 100px;
+
+        
+    .feedback-heading{
+        text-align: center;
+    }
+}
+.form-horizontal{
+    margin-left: 30%;
+    margin-top: 30px;
+}
+
+.form-close{
+    color: $white;
+}
+
+footer{
+    
+    p{
+        margin-top: $px100 - 70px;
+        color: $orange;
+        font-weight: 400;
+    }
+
+    .footer-order{
+        color: $green;
+        margin-top: $px100 - 70px;
+    }
+} 
+
+
+
+@media only screen and (max-width:768px){
+
+    .mynav{
+
+        margin-top: $px100 - 80px;
+        margin-right: 70px;
+
+        a{
+            font-size: 12px;
+            cursor: pointer;
+            text-decoration: none;
+        
+
+            button{
+                width: $px100 + 20px;
+                font-weight: bold;
+                font-weight: 400;
+                margin-top: -5px;
+            }
+
+            &:hover{
+            font-weight: 400;
+            }
+        }
+    }  
+        
+        .hero{
+
+            .title{
+
+                .heading{
+
+                    font-size: 37px;
+                    margin-top: 80px;
+                    line-height: 60px;
+                }
+
+                .tagline{
+
+                    font-size: 20px;
+                }
+            }
+
+            .place-order-button {
+
+                margin-top: 0px;
+            }
+
+            .how-it-works{
+
+                margin-top: 170px;
+            }
+        }
+
+        
+    .most-popular{
+
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+        .food-row-1{
+
+            .caption {
+
+            font-weight: 400;
+            font-size: 10px;
+            }
+
+            button{
+
+                width: 150px;
+                height: auto;
+                margin-left: 10px;
+            }
+
+        }
+
+        .feedback-area{
+
+            .feedback-heading{
+                font-size: 15px;
+            }
+        }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:425px){
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 20px;
+            height: auto;
+            float: right;
+            margin-top: -45px;
+        }
+        .basket{
+            margin-right: 63px;
+        }
+    }
+        .cont {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 2px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change {
+    
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+    
+        .bar2 {
+            opacity: 0;
+        }
+    
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    
+    }
+    
+    header{
+        width: 100%;
+        margin: 0px auto;
+        position: fixed;
+        padding-top: 10px;
+        background: $yellow;
+        z-index: 2001;
+    }
+    .hero{
+        background: none;
+        .title{
+            .heading{
+                margin-top: 180px;
+            }
+        }
+        .action-icon{
+            img{
+                width: 50px;
+            }
+            #handlogo{
+                width: 42px;
+            }
+            .caption{
+                font-size: 13px;
+            }
+        }
+    }
+
+    .menu{
+        margin-top: 100px;
+    }
+
+    .action-icon .figure{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .how-it-works{
+        margin-top: 320px;
+        color: #182900;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .action-icon img{
+        width: 50px;
+        margin-top: 0px;
+    }
+    .action-icon .caption{
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .mobile-navbutton{
+        float: right;
+        margin-top: -50px;
+    }
+    .logo{
+        width: 100px;
+        margin-top: -20px;
+    }
+    
+    
+    .mobile-nav{
+
+        a{
+            font-size: 15px;
+        }
+    }
+
+    .title{
+        margin-top: -90px;
+        margin-bottom: 50px;
+    }
+
+    .place-order-button{
+        width: $px100 * 2;
+        height: $px100 - 50px;
+        border: none;
+        border-radius: 0px;
+        background:  $actionGreen;
+        border-radius: 3px;
+        padding-top: 13px;
+        font-family: $poppins;
+    }
+
+    .breakfast-launch{
+        margin-left: 10px;
+    }
+    .salads-sandwiches{
+        margin-left: 10px;
+    }
+    .hr{
+        margin-left: 10px;
+    }
+
+    
+.modal{
+    margin-top: 70px;
+}
+
+.modal-content{
+    width: 95%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../photos/food.png);
+    background-repeat: no repeat;
+    background-size: 600px 580px;
+    background-size: cover;
+    font-size: 13px;
+    color: $white;
+}
+
+#mySignupModal{
+    label{
+        font-weight: 200;
+        // font-size: 10px;
+        margin-right: -20px;
+        margin-top: 5px;
+    }
+    .inputarea{
+        height: 30px;
+        width: 70%;
+        margin-left: 10px;
+    }   
+
+    .form-button{
+        background: $actionGreen;
+        color: $white;
+        height: 50px;
+        width: 62%;
+        margin-left: 20px;
+        border-radius: 3px;
+    }
+    
+    .form-horizontal{
+        margin-left: 120px;
+     }
+
+}
+
+#myLoginModal{
+    height: 500px;
+    font-family: $poppins;
+    
+    label{
+        font-weight: 200;
+        // font-size: 10px;
+        // margin-right: -20px;
+        margin-top: 5px;
+    }
+
+    .inputarea{
+        height: 30px;
+        width: 70%;
+        margin-left: 10px;
+    }   
+
+    .form-button{
+        background: $actionGreen;
+        color: $white;
+        font-size: 10px;
+        height: 30px;
+        width: 52%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .form-horizontal{
+       margin-left: 50px;
+    }
+        // 
+    .login-options{
+        margin-left: 50px;
+        margin-top: -20px;
+
+        h3{
+            color: $orange;
+            font-weight: 600;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    }
+    
+    .have-account{
+        font-size: 13px;
+        margin: 100px 0 0 30px;
+    }
+
+    .signup{
+        font-size: 13px;
+        margin: 100px 0 0 10px;
+        color: rgb(16, 90, 150);
+        font-weight: 600;
+    }
+
+}
+
+
+
+
+.e-message{
+    width: 100%;
+    
+    .form-button{
+        background: $actionGreen;
+        color: #fff;
+        height: 30px;
+        width: 39.5%;
+        margin-left: 0px;
+        font-size: 13px;
+        border-radius: 3px;
+    }
+
+    
+    .inputarea{
+        border-radius: 0px;
+        height: 40px;
+        width: 80%;
+        margin-left: 0px;
+    }
+
+
+    .textarea{
+        width: 80%;
+        margin-left: 0px;
+    }
+
+}
+
+.feedback-heading{
+    font-size: 14px;
+}
+.form-horizontal{
+    margin-left: 2%;
+    margin-top: 30px;
+}
+
+
+    
+
+
+footer{
+
+    p{
+        margin-top: 45px;
+        font-size: 10px;
+        color: $orange;
+        font-weight: 600;
+    }
+
+    .footer-order{
+        color: $green;
+        margin-top: -10px;
+        margin-left: 0px;
+    }
+} 
+
+}
+
+
+
+   
+
+@media only screen and (max-width:375px){
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 18px;
+        }
+    }
+    .title{
+        margin-top: -90px;
+        margin-bottom: 120px;
+    }
+    
+    .menu{
+        margin-top: 200px;
+    }
+ }
+ 
+ 
+
+@media only screen and (max-width:320px){
+   .title{
+       margin-bottom: 150px;
+   }
+    .menu{
+        margin-top: 220px;
+    }
+}
+
