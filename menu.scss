@@ -156,7 +156,7 @@ body{
     width: $px100 + $px100;
     height: 40px;
     color: $green;
-    border: 1px solid $orange;
+    border: 1px solid $yellow;
     background: $white;
     font-weight: 600;
     text-align: center;
@@ -164,7 +164,7 @@ body{
 }
 
 .add-to-cart:hover{
-    background: rgb(211, 176, 145);
+    background: $yellow;
 }
 
 .food-row-2{
