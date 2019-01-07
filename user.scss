@@ -346,6 +346,7 @@ footer{
         margin-top: $px100 - 70px;
         color: $orange;
         font-weight: 400;
+        font-size: 14px;
     }
 
     .footer-order{
@@ -507,9 +508,13 @@ footer{
         z-index: 2001;
     }
     .hero{
-        background: none;
+        
+        background-image: url("photos/Mobile-View.png");
+        background-size: auto auto;
+        margin-top: 40px;
         .title{
             .heading{
+                display: none;
                 margin-top: 180px;
             }
         }
@@ -524,18 +529,31 @@ footer{
                 font-size: 13px;
             }
         }
+        .place-order-button{
+            width: $px100 * 2;
+            height: $px100 - 50px;
+            border: none;
+            border-radius: 0px;
+            background:  $actionGreen;
+            border-radius: 3px;
+            padding-top: 13px;
+            font-family: $poppins;
+            margin-top: 70px;
+        }
+        
+        .how-it-works{
+
+            margin-top: 100px;
+        }
     }
 
-    .menu{
-        margin-top: 100px;
-    }
 
     .action-icon .figure{
         margin-top: 30px;
         font-size: 14px;
     }
     .how-it-works{
-        margin-top: 320px;
+        // margin-top: 320px;
         color: #182900;
         font-weight: 600;
         font-size: 20px;
@@ -571,15 +589,8 @@ footer{
         margin-bottom: 50px;
     }
 
-    .place-order-button{
-        width: $px100 * 2;
-        height: $px100 - 50px;
-        border: none;
-        border-radius: 0px;
-        background:  $actionGreen;
-        border-radius: 3px;
-        padding-top: 13px;
-        font-family: $poppins;
+    .most-popular{
+        margin-top: -60px;
     }
 
     .breakfast-launch{
@@ -774,10 +785,14 @@ footer{
         margin-top: -90px;
         margin-bottom: 120px;
     }
-    
-    .menu{
-        margin-top: 200px;
+
+    .hero{
+        
+        .place-order-button{
+            margin-top: 0px;
+        }
     }
+    
  }
  
  
@@ -786,8 +801,13 @@ footer{
    .title{
        margin-bottom: 150px;
    }
-    .menu{
-        margin-top: 220px;
+   
+   .hero{
+        
+    .place-order-button{
+            margin-top: -30px;
+        }
     }
+   
 }
 

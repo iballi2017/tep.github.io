@@ -194,6 +194,8 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#cardOptionClick").click(function(){
         $("#cardInfo").toggle(1000);
+        $("#walletInfo").hide(1000);
+        $("#transferInfo").hide(1000);
     });
 });
 
@@ -201,6 +203,8 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#walletOptionClick").click(function(){
         $("#walletInfo").toggle(1000);
+        $("#cardInfo").hide(1000);
+        $("#transferInfo").hide(1000);
     });
 });
 
@@ -208,6 +212,8 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#transferOptionClick").click(function(){
         $("#transferInfo").toggle(1000);
+        $("#walletInfo").hide(1000);
+        $("#cardInfo").hide(1000);
     });
 });
 

@@ -266,7 +266,8 @@ body {
 footer p {
   margin-top: 30px;
   color: #e68631;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 14px; }
 footer .footer-order {
   color: #000;
   margin-top: 30px; }
@@ -346,15 +347,28 @@ footer .footer-order {
     z-index: 2001; }
 
   .hero {
-    background: none; }
+    background-image: url("photos/Mobile-View.png");
+    background-size: auto auto;
+    margin-top: 30px;
+    background-repeat: no-repeat; }
     .hero .title .heading {
+      display: none;
       margin-top: 180px; }
+    .hero .title .tagline {
+      display: none; }
+    .hero .place-order-button {
+      margin-top: 40px; }
     .hero .action-icon img {
       width: 50px; }
     .hero .action-icon #handlogo {
       width: 42px; }
     .hero .action-icon .caption {
       font-size: 13px; }
+
+  .most-popular {
+    font-size: 24px;
+    margin-top: -60px;
+    margin-left: 20px; }
 
   .menu {
     margin-top: 100px; }
@@ -388,20 +402,6 @@ footer .footer-order {
 
   .mobile-nav a {
     font-size: 20px; }
-
-  .title {
-    margin-top: -90px;
-    margin-bottom: 50px; }
-
-  .place-order-button {
-    width: 200px;
-    height: 50px;
-    border: none;
-    border-radius: 0px;
-    background: #4C6F35;
-    border-radius: 3px;
-    padding-top: 13px;
-    font-family: "Poppins", sans-serif; }
 
   .breakfast-launch {
     margin-left: 10px; }
@@ -527,6 +527,9 @@ footer .footer-order {
     margin-top: -90px;
     margin-bottom: 120px; }
 
+  .hero .place-order-button {
+    margin-top: 0px; }
+
   .menu {
     margin-top: 200px; }
 
@@ -536,6 +539,9 @@ footer .footer-order {
 @media only screen and (max-width: 320px) {
   .title {
     margin-bottom: 150px; }
+
+  .hero .place-order-button {
+    margin-top: -20px; }
 
   .menu {
     margin-top: 220px; }
