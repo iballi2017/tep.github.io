@@ -50,7 +50,8 @@ var add = (function () {
   
   function addToCart(){
     document.getElementById("cartNum").innerHTML = add();
-    document.getElementById("cartNum").style.display="block"
+    document.getElementById("cartNumMobile").innerHTML = add();
+    document.getElementById("cartNum").style.display="block";
   }
 
 
