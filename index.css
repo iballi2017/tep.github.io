@@ -219,6 +219,12 @@ body {
     #myLoginModal .login-options p {
       margin-top: 20px;
       font-size: 14px; }
+  #myLoginModal .forgotPassword {
+    margin-left: 119px;
+    text-decoration: none;
+    color: #e68631;
+    font-weight: 600;
+    margin-top: -20px; }
   #myLoginModal .have-account {
     font-size: 11px;
     margin: 100px 0 0 119px; }
@@ -464,9 +470,9 @@ footer .footer-order {
       color: #ffffff;
       font-size: 10px;
       height: 30px;
-      width: 32%;
+      width: 70%;
       margin-left: 0px;
-      margin-bottom: 20px; }
+      margin-bottom: 0px; }
     #myLoginModal .form-horizontal {
       margin-left: 0px; }
     #myLoginModal .login-options {
@@ -478,14 +484,18 @@ footer .footer-order {
       #myLoginModal .login-options p {
         margin-top: 20px;
         font-size: 14px; }
+    #myLoginModal .forgotPassword {
+      margin-left: 17px; }
     #myLoginModal .have-account {
       font-size: 10px;
-      margin: 100px 0 0 16px; }
+      margin: 100px 0 0 16px;
+      color: #fff;
+      font-weight: 600; }
     #myLoginModal .signup {
       font-size: 10px;
       margin: 100px 0 0 10px;
-      color: #105a96;
-      font-weight: 600; }
+      font-weight: bolder;
+      color: orange; }
 
   .e-message {
     width: 100%; }

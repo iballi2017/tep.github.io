@@ -1,24 +1,5 @@
 // index.html codes................
 
-$(document).ready(function(){
-    $("#login").click(function(){
-        $("#myLoginModal").modal();
-// The following code is to avoid login and signup modal pop-up to show up at 
-// the same time on one screen if login and sign buttons are clicked simultaneously
-        $("#mySignupModal").hide();
-    });
-});
-
-
-$(document).ready(function(){
-    $("#signup").click(function(){
-        $("#mySignupModal").modal();
-// The following code is to avoid login and signup modal pop-up to show up at 
-// the same time on one screen if login and sign buttons are clicked simultaneously
-        $("#myLoginModal").hide();
-    });
-});
-
 
 //Mobile menu button
 function myFunction(x) {
@@ -78,6 +59,7 @@ var add = (function () {
         $(document).ready(function(){
             $(".login").click(function(){
                 $("#myLoginModal").modal();
+                $("#mySignupModal").hide();
             });
         });
 
@@ -85,6 +67,7 @@ var add = (function () {
         $(document).ready(function(){
             $(".signup").click(function(){
                 $("#mySignupModal").modal();
+                $("#myLoginModal").hide();
             });
         });
 

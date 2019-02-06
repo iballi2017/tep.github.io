@@ -1,0 +1,239 @@
+$green: #182900;
+$orange: #e68631;
+$white: #ffffff;
+$yellow: #EDAA2F;
+$poppins: 'Poppins', sans-serif;
+$p100: 100%;
+$px100: 100px;
+$actionGreen: #4C6F35;
+
+
+body{
+    overflow-x: hidden;
+    font-family: $poppins;
+}
+
+
+
+
+
+// navigation bar starts here
+.navbar-brand>img {
+    display: block;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+.desktop-nav{
+    background: $yellow;
+    width: $p100;
+    height: $px100 - 30px;
+    position: fixed;
+    z-index: 2000;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+    a{
+    margin-right: 30px;
+    float: right;
+    }
+}
+.mynav{
+    margin-top: $px100 - 80px;
+    margin-right: $px100;
+    float: right;
+    font-family: $poppins;
+
+    a{
+        font-size: $px100 - 86px;
+        color: $green;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover{
+            font-weight: 600;
+            color: $orange;
+        }
+
+        
+        #noteNum {
+            display: none;
+            background: $orange;
+            color: $white;
+            position: absolute;
+            margin: -25px 0 0 15px;
+            width: 12px;
+            text-align: center;
+            border-radius: 100px;
+        }
+    }
+        
+    .admin-image{
+        width: 25px;
+    }
+    
+    .admin-note{
+        width:23px;
+    
+    }
+}
+
+
+.inputarea{
+    border-radius: 0px;
+    height: 40px;
+    width: 68%;
+    margin-left: 40px;
+}
+
+// Navigation bar ends here
+
+
+
+
+// DashBoard login starts here
+
+h4{
+    margin: 100px 0 50px 0;
+    text-align: center;
+    font-weight: 600;
+    color: $actionGreen;
+}
+
+#dashboard-loginContainer{
+    width: 60%;
+    margin: 0 auto;
+    height: 350px;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(32, 32, 32, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 30px;
+
+    form{
+        width: 90%;
+        margin: 30px auto;
+        input{
+            height: 50px;
+            border: none;
+            box-shadow: 0px 5px 10px rgba(32, 32, 32, 0.1);
+        }
+
+        button{
+            width: 100%;
+            height: 50px;
+            background: #497f03;
+            color: $white;
+        
+        }
+
+        #forgotPassword{
+            margin-left: 15px;
+            color: #202020;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+   
+}
+// DashBoard login ends here
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+@media only screen and (max-width:768px){
+    
+    #dashboard-loginContainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width:425px){
+    .desktop-nav{
+        display: none;
+    }
+
+    
+    #dashboard-loginContainer{
+        width: 100%;
+    }
+    
+    
+    header{
+        width: 100%;
+        margin: 0px auto;
+        position: fixed;
+        padding-top: 10px;
+        background: $white;
+        z-index: 2001;
+    }
+   
+    .logo{
+        width: 100px;
+        margin-top: -20px;
+    }
+    
+    
+
+    h1 {
+        margin-top: 80px;
+    }
+
+    .mobileView-adminInfo{
+        display: block;
+    }
+
+    #dashboardContainer{
+        background: #fff;
+        width: 100%;
+
+        .dash-summary{
+            height: 130px;
+        }
+
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width:375px){
+    .mobile-nav-icons{
+        display: block;
+        position: relative;
+
+        img{
+            width: 18px;
+        }
+    }
+    #savedCardContainer{
+
+        table{
+            font-size: 11px;
+        }
+        .cardDelete{
+            margin-left: 65px;
+        }
+    }
+   
+ }
+ 
+ 
+
+@media only screen and (max-width:320px){
+   
+    #savedCardContainer{
+
+        .cardDelete{
+            margin-left: 29px;
+        }
+    }
+}
+
+           
